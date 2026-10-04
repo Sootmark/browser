@@ -1,0 +1,21 @@
+These files are plaso's test data, under the Apache License 2.0 (LICENSE,
+in this directory). Copyright the plaso authors.
+
+Source: https://github.com/log2timeline/plaso, test_data/, at commit
+a70dde825618050f6ce6c646f12fed386a9b4d73.
+
+  chrome/History                       History
+  chrome/History-57.0.2987.133         History-57.0.2987.133
+  chrome/History-58.0.3029.96          History-58.0.3029.96
+  chrome/History-59.0.3071.86          History-59.0.3071.86
+  chrome/History-59_added-fake-column  History-59_added-fake-column
+  firefox/places.sqlite                places.sqlite
+  firefox/downloads.sqlite             downloads.sqlite
+  firefox/places118.sqlite             places118.sqlite.gz (gzip -9n)
+  firefox/firefox_25_places.sqlite     firefox_25_places.sqlite.gz (gzip -9n)
+
+The two largest are stored gzip-compressed (5 and 10 MiB, mostly empty
+pages); they are otherwise unmodified. SHA-256 of the uncompressed files:
+
+  places118.sqlite          9c4fea060279998f12d1fdf850b7160a86636b4899fee72bcc96e2e6f7f71831
+  firefox_25_places.sqlite  16038743834f96d0d0f30f28ffd7edc2af95ff09f4567bab90ed7a9099bb2afc
