@@ -1,5 +1,6 @@
 //! How the browser came to a page: Chromium's page transition (a core type
-//! in the low byte, qualifier bits above it) and Firefox's visit type.
+//! in the low byte, qualifier bits above it) and Firefox's visit type;
+//! Internet Explorer's WebCache doesn't record it.
 
 use std::fmt;
 
@@ -10,6 +11,8 @@ pub enum Transition {
     Chromium(PageTransition),
     /// Firefox's `moz_historyvisits.visit_type`.
     Firefox(VisitType),
+    /// Not recorded (Internet Explorer and legacy Edge's WebCache).
+    NotRecorded,
 }
 
 impl fmt::Display for Transition {
@@ -17,6 +20,7 @@ impl fmt::Display for Transition {
         match self {
             Self::Chromium(transition) => transition.fmt(f),
             Self::Firefox(visit_type) => visit_type.fmt(f),
+            Self::NotRecorded => Ok(()),
         }
     }
 }

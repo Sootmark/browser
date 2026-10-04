@@ -74,6 +74,7 @@ fn visit(row: &Named<'_>, page: &Page) -> Visit {
         time: row.integer("visit_date").map(Ts::from_unix_micros),
         url: page.url.clone(),
         title: page.title.clone(),
+        user: None,
         transition: Transition::Firefox(VisitType::from_raw(
             row.integer("visit_type").unwrap_or(0),
         )),

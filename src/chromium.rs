@@ -51,6 +51,7 @@ fn visit(row: &Named<'_>, page: &Page) -> Visit {
         time: row.integer("visit_time").map(Ts::from_webkit_micros),
         url: page.url.clone(),
         title: page.title.clone(),
+        user: None,
         // Stored as a signed 32-bit value: the low 32 bits are the bits.
         transition: Transition::Chromium(PageTransition(
             row.integer("transition").unwrap_or(0) as u32

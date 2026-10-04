@@ -1,2 +1,2 @@
 # Domain vocabulary that is prose, not code.
-doc-valid-idents = ["..", "SQLite", "WebKit", "PRTime"]
+doc-valid-idents = ["..", "SQLite", "WebKit", "PRTime", "WebCache"]

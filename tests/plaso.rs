@@ -274,6 +274,7 @@ fn every_visit_matches_sqlite3() {
                 let raw = match v.transition {
                     Transition::Chromium(PageTransition(bits)) => i64::from(bits),
                     Transition::Firefox(t) => t.raw(),
+                    Transition::NotRecorded => unreachable!("SQLite databases record it"),
                 };
                 let ticks = v.time.and_then(|t| t.ticks()).unwrap_or(0);
                 format!(
@@ -289,4 +290,51 @@ fn every_visit_matches_sqlite3() {
             .collect();
         assert_eq!(ours, oracle.lines().collect::<Vec<_>>(), "{name}");
     }
+}
+
+/// plaso's WebCache databases (ESE): the visits of their history
+/// containers (`History`, `MSHist01…`), counted and checked against
+/// libesedb's reading of the same rows.
+#[test]
+fn webcache_visits() {
+    for (name, visits, user) in [
+        ("WebCacheV01.dat.gz", 113, "test"),
+        ("PartitionsEx-WebCacheV01.dat.gz", 69, "John Doe"),
+    ] {
+        let history = read(&fixture(name), &[]).unwrap();
+        assert_eq!(history.kind, Kind::WebCache);
+        assert!(
+            history.problems.iter().all(|p| p.contains("dirty")),
+            "{name}: {:?}",
+            history.problems
+        );
+        assert_eq!(history.visits.len(), visits, "{name}");
+        assert!(history
+            .visits
+            .iter()
+            .all(|v| v.user.as_deref() == Some(user)));
+        assert!(history.downloads.is_empty());
+    }
+    let history = read(&fixture("WebCacheV01.dat.gz"), &[]).unwrap();
+    let overview = history.visits.iter().find(|v| v.id == 30).unwrap();
+    assert_eq!(
+        overview.url,
+        "http://code.google.com/p/libyal/wiki/Overview"
+    );
+    assert_eq!(
+        overview.time.and_then(|t| t.to_iso8601()).as_deref(),
+        Some("2014-05-12T07:31:06.1252928Z")
+    );
+    assert_eq!(overview.transition.to_string(), "");
+    assert_eq!(
+        browser::detect(
+            "Users/test/AppData/Local/Microsoft/Windows/WebCache/WebCacheV01.dat",
+            &fixture("WebCacheV01.dat.gz")
+        ),
+        Some(Kind::WebCache)
+    );
+    assert_eq!(
+        browser::detect("Windows.edb", &fixture("WebCacheV01.dat.gz")),
+        None
+    );
 }

@@ -1,9 +1,9 @@
 [package]
 name = "sootmark-browser"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 rust-version = "1.80"
-description = "Browser history for forensics: visits and downloads from Chromium-family History databases (Chrome, Edge, Brave, Opera, Vivaldi) and Firefox places.sqlite, read without SQLite, damage reported rather than fatal."
+description = "Browser history for forensics: visits and downloads from Chromium-family History databases (Chrome, Edge, Brave, Opera, Vivaldi), Firefox places.sqlite and Internet Explorer/legacy Edge WebCacheV01.dat, read without SQLite or ESE, damage reported rather than fatal."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Sootmark/browser"
 homepage = "https://sootmark.com"
@@ -16,6 +16,7 @@ name = "browser"
 
 [dependencies]
 common = { package = "sootmark-common", version = "0.3.7" }
+ese = { package = "sootmark-ese", version = "0.1.0" }
 sqlite = { package = "sootmark-sqlite", version = "0.1.1" }
 
 [dev-dependencies]

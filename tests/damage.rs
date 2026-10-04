@@ -6,12 +6,13 @@ mod support;
 use proptest::prelude::*;
 
 /// Every kind, from the oldest version to the newest.
-const DATABASES: [&str; 8] = [
+const DATABASES: [&str; 9] = [
     "plaso/History",
     "plaso/History-59.0.3071.86",
     "plaso/places.sqlite",
     "plaso/places118.sqlite.gz",
     "plaso/firefox_25_places.sqlite.gz",
+    "plaso/WebCacheV01.dat.gz",
     "plaso/downloads.sqlite",
     "synthetic/History",
     "synthetic/places.sqlite",

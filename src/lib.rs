@@ -1,5 +1,5 @@
 //! Browser history for forensics: the pages visited and the files
-//! downloaded, read from the browser's own SQLite database without SQLite.
+//! downloaded, read from the browser's own database without SQLite or ESE.
 //!
 //! - Chromium's `History`, which Chrome, Edge, Brave, Opera and Vivaldi
 //!   share: visits (`visits` joined to `urls`) and downloads (`downloads`
@@ -12,6 +12,10 @@
 //!   Times are `PRTime`, microseconds since 1970.
 //! - Firefox's `downloads.sqlite` (`moz_downloads`), where Firefox 25 and
 //!   older kept downloads.
+//! - Internet Explorer and legacy Edge's `WebCacheV01.dat`, an ESE
+//!   database: the visits of its history containers, with the account
+//!   each was recorded for; local files opened in Explorer as `file:///`
+//!   URLs. Times are FILETIMEs.
 //!
 //! Columns are read by name: one a version lacks reads as `None`, one it
 //! added is ignored. [`read`] takes the database with its write-ahead log,
@@ -26,6 +30,7 @@ mod chromium;
 mod firefox;
 mod table;
 mod transition;
+mod webcache;
 
 pub use transition::{CoreTransition, PageTransition, Qualifier, Transition, VisitType};
 
@@ -43,6 +48,9 @@ pub enum Kind {
     /// Firefox's `downloads.sqlite` (table `moz_downloads`), up to
     /// Firefox 25.
     FirefoxDownloads,
+    /// Internet Explorer and legacy Edge's `WebCacheV01.dat`, an ESE
+    /// database (table `Containers`): visits only.
+    WebCache,
 }
 
 impl Kind {
@@ -55,6 +63,7 @@ impl Kind {
             ("History", Self::ChromiumHistory),
             ("places.sqlite", Self::FirefoxPlaces),
             ("downloads.sqlite", Self::FirefoxDownloads),
+            ("WebCacheV01.dat", Self::WebCache),
         ]
         .into_iter()
         .find(|(known, _)| base.eq_ignore_ascii_case(known))
@@ -82,10 +91,14 @@ impl Kind {
 /// The tables decide when the file is a SQLite database whose schema
 /// reads; the name (as [`Kind::from_name`]) only when it is a SQLite
 /// database whose schema doesn't, such as the first pages of a larger
-/// file. Anything else is `None`.
+/// file. An ESE database is a WebCache when named as one. Anything else is
+/// `None`.
 #[must_use]
 pub fn detect(name: &str, data: &[u8]) -> Option<Kind> {
-    if !data.starts_with(b"SQLite format 3\0") {
+    if is_ese(data) {
+        return (Kind::from_name(name) == Some(Kind::WebCache)).then_some(Kind::WebCache);
+    }
+    if !data.starts_with(SQLITE_MAGIC) {
         return None;
     }
     match Database::open(data) {
@@ -105,6 +118,9 @@ pub struct Visit {
     pub url: String,
     /// The page's title, as last seen; empty when none.
     pub title: String,
+    /// The account the visit was recorded for, when the database says
+    /// (WebCache's `Visited: alice@…`).
+    pub user: Option<String>,
     /// How the browser came to the page.
     pub transition: Transition,
     /// The visit this one came from (the referring page, the redirect's
@@ -220,13 +236,16 @@ impl std::fmt::Display for Error {
 
 impl std::error::Error for Error {}
 
-/// Read a browser's history database, with its `-wal` file's committed
-/// changes (`wal` may be empty).
+/// Read a browser's history database: a SQLite one with its `-wal` file's
+/// committed changes (`wal` may be empty), or a WebCache (`wal` unused).
 ///
 /// # Errors
-/// When it isn't a SQLite database, or has none of the tables of a
+/// When it isn't a SQLite or ESE database, or has none of the tables of a
 /// [`Kind`].
 pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
+    if is_ese(database) {
+        return read_webcache(database);
+    }
     let db = Database::open_with_wal(database, wal).map_err(|e| Error(e.to_string()))?;
     let kind = Kind::of(&db).ok_or_else(|| Error("not a browser history database".to_owned()))?;
     let mut problems = db.problems.clone();
@@ -237,11 +256,35 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
         ),
         Kind::FirefoxPlaces => firefox::places(&db, &mut problems),
         Kind::FirefoxDownloads => (Vec::new(), firefox::legacy_downloads(&db, &mut problems)),
+        // `Kind::of` names SQLite databases only; a WebCache reads as one.
+        Kind::WebCache => return read_webcache(database),
     };
     Ok(History {
         kind,
         visits,
         downloads,
+        problems,
+    })
+}
+
+const SQLITE_MAGIC: &[u8] = b"SQLite format 3\0";
+
+/// Whether `data` starts like an ESE database (its signature at offset 4).
+fn is_ese(data: &[u8]) -> bool {
+    data.get(4..8) == Some(&[0xef, 0xcd, 0xab, 0x89][..])
+}
+
+fn read_webcache(data: &[u8]) -> Result<History, Error> {
+    let db = ese::Database::open(data).map_err(|e| Error(e.to_string()))?;
+    if !webcache::is_webcache(&db) {
+        return Err(Error("an ESE database, but not a WebCache".to_owned()));
+    }
+    let mut problems = db.problems.clone();
+    let visits = webcache::visits(&db, &mut problems);
+    Ok(History {
+        kind: Kind::WebCache,
+        visits,
+        downloads: Vec::new(),
         problems,
     })
 }
