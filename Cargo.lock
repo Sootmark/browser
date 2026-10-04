@@ -242,7 +242,7 @@ dependencies = [
 
 [[package]]
 name = "sootmark-browser"
-version = "0.2.0"
+version = "0.3.0"
 dependencies = [
  "proptest",
  "sootmark-common",

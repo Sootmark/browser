@@ -48,6 +48,7 @@ pub(crate) fn visits(db: &Database<'_>, problems: &mut Vec<String>) -> Vec<Visit
 fn visit(row: &Named<'_>, page: &Page) -> Visit {
     Visit {
         id: row.integer("id").unwrap_or(row.rowid),
+        table: "visits".to_owned(),
         time: row.integer("visit_time").map(Ts::from_webkit_micros),
         url: page.url.clone(),
         title: page.title.clone(),

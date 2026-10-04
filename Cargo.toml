@@ -1,6 +1,6 @@
 [package]
 name = "sootmark-browser"
-version = "0.2.0"
+version = "0.3.0"
 edition = "2021"
 rust-version = "1.80"
 description = "Browser history for forensics: visits and downloads from Chromium-family History databases (Chrome, Edge, Brave, Opera, Vivaldi), Firefox places.sqlite and Internet Explorer/legacy Edge WebCacheV01.dat, read without SQLite or ESE, damage reported rather than fatal."

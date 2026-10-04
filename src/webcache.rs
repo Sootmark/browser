@@ -63,6 +63,7 @@ fn visit(table: &Table, row: &Row) -> Option<Visit> {
         .map(Ts::from_filetime);
     Some(Visit {
         id: integer("EntryId").unwrap_or_default(),
+        table: table.name.clone(),
         time,
         url: url.to_owned(),
         title: String::new(),

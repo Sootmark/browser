@@ -110,8 +110,12 @@ pub fn detect(name: &str, data: &[u8]) -> Option<Kind> {
 /// One visit to a page.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Visit {
-    /// The visit's row id (`visits.id`, `moz_historyvisits.id`).
+    /// The visit's row id (`visits.id`, `moz_historyvisits.id`, a WebCache
+    /// container's `EntryId`), unique within its table.
     pub id: i64,
+    /// The table it's in: `visits`, `moz_historyvisits`, or the WebCache
+    /// container's `Container_<ContainerId>`.
+    pub table: String,
     /// When.
     pub time: Option<Ts>,
     /// The page; empty when its row is gone.

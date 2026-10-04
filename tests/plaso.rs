@@ -338,3 +338,17 @@ fn webcache_visits() {
         None
     );
 }
+
+/// A WebCache keeps its history in several containers, each numbering its
+/// own entries: visits are unique by table and id.
+#[test]
+fn webcache_visits_are_unique_by_table_and_id() {
+    let history = read(&fixture("WebCacheV01.dat.gz"), &[]).unwrap();
+    let keys: std::collections::HashSet<(&str, i64)> = history
+        .visits
+        .iter()
+        .map(|v| (v.table.as_str(), v.id))
+        .collect();
+    assert_eq!(keys.len(), history.visits.len());
+    assert!(keys.contains(&("Container_23", 1)));
+}

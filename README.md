@@ -4,7 +4,7 @@ Browser history for forensics: the pages visited and the files downloaded, from 
 
 ```toml
 [dependencies]
-sootmark-browser = "0.2"
+sootmark-browser = "0.3"
 ```
 
 ```rust

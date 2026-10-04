@@ -71,6 +71,7 @@ fn visits(db: &Database<'_>, pages: &HashMap<i64, Page>, problems: &mut Vec<Stri
 fn visit(row: &Named<'_>, page: &Page) -> Visit {
     Visit {
         id: row.integer("id").unwrap_or(row.rowid),
+        table: "moz_historyvisits".to_owned(),
         time: row.integer("visit_date").map(Ts::from_unix_micros),
         url: page.url.clone(),
         title: page.title.clone(),
