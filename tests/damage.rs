@@ -5,8 +5,9 @@ mod support;
 
 use proptest::prelude::*;
 
-/// Every kind, from the oldest version to the newest.
-const DATABASES: [&str; 9] = [
+/// Every kind, from the oldest version to the newest, and databases with
+/// deleted records to recover.
+const DATABASES: [&str; 11] = [
     "plaso/History",
     "plaso/History-59.0.3071.86",
     "plaso/places.sqlite",
@@ -16,6 +17,16 @@ const DATABASES: [&str; 9] = [
     "plaso/downloads.sqlite",
     "synthetic/History",
     "synthetic/places.sqlite",
+    "recovery/chromium.db",
+    "recovery/places.sqlite",
+];
+
+/// Databases with their logs: a visit only in the log; deletions only in
+/// the log, whose older page versions are recovered from.
+const LOGGED: [(&str, &str); 3] = [
+    ("synthetic/wal/History", "synthetic/wal/History-wal"),
+    ("recovery/History", "recovery/History-wal"),
+    ("recovery/places.sqlite", "recovery/places.sqlite-wal"),
 ];
 
 fn read_everything(data: &[u8], wal: &[u8]) {
@@ -54,11 +65,13 @@ proptest! {
 
     #[test]
     fn damaged_logs_never_panic(
+        which in 0..LOGGED.len(),
         flips in proptest::collection::vec((any::<usize>(), any::<u8>()), 1..20),
         cut in any::<usize>(),
     ) {
-        let database = support::fixture("synthetic/wal/History");
-        let mut wal = support::fixture("synthetic/wal/History-wal");
+        let (database, wal) = LOGGED[which];
+        let database = support::fixture(database);
+        let mut wal = support::fixture(wal);
         for &(at, byte) in &flips {
             let at = at % wal.len();
             wal[at] = byte;

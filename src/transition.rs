@@ -11,7 +11,8 @@ pub enum Transition {
     Chromium(PageTransition),
     /// Firefox's `moz_historyvisits.visit_type`.
     Firefox(VisitType),
-    /// Not recorded (Internet Explorer and legacy Edge's WebCache).
+    /// Not recorded (Internet Explorer and legacy Edge's WebCache), or lost
+    /// from a recovered visit's record.
     NotRecorded,
 }
 

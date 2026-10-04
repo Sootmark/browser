@@ -1,9 +1,10 @@
 //! Rows read by column name, so that a column a browser version lacks, or
-//! one it added, changes nothing: a missing column reads as NULL.
+//! one it added, changes nothing: a missing column reads as NULL. Recovered
+//! records read the same way, a lost value as NULL.
 
 use std::collections::HashMap;
 
-use sqlite::{Database, Row, Value};
+use sqlite::{Database, RecoveredRecord, Row, Value};
 
 /// A row with its table's column names.
 pub(crate) struct Named<'t> {
@@ -12,7 +13,20 @@ pub(crate) struct Named<'t> {
     values: Vec<Value>,
 }
 
-impl Named<'_> {
+impl<'t> Named<'t> {
+    /// A recovered record of the table with these columns: a lost value
+    /// reads as NULL, a lost rowid as 0.
+    pub(crate) fn recovered(columns: &'t [String], record: &RecoveredRecord) -> Self {
+        Self {
+            columns,
+            rowid: record.rowid.unwrap_or(0),
+            values: record
+                .values
+                .iter()
+                .map(|value| value.clone().unwrap_or(Value::Null))
+                .collect(),
+        }
+    }
     fn value(&self, column: &str) -> Option<&Value> {
         let at = self
             .columns
@@ -55,6 +69,12 @@ pub(crate) fn has_column(db: &Database<'_>, table: &str, column: &str) -> bool {
     })
 }
 
+/// The names of `table`'s columns, if it exists.
+pub(crate) fn columns(db: &Database<'_>, table: &str) -> Option<Vec<String>> {
+    db.table(table)
+        .map(|t| t.column_names().into_iter().map(str::to_owned).collect())
+}
+
 /// Every row of `table` in rowid order, converted; none when the table is
 /// absent. Damage met on the way is added to `problems`.
 pub(crate) fn read<T>(
@@ -63,12 +83,7 @@ pub(crate) fn read<T>(
     problems: &mut Vec<String>,
     mut convert: impl FnMut(&Named<'_>) -> T,
 ) -> Vec<T> {
-    let Some(columns) = db.table(table).map(|t| {
-        t.column_names()
-            .into_iter()
-            .map(str::to_owned)
-            .collect::<Vec<_>>()
-    }) else {
+    let Some(columns) = columns(db, table) else {
         return Vec::new();
     };
     let mut rows = match db.rows(table) {

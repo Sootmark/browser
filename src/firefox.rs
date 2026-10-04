@@ -9,7 +9,8 @@
 //! (`{"state":1,"deleted":false,"endTime":1689722333589,"fileSize":66383750}`,
 //! the end in milliseconds). Before, `downloads.sqlite` held one
 //! `moz_downloads` row per download. Times are `PRTime`, microseconds since
-//! 1970.
+//! 1970. Deleted visits, pages and `moz_downloads` rows are read from
+//! recovered records the same way; deleted annotations are not.
 
 use std::collections::HashMap;
 
@@ -17,55 +18,66 @@ use common::json::{self, Json};
 use common::time::Ts;
 use sqlite::Database;
 
+use crate::recovered::{self, Recovery, Schema};
 use crate::table::{self, Named};
-use crate::{Download, DownloadState, Transition, Visit, VisitType};
+use crate::{Download, DownloadState, Entries, Page, Transition, Visit, VisitType};
 
 const DESTINATION: &str = "downloads/destinationFileURI";
 const METADATA: &str = "downloads/metaData";
 
-/// A `moz_places` row: what a visit or download knows of its page.
-#[derive(Default)]
-struct Page {
-    url: String,
-    title: String,
-    visit_count: Option<i64>,
-    typed: bool,
-    hidden: bool,
-    frecency: Option<i64>,
-}
+const SCHEMA: Schema = Schema {
+    visits: "moz_historyvisits",
+    page_id: "place_id",
+    transition: "visit_type",
+    pages: "moz_places",
+    page,
+    visit,
+};
 
-/// A `places.sqlite` database's visits and downloads.
-pub(crate) fn places(db: &Database<'_>, problems: &mut Vec<String>) -> (Vec<Visit>, Vec<Download>) {
+/// A `places.sqlite` database's visits and downloads, and the visits and
+/// pages deleted that recovery finds.
+pub(crate) fn places(
+    db: &Database<'_>,
+    recovery: &Recovery,
+    problems: &mut Vec<String>,
+) -> Entries {
     let pages: HashMap<i64, Page> = table::read(db, "moz_places", problems, |row| {
-        (row.integer("id").unwrap_or(row.rowid), page(row))
+        let page = page(row);
+        (page.id, page)
     })
     .into_iter()
     .collect();
-    (
-        visits(db, &pages, problems),
-        downloads(db, &pages, problems),
-    )
-}
-
-fn page(row: &Named<'_>) -> Page {
-    Page {
-        url: row.text("url").unwrap_or_default(),
-        title: row.text("title").unwrap_or_default(),
-        visit_count: row.integer("visit_count"),
-        typed: row.flag("typed").unwrap_or(false),
-        hidden: row.flag("hidden").unwrap_or(false),
-        frecency: row.integer("frecency"),
+    let visits = table::read_joined(
+        db,
+        ("moz_historyvisits", "place_id"),
+        ("moz_places", &pages),
+        problems,
+        visit,
+    );
+    let (deleted_visits, deleted_pages) =
+        recovered::history(recovery, db, &SCHEMA, &pages, &visits);
+    Entries {
+        downloads: downloads(db, &pages, problems),
+        visits,
+        deleted_visits,
+        deleted_pages,
+        deleted_downloads: Vec::new(),
     }
 }
 
-fn visits(db: &Database<'_>, pages: &HashMap<i64, Page>, problems: &mut Vec<String>) -> Vec<Visit> {
-    table::read_joined(
-        db,
-        ("moz_historyvisits", "place_id"),
-        ("moz_places", pages),
-        problems,
-        visit,
-    )
+/// A `moz_places` row: what a visit or download knows of its page.
+fn page(row: &Named<'_>) -> Page {
+    Page {
+        id: row.integer("id").unwrap_or(row.rowid),
+        url: row.text("url").unwrap_or_default(),
+        title: row.text("title").unwrap_or_default(),
+        last_visit: row.integer("last_visit_date").map(Ts::from_unix_micros),
+        visit_count: row.integer("visit_count"),
+        typed: row.flag("typed").unwrap_or(false),
+        typed_count: None,
+        hidden: row.flag("hidden").unwrap_or(false),
+        frecency: row.integer("frecency"),
+    }
 }
 
 fn visit(row: &Named<'_>, page: &Page) -> Visit {
@@ -218,9 +230,29 @@ fn annotated_download(
     }
 }
 
-/// A `downloads.sqlite` database's downloads (Firefox 25 and older).
-pub(crate) fn legacy_downloads(db: &Database<'_>, problems: &mut Vec<String>) -> Vec<Download> {
-    table::read(db, "moz_downloads", problems, |row| Download {
+/// A `downloads.sqlite` database's downloads (Firefox 25 and older), and
+/// those deleted that recovery finds.
+pub(crate) fn legacy_downloads(
+    db: &Database<'_>,
+    recovery: &Recovery,
+    problems: &mut Vec<String>,
+) -> Entries {
+    let downloads = table::read(db, "moz_downloads", problems, legacy_download);
+    Entries {
+        deleted_downloads: recovered::downloads(
+            recovery,
+            db,
+            "moz_downloads",
+            legacy_download,
+            &downloads,
+        ),
+        downloads,
+        ..Entries::default()
+    }
+}
+
+fn legacy_download(row: &Named<'_>) -> Download {
+    Download {
         id: row.integer("id").unwrap_or(row.rowid),
         url: row.text("source").unwrap_or_default(),
         url_chain: Vec::new(),
@@ -239,7 +271,7 @@ pub(crate) fn legacy_downloads(db: &Database<'_>, problems: &mut Vec<String>) ->
         mime_type: row.text("mimeType"),
         opened: None,
         deleted: None,
-    })
+    }
 }
 
 /// `nsIDownloadManager`'s states, which the annotations' metadata kept:

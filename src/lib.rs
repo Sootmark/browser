@@ -22,16 +22,26 @@
 //! whose committed changes it applies: the latest visits are often only
 //! there. Damage is listed in `problems`, never a panic; a visit whose page
 //! row is gone is kept, without its URL.
+//!
+//! Deleted history is recovered from the SQLite databases, apart from the
+//! live rows: the records of deleted visits, pages and downloads that
+//! `sootmark-sqlite` finds in free space, on the freelist and in the older
+//! page versions a write-ahead log keeps, each with where and how it was
+//! found ([`Provenance`]). Earlier states of rows still live (a page whose
+//! visit count changed, a visit whose duration was written later) are left
+//! out.
 
 use common::time::Ts;
 use sqlite::Database;
 
 mod chromium;
 mod firefox;
+mod recovered;
 mod table;
 mod transition;
 mod webcache;
 
+pub use sqlite::{Area, Confidence, Evidence, PageState};
 pub use transition::{CoreTransition, PageTransition, Qualifier, Transition, VisitType};
 
 /// This crate's version, for records of what parsed them.
@@ -215,7 +225,113 @@ pub struct Download {
     pub deleted: Option<bool>,
 }
 
-/// A database's visits and downloads.
+/// A page: a Chromium `urls` row, a Firefox `moz_places` row.
+#[derive(Debug, Clone, Default, PartialEq, Eq)]
+pub struct Page {
+    /// Its row id (`urls.id`, `moz_places.id`), which visits name; 0 when
+    /// a recovered record lost it ([`Provenance::rowid`] is `None`).
+    pub id: i64,
+    /// Its URL.
+    pub url: String,
+    /// Its title, as last seen; empty when none.
+    pub title: String,
+    /// When it was last visited.
+    pub last_visit: Option<Ts>,
+    /// Visits to it in all.
+    pub visit_count: Option<i64>,
+    /// Whether its URL was ever typed.
+    pub typed: bool,
+    /// How many times its URL was typed (Chromium).
+    pub typed_count: Option<i64>,
+    /// Hidden from the history list and suggestions.
+    pub hidden: bool,
+    /// Firefox's ranking of it for suggestions.
+    pub frecency: Option<i64>,
+}
+
+/// Where and how a deleted entry was found: the record `sootmark-sqlite`
+/// recovered it from.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct Provenance {
+    /// The table its record fits best: `visits`, `urls`, `downloads`,
+    /// `moz_historyvisits`, `moz_places`, `moz_downloads`.
+    pub table: String,
+    /// Its rowid, when the cell's start survived (never for a record whose
+    /// first bytes a freeblock header overwrote).
+    pub rowid: Option<i64>,
+    /// The page it was found on (for a log frame, the page it is a version
+    /// of).
+    pub page: u32,
+    /// Where its cell starts on that page, from the page's first byte.
+    pub offset: usize,
+    /// The page as the database reads now (in a table, on the freelist),
+    /// or the older version of it a write-ahead log or the file under it
+    /// keeps (superseded, never committed, replaced by the log).
+    pub page_state: PageState,
+    /// Where on the page: a cell, a freeblock, unallocated space, a free
+    /// page.
+    pub area: Area,
+    /// How much of the cell was read as stored.
+    pub evidence: Evidence,
+    /// How sure the match of the record with its table is.
+    pub confidence: Confidence,
+    /// Other tables its record fits as well.
+    pub also_fits: Vec<String>,
+    /// The columns whose values were lost (overwritten, or past the point
+    /// where a truncated record stops): the fields read from them are
+    /// `None`, empty, zero or false.
+    pub lost: Vec<String>,
+    /// Whether its payload spilled to overflow pages that are gone: the
+    /// values after its local bytes are lost, the one they cut kept as far
+    /// as it goes.
+    pub truncated: bool,
+}
+
+/// Where a recovered visit's page (URL, title, counts) came from.
+#[derive(Debug, Clone, Copy, PartialEq, Eq, Hash)]
+pub enum PageSource {
+    /// The live page row its page id names.
+    Live,
+    /// A recovered page record with its page id: the page was deleted too.
+    Recovered,
+    /// Neither, or its page id was lost: URL and title are empty.
+    NotFound,
+}
+
+/// A deleted visit, recovered.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RecoveredVisit {
+    /// The visit as its record and page read; its `id` is 0 when the rowid
+    /// was lost, its `transition` [`Transition::NotRecorded`] when the
+    /// transition was.
+    pub visit: Visit,
+    /// Where its page came from.
+    pub page: PageSource,
+    /// Where and how its record was found.
+    pub provenance: Provenance,
+}
+
+/// A deleted page, recovered: its visits may be gone too.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RecoveredPage {
+    /// The page as its record reads.
+    pub page: Page,
+    /// Where and how its record was found.
+    pub provenance: Provenance,
+}
+
+/// A deleted download, recovered.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct RecoveredDownload {
+    /// The download as its record reads, its `id` 0 when the rowid was
+    /// lost; a Chromium download's URL chain from its live or recovered
+    /// `downloads_url_chains` rows, empty when none is found.
+    pub download: Download,
+    /// Where and how its record was found.
+    pub provenance: Provenance,
+}
+
+/// A database's visits and downloads, live and deleted.
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct History {
     /// Which database it is.
@@ -224,8 +340,29 @@ pub struct History {
     pub visits: Vec<Visit>,
     /// In row order.
     pub downloads: Vec<Download>,
-    /// Damage in the database or its log, and rows that don't join.
+    /// Deleted visits (Chromium `visits`, Firefox `moz_historyvisits`),
+    /// recovered: those in the database as it reads now first, then those
+    /// in older page versions, each in page and offset order.
+    pub deleted_visits: Vec<RecoveredVisit>,
+    /// Deleted pages (Chromium `urls`, Firefox `moz_places`) whose URL no
+    /// live page has, recovered, in the same order.
+    pub deleted_pages: Vec<RecoveredPage>,
+    /// Deleted downloads (Chromium `downloads`, Firefox 25 and older
+    /// `moz_downloads`), recovered, in the same order.
+    pub deleted_downloads: Vec<RecoveredDownload>,
+    /// Damage in the database or its log, rows that don't join, and damage
+    /// met by recovery (`recovery: …`).
     pub problems: Vec<String>,
+}
+
+/// What a SQLite database holds, live and deleted.
+#[derive(Default)]
+struct Entries {
+    visits: Vec<Visit>,
+    downloads: Vec<Download>,
+    deleted_visits: Vec<RecoveredVisit>,
+    deleted_pages: Vec<RecoveredPage>,
+    deleted_downloads: Vec<RecoveredDownload>,
 }
 
 /// Why a file isn't browser history.
@@ -253,20 +390,21 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
     let db = Database::open_with_wal(database, wal).map_err(|e| Error(e.to_string()))?;
     let kind = Kind::of(&db).ok_or_else(|| Error("not a browser history database".to_owned()))?;
     let mut problems = db.problems.clone();
-    let (visits, downloads) = match kind {
-        Kind::ChromiumHistory => (
-            chromium::visits(&db, &mut problems),
-            chromium::downloads(&db, &mut problems),
-        ),
-        Kind::FirefoxPlaces => firefox::places(&db, &mut problems),
-        Kind::FirefoxDownloads => (Vec::new(), firefox::legacy_downloads(&db, &mut problems)),
+    let recovery = recovered::Recovery::new(&db, &mut problems);
+    let entries = match kind {
+        Kind::ChromiumHistory => chromium::history(&db, &recovery, &mut problems),
+        Kind::FirefoxPlaces => firefox::places(&db, &recovery, &mut problems),
+        Kind::FirefoxDownloads => firefox::legacy_downloads(&db, &recovery, &mut problems),
         // `Kind::of` names SQLite databases only; a WebCache reads as one.
         Kind::WebCache => return read_webcache(database),
     };
     Ok(History {
         kind,
-        visits,
-        downloads,
+        visits: entries.visits,
+        downloads: entries.downloads,
+        deleted_visits: entries.deleted_visits,
+        deleted_pages: entries.deleted_pages,
+        deleted_downloads: entries.deleted_downloads,
         problems,
     })
 }
@@ -289,6 +427,9 @@ fn read_webcache(data: &[u8]) -> Result<History, Error> {
         kind: Kind::WebCache,
         visits,
         downloads: Vec::new(),
+        deleted_visits: Vec::new(),
+        deleted_pages: Vec::new(),
+        deleted_downloads: Vec::new(),
         problems,
     })
 }
