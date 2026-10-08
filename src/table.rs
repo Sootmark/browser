@@ -49,6 +49,14 @@ impl<'t> Named<'t> {
             .map(str::to_owned)
     }
 
+    /// The column's number, integer or real.
+    pub(crate) fn real(&self, column: &str) -> Option<f64> {
+        match self.value(column)? {
+            Value::Real(value) => Some(*value),
+            other => other.as_integer().map(|n| n as f64),
+        }
+    }
+
     /// The column's integer as a flag: non-zero is true.
     pub(crate) fn flag(&self, column: &str) -> Option<bool> {
         self.integer(column).map(|value| value != 0)

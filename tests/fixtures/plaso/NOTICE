@@ -23,3 +23,16 @@ otherwise unmodified. SHA-256 of the uncompressed files:
   firefox_25_places.sqlite  16038743834f96d0d0f30f28ffd7edc2af95ff09f4567bab90ed7a9099bb2afc
   WebCacheV01.dat           2713e7ff413c69659442c5dcb0f23f41230fa76bf760b8aeac0ffd430d10c83e
   PartitionsEx-WebCacheV01.dat  3b2958f0283d20d38de63e110da59e03f58c927f4360e8fe5161fdb1a99c3330
+
+Also from test_data/ at commit 91b6849503b125267d00ea134248e4fe59e5479c, stored
+gzip-compressed (gzip -9n), otherwise unmodified (SHA-256 of the originals):
+
+  chrome/cookies.db                    57c81098b475576befa9e11e30b974313ff6bba4976123297d8c4815abaa805f
+  chrome/Cookies-68.0.3440.106         59d1a2c835a5aba67c8e7e31ee853382fcb1b2807ffdad3b79edc53d50acc1e9
+  chrome/Web Data                      7779fb8b6dab0d38fd41df3dacfd9f5ca96ec1ee5ecece6b9d276a786bc23812
+  chrome/Extension Activity            e7a38d5d9281699ba689dc61b697eaef1a66cc94905985d15459018619edb5e4
+  Preferences                          a7f71e7c543f9b007fb91ed6f1ef2d9f17046e605a9945c3845b49637c56588a
+  firefox/firefox_10_cookies.sqlite    fc6feee4809542a2eb90ef2a33e37a169ba867ad601214cac86258d64c5a8a16
+  firefox/firefox_2_cookies.sqlite     0b2cc4f0bb782b0be5160bbcf425d12d382903c1ae029b00bf2bfe4333205a95
+  safari/History.db                    2e87d99d0bc7765e523ee1250828e82fb350780c0c28020db6bb0b0ce8d3f351
+  plist/History.plist                  f0b7da783abf82182fca8603ef269ce8c934a4fe291595fb87cf325bda6265a4

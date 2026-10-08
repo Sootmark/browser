@@ -34,12 +34,22 @@
 use common::time::Ts;
 use sqlite::Database;
 
+mod autofill;
 mod chromium;
+mod cookies;
+mod extensions;
 mod firefox;
 mod recovered;
+mod safari;
 mod table;
 mod transition;
 mod webcache;
+
+pub use autofill::AutofillEntry;
+pub use cookies::{Cookie, CookieStore};
+pub use extensions::{
+    read_preferences, ContentException, ExtensionActivity, InstalledExtension, Preferences,
+};
 
 pub use sqlite::{Area, Confidence, Evidence, PageState};
 pub use transition::{CoreTransition, PageTransition, Qualifier, Transition, VisitType};
@@ -61,6 +71,22 @@ pub enum Kind {
     /// Internet Explorer and legacy Edge's `WebCacheV01.dat`, an ESE
     /// database (table `Containers`): visits only.
     WebCache,
+    /// Safari's `History.db` (tables `history_items` and
+    /// `history_visits`).
+    SafariHistory,
+    /// Safari's older `History.plist`.
+    SafariHistoryPlist,
+    /// Chromium's `Cookies` (table `cookies`) or Firefox's
+    /// `cookies.sqlite` (table `moz_cookies`): read with [`read_cookies`].
+    Cookies,
+    /// Chromium's `Web Data` (table `autofill`): read with
+    /// [`read_autofill`].
+    Autofill,
+    /// Chromium's `Extension Activity` (table `activitylog_compressed`):
+    /// read with [`read_extension_activity`].
+    ExtensionActivity,
+    /// Chromium's `Preferences` (JSON): read with [`read_preferences`].
+    Preferences,
 }
 
 impl Kind {
@@ -74,6 +100,13 @@ impl Kind {
             ("places.sqlite", Self::FirefoxPlaces),
             ("downloads.sqlite", Self::FirefoxDownloads),
             ("WebCacheV01.dat", Self::WebCache),
+            ("History.db", Self::SafariHistory),
+            ("History.plist", Self::SafariHistoryPlist),
+            ("Cookies", Self::Cookies),
+            ("cookies.sqlite", Self::Cookies),
+            ("Web Data", Self::Autofill),
+            ("Extension Activity", Self::ExtensionActivity),
+            ("Preferences", Self::Preferences),
         ]
         .into_iter()
         .find(|(known, _)| base.eq_ignore_ascii_case(known))
@@ -90,6 +123,14 @@ impl Kind {
             Some(Self::FirefoxPlaces)
         } else if has("moz_downloads") {
             Some(Self::FirefoxDownloads)
+        } else if has("history_items") && has("history_visits") {
+            Some(Self::SafariHistory)
+        } else if has("cookies") || has("moz_cookies") {
+            Some(Self::Cookies)
+        } else if has("autofill") {
+            Some(Self::Autofill)
+        } else if has("activitylog_compressed") {
+            Some(Self::ExtensionActivity)
         } else {
             None
         }
@@ -107,6 +148,13 @@ impl Kind {
 pub fn detect(name: &str, data: &[u8]) -> Option<Kind> {
     if is_ese(data) {
         return (Kind::from_name(name) == Some(Kind::WebCache)).then_some(Kind::WebCache);
+    }
+    let named = Kind::from_name(name);
+    if data.starts_with(b"bplist") || data.trim_ascii_start().starts_with(b"<?xml") {
+        return named.filter(|k| *k == Kind::SafariHistoryPlist);
+    }
+    if data.trim_ascii_start().starts_with(b"{") {
+        return named.filter(|k| *k == Kind::Preferences);
     }
     if !data.starts_with(SQLITE_MAGIC) {
         return None;
@@ -387,6 +435,15 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
     if is_ese(database) {
         return read_webcache(database);
     }
+    if database.starts_with(b"bplist") || database.trim_ascii_start().starts_with(b"<?xml") {
+        let mut problems = Vec::new();
+        let visits = safari::history_plist(database, &mut problems);
+        return Ok(History::of_visits(
+            Kind::SafariHistoryPlist,
+            visits,
+            problems,
+        ));
+    }
     let db = Database::open_with_wal(database, wal).map_err(|e| Error(e.to_string()))?;
     let kind = Kind::of(&db).ok_or_else(|| Error("not a browser history database".to_owned()))?;
     let mut problems = db.problems.clone();
@@ -395,8 +452,19 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
         Kind::ChromiumHistory => chromium::history(&db, &recovery, &mut problems),
         Kind::FirefoxPlaces => firefox::places(&db, &recovery, &mut problems),
         Kind::FirefoxDownloads => firefox::legacy_downloads(&db, &recovery, &mut problems),
+        Kind::SafariHistory => Entries {
+            visits: safari::history_db(&db, &mut problems),
+            ..Entries::default()
+        },
         // `Kind::of` names SQLite databases only; a WebCache reads as one.
         Kind::WebCache => return read_webcache(database),
+        Kind::SafariHistoryPlist
+        | Kind::Cookies
+        | Kind::Autofill
+        | Kind::ExtensionActivity
+        | Kind::Preferences => {
+            return Err(Error(format!("a {kind:?} database, not history")));
+        }
     };
     Ok(History {
         kind,
@@ -407,6 +475,69 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
         deleted_downloads: entries.deleted_downloads,
         problems,
     })
+}
+
+impl History {
+    fn of_visits(kind: Kind, visits: Vec<Visit>, problems: Vec<String>) -> Self {
+        Self {
+            kind,
+            visits,
+            downloads: Vec::new(),
+            deleted_visits: Vec::new(),
+            deleted_pages: Vec::new(),
+            deleted_downloads: Vec::new(),
+            problems,
+        }
+    }
+}
+
+/// A database's rows of one kind, and its problems.
+#[derive(Debug, Clone, PartialEq, Eq)]
+pub struct Rows<T> {
+    /// The rows, in row order.
+    pub rows: Vec<T>,
+    /// Damage met.
+    pub problems: Vec<String>,
+}
+
+/// Open a SQLite database with its log, read with `read`.
+fn rows<T>(
+    database: &[u8],
+    wal: &[u8],
+    read: impl FnOnce(&Database<'_>, &mut Vec<String>) -> Vec<T>,
+) -> Result<Rows<T>, Error> {
+    let db = Database::open_with_wal(database, wal).map_err(|e| Error(e.to_string()))?;
+    let mut problems = db.problems.clone();
+    let rows = read(&db, &mut problems);
+    Ok(Rows { rows, problems })
+}
+
+/// Read a cookie database: Chromium's `Cookies` or Firefox's
+/// `cookies.sqlite`, with its `-wal` file's committed changes.
+///
+/// # Errors
+/// When it isn't a SQLite database.
+pub fn read_cookies(database: &[u8], wal: &[u8]) -> Result<Rows<Cookie>, Error> {
+    rows(database, wal, cookies::read)
+}
+
+/// Read Chromium's form history (`Web Data`).
+///
+/// # Errors
+/// When it isn't a SQLite database.
+pub fn read_autofill(database: &[u8], wal: &[u8]) -> Result<Rows<AutofillEntry>, Error> {
+    rows(database, wal, autofill::read)
+}
+
+/// Read Chromium's extension activity log (`Extension Activity`).
+///
+/// # Errors
+/// When it isn't a SQLite database.
+pub fn read_extension_activity(
+    database: &[u8],
+    wal: &[u8],
+) -> Result<Rows<ExtensionActivity>, Error> {
+    rows(database, wal, extensions::activity)
 }
 
 const SQLITE_MAGIC: &[u8] = b"SQLite format 3\0";
@@ -423,13 +554,5 @@ fn read_webcache(data: &[u8]) -> Result<History, Error> {
     }
     let mut problems = db.problems.clone();
     let visits = webcache::visits(&db, &mut problems);
-    Ok(History {
-        kind: Kind::WebCache,
-        visits,
-        downloads: Vec::new(),
-        deleted_visits: Vec::new(),
-        deleted_pages: Vec::new(),
-        deleted_downloads: Vec::new(),
-        problems,
-    })
+    Ok(History::of_visits(Kind::WebCache, visits, problems))
 }

@@ -194,7 +194,8 @@ fn detect_by_tables_then_name() {
         detect("C:\\Profile\\places.sqlite", head),
         Some(Kind::FirefoxPlaces)
     );
-    assert_eq!(detect("Cookies", head), None);
+    assert_eq!(detect("Cookies", head), Some(Kind::Cookies));
+    assert_eq!(detect("Login Data", head), None);
     // Not SQLite at all.
     assert_eq!(detect("History", b"not a database"), None);
     assert_eq!(

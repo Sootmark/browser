@@ -31,6 +31,10 @@ const LOGGED: [(&str, &str); 3] = [
 
 fn read_everything(data: &[u8], wal: &[u8]) {
     let _ = browser::read(data, wal);
+    let _ = browser::read_cookies(data, wal);
+    let _ = browser::read_autofill(data, wal);
+    let _ = browser::read_extension_activity(data, wal);
+    let _ = browser::read_preferences(data);
     let _ = browser::detect("History", data);
 }
 

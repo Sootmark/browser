@@ -242,11 +242,12 @@ dependencies = [
 
 [[package]]
 name = "sootmark-browser"
-version = "0.4.0"
+version = "0.5.0"
 dependencies = [
  "proptest",
  "sootmark-common",
  "sootmark-ese",
+ "sootmark-plist",
  "sootmark-sqlite",
 ]
 
@@ -261,6 +262,15 @@ name = "sootmark-ese"
 version = "0.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ef9f36370ac1bf2b4935a07c03c6828a667575a66b77ccddfbc46491aa9bbfab"
+
+[[package]]
+name = "sootmark-plist"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "1c122cba6d58a85646b1755754fe8cce4ebfbe954f1b19b3727ef23fb6d655ea"
+dependencies = [
+ "sootmark-common",
+]
 
 [[package]]
 name = "sootmark-sqlite"

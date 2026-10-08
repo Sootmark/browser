@@ -1,0 +1,2136 @@
+Cookies-68.0.3440.106	cookie	fbi.gov	__cfduid	/	Creation Time	1534785593134291
+Cookies-68.0.3440.106	cookie	fbi.gov	__cfduid	/	Expiration Time	1566321593134291
+Cookies-68.0.3440.106	cookie	fbi.gov	__cfduid	/	Last Access Time	1534785593134291
+Cookies-68.0.3440.106	cookie	google.com	__utma	/gmail/about/	Creation Time	1534259023650324
+Cookies-68.0.3440.106	cookie	google.com	__utma	/gmail/about/	Expiration Time	1597331025000000
+Cookies-68.0.3440.106	cookie	google.com	__utma	/gmail/about/	Last Access Time	1534259025489599
+Cookies-68.0.3440.106	cookie	projects.fivethirtyeight.com	repeatUser	/	Creation Time	1534533988299531
+Cookies-68.0.3440.106	cookie	projects.fivethirtyeight.com	repeatUser	/	Expiration Time	253390508788000000
+Cookies-68.0.3440.106	cookie	projects.fivethirtyeight.com	repeatUser	/	Last Access Time	1534534144235193
+Cookies-68.0.3440.106	cookie	twitter.com	dnt	/	Creation Time	1534259190074740
+Cookies-68.0.3440.106	cookie	twitter.com	dnt	/	Expiration Time	1850163048991093
+Cookies-68.0.3440.106	cookie	twitter.com	dnt	/	Last Access Time	1534888544947867
+Cookies-68.0.3440.106	cookie	twitter.com	guest_id	/	Creation Time	1534259180584929
+Cookies-68.0.3440.106	cookie	twitter.com	guest_id	/	Expiration Time	1597331180584929
+Cookies-68.0.3440.106	cookie	twitter.com	guest_id	/	Last Access Time	1534888544947867
+Extension Activity	activity	1	knipolnnllmklapflnccelgolnpehhpl	alarms.create	0	1416949923189013
+Extension Activity	activity	10	knipolnnllmklapflnccelgolnpehhpl	identity.getAuthToken	0	1416949923025024
+Extension Activity	activity	11	knipolnnllmklapflnccelgolnpehhpl	idle.queryState	0	1416949927919816
+Extension Activity	activity	12	knipolnnllmklapflnccelgolnpehhpl	idle.setDetectionInterval	0	1416949922917702
+Extension Activity	activity	13	knipolnnllmklapflnccelgolnpehhpl	runtime.getManifest	0	1416949923003696
+Extension Activity	activity	14	knipolnnllmklapflnccelgolnpehhpl	runtime.requestUpdateCheck	0	1416949922910046
+Extension Activity	activity	15	knipolnnllmklapflnccelgolnpehhpl	storage.get	0	1416949922677583
+Extension Activity	activity	16	knipolnnllmklapflnccelgolnpehhpl	storage.set	0	1416949927980020
+Extension Activity	activity	17	knipolnnllmklapflnccelgolnpehhpl	system.display.getInfo	0	1416949927921403
+Extension Activity	activity	18	knipolnnllmklapflnccelgolnpehhpl	webRequestInternal.addEventListener	0	1416949819378491
+Extension Activity	activity	19	knipolnnllmklapflnccelgolnpehhpl	webRequestInternal.eventHandled	0	1416949819893521
+Extension Activity	activity	2	knipolnnllmklapflnccelgolnpehhpl	app.currentWindowInternal.setShape	0	1416949923520066
+Extension Activity	activity	20	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.executeScript	0	1416949819495642
+Extension Activity	activity	21	knipolnnllmklapflnccelgolnpehhpl	alarms.onAlarm	1	1416949818532962
+Extension Activity	activity	22	knipolnnllmklapflnccelgolnpehhpl	runtime.onStartup	1	1416949922658176
+Extension Activity	activity	23	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onBeforeSendHeaders/3	1	1416949819885722
+Extension Activity	activity	24	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onBeforeSendHeaders/9	1	1416949819417256
+Extension Activity	activity	25	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onCompleted/10	1	1416949819447007
+Extension Activity	activity	26	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onCompleted/4	1	1416949819930762
+Extension Activity	activity	27	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onContentLoad	1	1416949819452673
+Extension Activity	activity	28	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onFrameNameChanged	1	1416949819406018
+Extension Activity	activity	29	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onLoadCommit	1	1416949819944368
+Extension Activity	activity	3	knipolnnllmklapflnccelgolnpehhpl	app.currentWindowInternal.show	0	1416949923350941
+Extension Activity	activity	30	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onLoadProgress	1	1416949819957829
+Extension Activity	activity	31	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onLoadStart	1	1416949819881888
+Extension Activity	activity	32	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onLoadStop	1	1416949819958287
+Extension Activity	activity	33	knipolnnllmklapflnccelgolnpehhpl	Window.navigator	4	1416949819677690
+Extension Activity	activity	34	knipolnnllmklapflnccelgolnpehhpl	blinkAddElement	4	1416949819314071
+Extension Activity	activity	35	knipolnnllmklapflnccelgolnpehhpl	blinkAddEventListener	4	1416949819820053
+Extension Activity	activity	36	knipolnnllmklapflnccelgolnpehhpl	blinkRequestResource	4	1416949818797919
+Extension Activity	activity	37	knipolnnllmklapflnccelgolnpehhpl	blinkRequestResource	4	1416949819235193
+Extension Activity	activity	38	knipolnnllmklapflnccelgolnpehhpl	blinkSetAttribute	4	1416949819861713
+Extension Activity	activity	39	ognampngfcbddbfemdapefohjiobgbdl	browserAction.setIcon	0	1416949705948617
+Extension Activity	activity	4	knipolnnllmklapflnccelgolnpehhpl	app.window.create	0	1416949922994165
+Extension Activity	activity	40	ognampngfcbddbfemdapefohjiobgbdl	browserAction.setTitle	0	1416949705891621
+Extension Activity	activity	41	ognampngfcbddbfemdapefohjiobgbdl	debugger.attach	0	1416949704051997
+Extension Activity	activity	42	ognampngfcbddbfemdapefohjiobgbdl	debugger.detach	0	1416949705890925
+Extension Activity	activity	43	ognampngfcbddbfemdapefohjiobgbdl	debugger.sendCommand	0	1416949705889423
+Extension Activity	activity	44	ognampngfcbddbfemdapefohjiobgbdl	extension.getBackgroundPage	0	1416949704299713
+Extension Activity	activity	45	ognampngfcbddbfemdapefohjiobgbdl	extension.getURL	0	1416949703703294
+Extension Activity	activity	46	ognampngfcbddbfemdapefohjiobgbdl	tabs.getSelected	0	1416949704230903
+Extension Activity	activity	47	ognampngfcbddbfemdapefohjiobgbdl	windows.create	0	1416949703728664
+Extension Activity	activity	48	ognampngfcbddbfemdapefohjiobgbdl	browserAction.onClicked	1	1416949703698737
+Extension Activity	activity	49	ognampngfcbddbfemdapefohjiobgbdl	tabs.onUpdated	1	1416949704214667
+Extension Activity	activity	5	knipolnnllmklapflnccelgolnpehhpl	app.window.current	0	1416949923215905
+Extension Activity	activity	50	ognampngfcbddbfemdapefohjiobgbdl		3	1416949922399933
+Extension Activity	activity	51	ognampngfcbddbfemdapefohjiobgbdl	Storage.getItem	4	1416949704147061
+Extension Activity	activity	52	knipolnnllmklapflnccelgolnpehhpl	alarms.clear	0	1416949926977223
+Extension Activity	activity	53	knipolnnllmklapflnccelgolnpehhpl	app.window.getAll	0	1416949926976394
+Extension Activity	activity	54	knipolnnllmklapflnccelgolnpehhpl	runtime.getBackgroundPage	0	1416949927981865
+Extension Activity	activity	55	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onConsoleMessage	1	1416949819877902
+Extension Activity	activity	56	knipolnnllmklapflnccelgolnpehhpl	webViewInternal.onPluginDestroyed	1	1416949915086881
+Extension Activity	activity	6	knipolnnllmklapflnccelgolnpehhpl	app.window.initializeAppWindow	0	1416949923176597
+Extension Activity	activity	7	knipolnnllmklapflnccelgolnpehhpl	gcm.register	0	1416949922949003
+Extension Activity	activity	8	knipolnnllmklapflnccelgolnpehhpl	guestViewInternal.createGuest	0	1416949819365852
+Extension Activity	activity	9	knipolnnllmklapflnccelgolnpehhpl	i18n.getMessage	0	1416949923429200
+History.db	visit	http://cnn.com/		1	1510262719065818
+History.db	visit	http://facebook.com/		2	1510262668829571
+History.db	visit	http://facebook.com/	Facebook - Log In or Sign Up	2	1510262669130810
+History.db	visit	http://fox.com/		2	1510262734473674
+History.db	visit	http://fox.com/	Stream and Watch your Favorite TV Shows, Movies and Live TV - FOX	2	1510262734474439
+History.db	visit	http://foxnew.com/		1	1510262751608873
+History.db	visit	http://google.com/		1	1510262806056438
+History.db	visit	http://lyft.com/		2	1510262774486861
+History.db	visit	http://lyft.com/	A ride whenever you need one - Lyft	2	1510262774487559
+History.db	visit	http://start.ubuntu.com/current/Google/?sourceid=hp	Ubuntu Start Page	1	1510262614791503
+History.db	visit	http://www.cnn.com/	CNN - Breaking News, Latest News and Videos	1	1510262719066077
+History.db	visit	http://www.foxnews.com/	Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos	2	1510262751609235
+History.db	visit	http://www.foxnews.com/	Fox News - Breaking News Updates | Latest News Headlines | Photos & News Videos	2	1510262757233879
+History.db	visit	http://yahoo.com/		1	1510262687072970
+History.db	visit	https://finance.yahoo.com/	Yahoo Finance - Business Finance, Stock Market, Quotes, News	2	1510262698922470
+History.db	visit	https://finance.yahoo.com/	Yahoo Finance - Business Finance, Stock Market, Quotes, News	2	1510262702643438
+History.db	visit	https://help.lyft.com/		1	1510262784673299
+History.db	visit	https://help.lyft.com/hc/en-us	Lyft Help	1	1510262784673618
+History.db	visit	https://sso.foxnews.com/static/server.html?origin=http%3A%2F%2Fwww.foxnews.com%2F		1	1510262757137449
+History.db	visit	https://www.facebook.com/	Facebook - Log In or Sign Up	1	1510262668829831
+History.db	visit	https://www.fox.com/	Stream and Watch your Favorite TV Shows, Movies and Live TV - FOX	1	1510262734473974
+History.db	visit	https://www.google.com/?gws_rd=ssl	Google	1	1510262806056743
+History.db	visit	https://www.lyft.com/	A ride whenever you need one - Lyft	1	1510262774487066
+History.db	visit	https://www.yahoo.com/	Yahoo	2	1510262687073240
+History.db	visit	https://www.yahoo.com/	Yahoo	2	1510262687590973
+History.plist	visit	http://netverslun.sci-mx.is/aminosyrur	Amínósýrur	1	1373316834000000
+History.plist	visit	http://visir.is/	Vísir - Forsíða	1	1373304259100000
+History.plist	visit	http://visir.is/fost-a-halendinu-i-tvo-solarhringa/article/2013130709317	Vísir - Föst á hálendinu í tvo sólarhringa	1	1373304660500000
+History.plist	visit	http://visir.is/fyrrverandi-framkvaemdastjori-ils-skyrslan-full-af-sludri-og-grousogum/article/2013130709266	Vísir - Fyrrverandi framkvæmdastjóri ÍLS: Skýrslan full af slúðri og Gróusögum	1	1373304266100000
+History.plist	visit	http://visir.is/mat-throngvad-ofan-i-rappara/article/2013130709261	Vísir - Mat þröngvað ofan í rappara	1	1373304500200000
+History.plist	visit	http://www.apple.com/startpage/	Apple - Start	2	1373304251500000
+History.plist	visit	http://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=0CEQQFjAA&url=http%3A%2F%2Fwww.google.com%2Fchrome%2F&ei=refaUdrFC-HniALbnIDoDg&usg=AFQjCNFw-0GuxyuZwraQHrJ5tqsxgerAFQ&bvm=bv.48705608,d.cGE		1	1373300656900000
+History.plist	visit	http://www.youtube.com/channel/HCtnHdj3df7iM	Popular on YouTube - Worldwide - YouTube	1	1373317031500000
+History.plist	visit	http://www.youtube.com/results?search_query=fost+a+halendi&oq=fost+a+halendi&gs_l=youtube.3...174264.179872.0.180096.14.13.0.1.1.0.121.770.12j1.13.0...0.0...1ac.1.11.youtube.zI_k4Vv0hsw	fost a halendi - YouTube	1	1373317023800000
+History.plist	visit	http://www.youtube.com/results?search_query=islensk+glima&oq=islensk+glima&gs_l=youtube.3...1341.6007.0.6374.13.13.0.0.0.0.115.862.9j4.13.0...0.0...1ac.1.11.youtube.QdRvkeRm6ys	islensk glima - YouTube	1	1373317038300000
+History.plist	visit	http://www.youtube.com/user/lhblovevnn	Huu Binh - YouTube	1	1373317027400000
+History.plist	visit	http://www.youtube.com/watch?v=NS1Si2XpNHs	Icelandic Glima Championship 2005 - YouTube	1	1373317041100000
+History.plist	visit	http://www.youtube.com/watch?v=jm8iSg8eZdw	Glima Interview - YouTube	1	1373317581400000
+History.plist	visit	http://www.youtube.com/watch?v=rVGB1Z3btIY	Glima - Icelandic wrestling (1932) - YouTube	1	1373317127300000
+History.plist	visit	http://youtube.com/	YouTube	1	1373316842700000
+History.plist	visit	https://ads.spoton.is/ad/click/%2B2BoasVqR4tvkzDOd7X9AsMszOyEcg5ZCUrglbO8pcFM4v24KQ%3D%3D	Sci-MX Evrópsk hágæða fæðubótarefni	1	1373316785100000
+History.plist	visit	https://www.google.com/intl/en/chrome/browser/thankyou.html	Chrome Browser	1	1373300660600000
+History.plist	visit	https://www.google.com/search?client=safari&rls=en&q=google+chrome&ie=UTF-8&oe=UTF-8	google chrome - Google Search	1	1373300653200000
+Preferences	exception	geolocation			1479132770588974
+Preferences	exception	geolocation	https://rawgit.com:443		1479132768934328
+Preferences	exception	media_stream_mic		*	1479132774899474
+Preferences	exception	media_stream_mic	https://rawgit.com:443	*	1479132773667838
+Preferences	exception	midi_sysex	https://rawgit.com:443	*	1478881209866137
+Preferences	exception	notifications	https://rawgit.com:443	*	1479132780627093
+Preferences	exception	notifications	https://rawgit.com:443	https://rawgit.com:443	1479132780639332
+Preferences	extension	aapocclcgogkmnckokdopfmhonfmgoek	Google Slides	aapocclcgogkmnckokdopfmhonfmgoek\0.8_0	1415212332435651
+Preferences	extension	ahfgeienlihckogmohjhadlkjgocpleb	Web Store	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\web_store	1415212284154837
+Preferences	extension	aohghmighlieiainnegkcijnfilokake	Google Docs	aohghmighlieiainnegkcijnfilokake\0.7_0	1415212317987651
+Preferences	extension	apdfllckaahabafndbhieahigkjlhalf	Google Drive	apdfllckaahabafndbhieahigkjlhalf\6.3_0	1415212331024651
+Preferences	extension	bepbmhgboaologfdajaanbcjmnhjmhfn	Google Voice Search Hotword (Beta)	bepbmhgboaologfdajaanbcjmnhjmhfn\0.1.1.5023_0	1415839019861400
+Preferences	extension	blpcfgokakmgnkcojhhkbfbldkacnbeo	YouTube	blpcfgokakmgnkcojhhkbfbldkacnbeo\4.2.6_0	1415212315618651
+Preferences	extension	coobgpohoikkiipiblmjeljniedjpjpf	Google Search	coobgpohoikkiipiblmjeljniedjpjpf\0.0.0.20_0	1415212319997651
+Preferences	extension	dnhpdliibojhegemfjheidglijccjfmc	hotword helper	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\hotword_helper	1415839009843400
+Preferences	extension	eemcgdkfndhakfknompkggombfjjjeno	Bookmark Manager	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\bookmark_manager	1415212284138837
+Preferences	extension	ennkphjdgehloodpbhlhldgbnhmacadg	Settings	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\settings_app	1415212284154837
+Preferences	extension	felcaaldnbdncclmgdcncolpebgiejap	Google Sheets	felcaaldnbdncclmgdcncolpebgiejap\1.0_0	1415212328445651
+Preferences	extension	gfdkimpbcpahaombhbimeihdjnejgicl	Feedback	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\feedback	1415212284154837
+Preferences	extension	kmendfapggjehodndflmmgagdbamhnfd	CryptoTokenExtension	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\cryptotoken	1415212284154837
+Preferences	extension	mfehgcgbbipciphmccgaenjidiccnmng	Cloud Print	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\cloud_print	1415212284154837
+Preferences	extension	mgndgikekgjfcpckkfioiadnlibdjbkf	Chrome	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\chrome_app	1415212284154837
+Preferences	extension	neajdppkdcdipfabeoofebfddakdcjhd	Google Network Speech	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\network_speech_synthesis	1415212284154837
+Preferences	extension	nkeimhogjdpnpccoofpliimaahmaaome	Google+ Hangouts	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\hangout_services	1415212284154837
+Preferences	extension	nmmhkkegccagdldgiimedpiccmgmieda	Google Wallet	nmmhkkegccagdldgiimedpiccmgmieda\0.0.6.1_0	1415212313604651
+Preferences	extension	pafkbggdmjlpgkdkcbjmhmfcdpncadgh	Google Now	C:\Program Files\Google\Chrome\Application\38.0.2125.111\resources\google_now	1415839009843400
+Preferences	extension	pjkljhegncpnkpknbcohdijeoejaedia	Gmail	pjkljhegncpnkpknbcohdijeoejaedia\7_1	1415212324081651
+Web Data	autofill	identifier	name@example.com	Creation Time	1534259242000000
+Web Data	autofill	identifier	name@example.com	Last Used Time	1534278094000000
+Web Data	autofill	q	timesketch	Creation Time	1534801088000000
+Web Data	autofill	q	timesketch	Last Used Time	1534801088000000
+Web Data	autofill	repo	log2timeline/plaso	Creation Time	1534534551000000
+Web Data	autofill	repo	log2timeline/plaso	Last Used Time	1534534551000000
+cookies.db	cookie	33across.com	33x_ps	/	Creation Time	1313708217553781
+cookies.db	cookie	33across.com	33x_ps	/	Expiration Time	1345244160000000
+cookies.db	cookie	33across.com	33x_ps	/	Last Access Time	1313708217553781
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner160X600	/	Creation Time	1333288370183446
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner160X600	/	Expiration Time	1341064317000000
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner160X600	/	Last Access Time	1333288370183446
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner300X250	/	Creation Time	1332383745577545
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner300X250	/	Expiration Time	1340159724000000
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner300X250	/	Last Access Time	1333288369876443
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner728X90	/	Creation Time	1333287469450062
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner728X90	/	Expiration Time	1341063416000000
+cookies.db	cookie	a1.interclick.com	Aqprep_Banner728X90	/	Last Access Time	1333288369876443
+cookies.db	cookie	a1.interclick.com	FC_53	/	Creation Time	1333287469450060
+cookies.db	cookie	a1.interclick.com	FC_53	/	Expiration Time	1333373816000000
+cookies.db	cookie	a1.interclick.com	FC_53	/	Last Access Time	1333288369876443
+cookies.db	cookie	a1.interclick.com	FC_54	/	Creation Time	1333288370183444
+cookies.db	cookie	a1.interclick.com	FC_54	/	Expiration Time	1333374717000000
+cookies.db	cookie	a1.interclick.com	FC_54	/	Last Access Time	1333288370183444
+cookies.db	cookie	a1.interclick.com	IFC	/	Creation Time	1333288370183445
+cookies.db	cookie	a1.interclick.com	IFC	/	Expiration Time	1333373461000000
+cookies.db	cookie	a1.interclick.com	IFC	/	Last Access Time	1333288370183445
+cookies.db	cookie	a1.interclick.com	Li	/	Creation Time	1333287114173999
+cookies.db	cookie	a1.interclick.com	Li	/	Expiration Time	1335879061000000
+cookies.db	cookie	a1.interclick.com	Li	/	Last Access Time	1333288369876443
+cookies.db	cookie	a1.interclick.com	dp	/	Creation Time	1333287114174001
+cookies.db	cookie	a1.interclick.com	dp	/	Expiration Time	1335879061000000
+cookies.db	cookie	a1.interclick.com	dp	/	Last Access Time	1333288369876443
+cookies.db	cookie	a1.interclick.com	ucap	/	Creation Time	1333288370183443
+cookies.db	cookie	a1.interclick.com	ucap	/	Expiration Time	1334152317000000
+cookies.db	cookie	a1.interclick.com	ucap	/	Last Access Time	1333288370183443
+cookies.db	cookie	abmr.net	01AI	/	Creation Time	1333288313089817
+cookies.db	cookie	abmr.net	01AI	/	Expiration Time	1364824260000000
+cookies.db	cookie	abmr.net	01AI	/	Last Access Time	1333288313089817
+cookies.db	cookie	acuityplatform.com	auid	/	Creation Time	1332381489598703
+cookies.db	cookie	acuityplatform.com	auid	/	Expiration Time	3479865115000000
+cookies.db	cookie	acuityplatform.com	auid	/	Last Access Time	1332381489598703
+cookies.db	cookie	ad.yieldmanager.com	BX	/	Creation Time	1333718736965310
+cookies.db	cookie	ad.yieldmanager.com	BX	/	Expiration Time	2147483647000000
+cookies.db	cookie	ad.yieldmanager.com	BX	/	Last Access Time	1333718736965310
+cookies.db	cookie	ad.yieldmanager.com	bh	/	Creation Time	1333718736965309
+cookies.db	cookie	ad.yieldmanager.com	bh	/	Expiration Time	1396790730000000
+cookies.db	cookie	ad.yieldmanager.com	bh	/	Last Access Time	1333718736965309
+cookies.db	cookie	ad.yieldmanager.com	ih	/	Creation Time	1333288009850913
+cookies.db	cookie	ad.yieldmanager.com	ih	/	Expiration Time	1396359957000000
+cookies.db	cookie	ad.yieldmanager.com	ih	/	Last Access Time	1333718736636309
+cookies.db	cookie	ad.yieldmanager.com	uid	/	Creation Time	1332380791817101
+cookies.db	cookie	ad.yieldmanager.com	uid	/	Expiration Time	1334972771000000
+cookies.db	cookie	ad.yieldmanager.com	uid	/	Last Access Time	1333718736636309
+cookies.db	cookie	adadvisor.net	ab	/	Creation Time	1332381240462179
+cookies.db	cookie	adadvisor.net	ab	/	Expiration Time	1363917219000000
+cookies.db	cookie	adadvisor.net	ab	/	Last Access Time	1333287115587995
+cookies.db	cookie	adap.tv	audienceData	/	Creation Time	1333720538574445
+cookies.db	cookie	adap.tv	audienceData	/	Expiration Time	1396792531000000
+cookies.db	cookie	adap.tv	audienceData	/	Last Access Time	1333720538574445
+cookies.db	cookie	adap.tv	rtbData0	/	Creation Time	1332381240650179
+cookies.db	cookie	adap.tv	rtbData0	/	Expiration Time	1395453220000000
+cookies.db	cookie	adap.tv	rtbData0	/	Last Access Time	1333720538356445
+cookies.db	cookie	adbrite.com	Apache	/	Creation Time	1314308953132565
+cookies.db	cookie	adbrite.com	Apache	/	Expiration Time	1945028898000000
+cookies.db	cookie	adbrite.com	Apache	/	Last Access Time	1332381555123301
+cookies.db	cookie	adbrite.com	b	/	Creation Time	1332381575214604
+cookies.db	cookie	adbrite.com	b	/	Expiration Time	1363917554000000
+cookies.db	cookie	adbrite.com	b	/	Last Access Time	1332381575214604
+cookies.db	cookie	adbrite.com	geo	/	Creation Time	1332381555424302
+cookies.db	cookie	adbrite.com	geo	/	Expiration Time	1332986334000000
+cookies.db	cookie	adbrite.com	geo	/	Last Access Time	1332381555424302
+cookies.db	cookie	adbrite.com	rb2	/	Creation Time	1332381575214606
+cookies.db	cookie	adbrite.com	rb2	/	Expiration Time	1340157554000000
+cookies.db	cookie	adbrite.com	rb2	/	Last Access Time	1332381575214606
+cookies.db	cookie	adbrite.com	srh	/	Creation Time	1332381555424305
+cookies.db	cookie	adbrite.com	srh	/	Expiration Time	1332467934000000
+cookies.db	cookie	adbrite.com	srh	/	Last Access Time	1332381555424305
+cookies.db	cookie	adbrite.com	vi	/	Creation Time	1332381555424306
+cookies.db	cookie	adbrite.com	vi	/	Expiration Time	1963101534000000
+cookies.db	cookie	adbrite.com	vi	/	Last Access Time	1332381555424306
+cookies.db	cookie	adbrite.com	vsd	/	Creation Time	1332381575214605
+cookies.db	cookie	adbrite.com	vsd	/	Expiration Time	1332554354000000
+cookies.db	cookie	adbrite.com	vsd	/	Last Access Time	1332381575214605
+cookies.db	cookie	addthis.com	di	/	Creation Time	1333287123312891
+cookies.db	cookie	addthis.com	di	/	Expiration Time	1396359070000000
+cookies.db	cookie	addthis.com	di	/	Last Access Time	1333288258853382
+cookies.db	cookie	addthis.com	dt	/	Creation Time	1333287123312892
+cookies.db	cookie	addthis.com	dt	/	Expiration Time	1335879070000000
+cookies.db	cookie	addthis.com	dt	/	Last Access Time	1333288258853382
+cookies.db	cookie	addthis.com	loc	/	Creation Time	1332381316364924
+cookies.db	cookie	addthis.com	loc	/	Expiration Time	1340157295000000
+cookies.db	cookie	addthis.com	loc	/	Last Access Time	1333288258853382
+cookies.db	cookie	addthis.com	psc	/	Creation Time	1333288263303382
+cookies.db	cookie	addthis.com	psc	/	Expiration Time	1396360263000000
+cookies.db	cookie	addthis.com	psc	/	Last Access Time	1333288263303382
+cookies.db	cookie	addthis.com	uid	/	Creation Time	1333288263295382
+cookies.db	cookie	addthis.com	uid	/	Expiration Time	1396360263000000
+cookies.db	cookie	addthis.com	uid	/	Last Access Time	1333288263295382
+cookies.db	cookie	addthis.com	uit	/	Creation Time	1333287123271891
+cookies.db	cookie	addthis.com	uit	/	Expiration Time	1333373523000000
+cookies.db	cookie	addthis.com	uit	/	Last Access Time	1333288258853382
+cookies.db	cookie	addthis.com	uvc	/	Creation Time	1333288263295383
+cookies.db	cookie	addthis.com	uvc	/	Expiration Time	1396360263000000
+cookies.db	cookie	addthis.com	uvc	/	Last Access Time	1333288263295383
+cookies.db	cookie	adinterax.com	adxf	/	Creation Time	1333288405283907
+cookies.db	cookie	adinterax.com	adxf	/	Expiration Time	1451520000000000
+cookies.db	cookie	adinterax.com	adxf	/	Last Access Time	1333288474502456
+cookies.db	cookie	adinterax.com	adxid	/	Creation Time	1332381764387406
+cookies.db	cookie	adinterax.com	adxid	/	Expiration Time	1451520000000000
+cookies.db	cookie	adinterax.com	adxid	/	Last Access Time	1333288474502456
+cookies.db	cookie	adnxs.com	anj	/	Creation Time	1333288313171820
+cookies.db	cookie	adnxs.com	anj	/	Expiration Time	1341064260000000
+cookies.db	cookie	adnxs.com	anj	/	Last Access Time	1333288313171820
+cookies.db	cookie	adnxs.com	icu	/	Creation Time	1333288264627385
+cookies.db	cookie	adnxs.com	icu	/	Expiration Time	1341064211000000
+cookies.db	cookie	adnxs.com	icu	/	Last Access Time	1333288264627385
+cookies.db	cookie	adnxs.com	sess	/	Creation Time	1333288313171818
+cookies.db	cookie	adnxs.com	sess	/	Expiration Time	1333374660000000
+cookies.db	cookie	adnxs.com	sess	/	Last Access Time	1333288313171818
+cookies.db	cookie	adnxs.com	uuid2	/	Creation Time	1333288313171819
+cookies.db	cookie	adnxs.com	uuid2	/	Expiration Time	1341064260000000
+cookies.db	cookie	adnxs.com	uuid2	/	Last Access Time	1333288313171819
+cookies.db	cookie	adobe.com	SETTINGS.LOCALE	/cfusion/	Creation Time	1314564160265494
+cookies.db	cookie	adobe.com	SETTINGS.LOCALE	/cfusion/	Expiration Time	2260644134000000
+cookies.db	cookie	adobe.com	SETTINGS.LOCALE	/cfusion/	Last Access Time	1314564160265494
+cookies.db	cookie	ads.pointroll.com	PRID	/	Creation Time	1332381316452923
+cookies.db	cookie	ads.pointroll.com	PRID	/	Expiration Time	1395453295000000
+cookies.db	cookie	ads.pointroll.com	PRID	/	Last Access Time	1333287114760995
+cookies.db	cookie	ads.pointroll.com	PRca	/	Creation Time	1333287114802997
+cookies.db	cookie	ads.pointroll.com	PRca	/	Expiration Time	1396359062000000
+cookies.db	cookie	ads.pointroll.com	PRca	/	Last Access Time	1333287114802997
+cookies.db	cookie	ads.pointroll.com	PRcp	/	Creation Time	1333287114802998
+cookies.db	cookie	ads.pointroll.com	PRcp	/	Expiration Time	1396359062000000
+cookies.db	cookie	ads.pointroll.com	PRcp	/	Last Access Time	1333287114802998
+cookies.db	cookie	ads.pointroll.com	PRcr	/	Creation Time	1333287114803000
+cookies.db	cookie	ads.pointroll.com	PRcr	/	Expiration Time	1396359062000000
+cookies.db	cookie	ads.pointroll.com	PRcr	/	Last Access Time	1333287114803000
+cookies.db	cookie	ads.pointroll.com	PRimp	/	Creation Time	1333287114802996
+cookies.db	cookie	ads.pointroll.com	PRimp	/	Expiration Time	1396359062000000
+cookies.db	cookie	ads.pointroll.com	PRimp	/	Last Access Time	1333287114802996
+cookies.db	cookie	ads.pointroll.com	PRpc	/	Creation Time	1333287114803995
+cookies.db	cookie	ads.pointroll.com	PRpc	/	Expiration Time	1396359062000000
+cookies.db	cookie	ads.pointroll.com	PRpc	/	Last Access Time	1333287114803995
+cookies.db	cookie	ads.pointroll.com	PRpl	/	Creation Time	1333287114802999
+cookies.db	cookie	ads.pointroll.com	PRpl	/	Expiration Time	1396359062000000
+cookies.db	cookie	ads.pointroll.com	PRpl	/	Last Access Time	1333287114802999
+cookies.db	cookie	ads.pubmatic.com	DPSync	/	Creation Time	1332381505227754
+cookies.db	cookie	ads.pubmatic.com	DPSync	/	Expiration Time	1333763905000000
+cookies.db	cookie	ads.pubmatic.com	DPSync	/	Last Access Time	1333288266066091
+cookies.db	cookie	ads.pubmatic.com	KTPCACOOKIE	/	Creation Time	1333288266882443
+cookies.db	cookie	ads.pubmatic.com	KTPCACOOKIE	/	Expiration Time	1333633866000000
+cookies.db	cookie	ads.pubmatic.com	KTPCACOOKIE	/	Last Access Time	1333288266882443
+cookies.db	cookie	ads.pubmatic.com	SyncRTB	/	Creation Time	1333288266434443
+cookies.db	cookie	ads.pubmatic.com	SyncRTB	/	Expiration Time	1334584266000000
+cookies.db	cookie	ads.pubmatic.com	SyncRTB	/	Last Access Time	1333288266434443
+cookies.db	cookie	ads.undertone.com	UTCBLOCK	/	Creation Time	1332381579692970
+cookies.db	cookie	ads.undertone.com	UTCBLOCK	/	Expiration Time	1334973559000000
+cookies.db	cookie	ads.undertone.com	UTCBLOCK	/	Last Access Time	1332381579692970
+cookies.db	cookie	ads.undertone.com	UTID	/	Creation Time	1332381580679851
+cookies.db	cookie	ads.undertone.com	UTID	/	Expiration Time	1364003960000000
+cookies.db	cookie	ads.undertone.com	UTID	/	Last Access Time	1332381580679851
+cookies.db	cookie	ads.undertone.com	UTLIA	/	Creation Time	1332381579692968
+cookies.db	cookie	ads.undertone.com	UTLIA	/	Expiration Time	1334973559000000
+cookies.db	cookie	ads.undertone.com	UTLIA	/	Last Access Time	1332381579692968
+cookies.db	cookie	ads.undertone.com	UTPROFILES	/	Creation Time	1332381580679852
+cookies.db	cookie	ads.undertone.com	UTPROFILES	/	Expiration Time	1340157560000000
+cookies.db	cookie	ads.undertone.com	UTPROFILES	/	Last Access Time	1332381580679852
+cookies.db	cookie	ads.undertone.com	_UTLIA[301118]	/	Creation Time	1332381579765968
+cookies.db	cookie	ads.undertone.com	_UTLIA[301118]	/	Expiration Time	1334973559000000
+cookies.db	cookie	ads.undertone.com	_UTLIA[301118]	/	Last Access Time	1332381579765968
+cookies.db	cookie	adserver.adtechus.com	1	/	Creation Time	1333287828916931
+cookies.db	cookie	adserver.adtechus.com	1	/	Expiration Time	1333892576000000
+cookies.db	cookie	adserver.adtechus.com	1	/	Last Access Time	1333288474844453
+cookies.db	cookie	adserver.adtechus.com	JEB2	/	Creation Time	1332380782145102
+cookies.db	cookie	adserver.adtechus.com	JEB2	/	Expiration Time	1395452761000000
+cookies.db	cookie	adserver.adtechus.com	JEB2	/	Last Access Time	1333288474844453
+cookies.db	cookie	adsonar.com	ASLID	/	Creation Time	1332381400371247
+cookies.db	cookie	adsonar.com	ASLID	/	Expiration Time	1334973379000000
+cookies.db	cookie	adsonar.com	ASLID	/	Last Access Time	1332381400371247
+cookies.db	cookie	adsonar.com	TData	/adserving	Creation Time	1332381400436248
+cookies.db	cookie	adsonar.com	TData	/adserving	Expiration Time	1334973400000000
+cookies.db	cookie	adsonar.com	TData	/adserving	Last Access Time	1332381400436248
+cookies.db	cookie	adsonar.com	TData2	/process	Creation Time	1332381400436249
+cookies.db	cookie	adsonar.com	TData2	/process	Expiration Time	1334973400000000
+cookies.db	cookie	adsonar.com	TData2	/process	Last Access Time	1332381400436249
+cookies.db	cookie	adsrvr.org	TDCPM	/	Creation Time	1332381526377645
+cookies.db	cookie	adsrvr.org	TDCPM	/	Expiration Time	1363917505000000
+cookies.db	cookie	adsrvr.org	TDCPM	/	Last Access Time	1333288291838303
+cookies.db	cookie	adsrvr.org	TDID	/	Creation Time	1333288291963303
+cookies.db	cookie	adsrvr.org	TDID	/	Expiration Time	1364824239000000
+cookies.db	cookie	adsrvr.org	TDID	/	Last Access Time	1333288291963303
+cookies.db	cookie	adtech.de	JEB2	/	Creation Time	1332380799099101
+cookies.db	cookie	adtech.de	JEB2	/	Expiration Time	1395452777000000
+cookies.db	cookie	adtech.de	JEB2	/	Last Access Time	1332380799099101
+cookies.db	cookie	advertising.com	ACID	/	Creation Time	1332380783760101
+cookies.db	cookie	advertising.com	ACID	/	Expiration Time	1395452763000000
+cookies.db	cookie	advertising.com	ACID	/	Last Access Time	1333718736604309
+cookies.db	cookie	advertising.com	C2	/	Creation Time	1333718736634309
+cookies.db	cookie	advertising.com	C2	/	Expiration Time	1396790729000000
+cookies.db	cookie	advertising.com	C2	/	Last Access Time	1333718736634309
+cookies.db	cookie	advertising.com	F1	/	Creation Time	1333288475246636
+cookies.db	cookie	advertising.com	F1	/	Expiration Time	1396360422000000
+cookies.db	cookie	advertising.com	F1	/	Last Access Time	1333718736604309
+cookies.db	cookie	advertising.com	FC	/	Creation Time	1333288475247636
+cookies.db	cookie	advertising.com	FC	/	Expiration Time	1396360422000000
+cookies.db	cookie	advertising.com	FC	/	Last Access Time	1333718736604309
+cookies.db	cookie	advertising.com	GUID	/	Creation Time	1333718736634310
+cookies.db	cookie	advertising.com	GUID	/	Expiration Time	1396790729000000
+cookies.db	cookie	advertising.com	GUID	/	Last Access Time	1333718736634310
+cookies.db	cookie	advertising.com	UMAP	/	Creation Time	1332381490593703
+cookies.db	cookie	advertising.com	UMAP	/	Expiration Time	1395453470000000
+cookies.db	cookie	advertising.com	UMAP	/	Last Access Time	1333718736604309
+cookies.db	cookie	advertising.com	aceRTB	/	Creation Time	1332381490399703
+cookies.db	cookie	advertising.com	aceRTB	/	Expiration Time	1334973490000000
+cookies.db	cookie	advertising.com	aceRTB	/	Last Access Time	1333718736604309
+cookies.db	cookie	adxpose.com	evlu	/	Creation Time	1332380784168101
+cookies.db	cookie	adxpose.com	evlu	/	Expiration Time	1335010506000000
+cookies.db	cookie	adxpose.com	evlu	/	Last Access Time	1332381762546406
+cookies.db	cookie	afy11.net	a	/	Creation Time	1332381240489179
+cookies.db	cookie	afy11.net	a	/	Expiration Time	1395453087000000
+cookies.db	cookie	afy11.net	a	/	Last Access Time	1332381240489179
+cookies.db	cookie	afy11.net	s	/	Creation Time	1332381240489180
+cookies.db	cookie	afy11.net	s	/	Expiration Time	1395453087000000
+cookies.db	cookie	afy11.net	s	/	Last Access Time	1332381240489180
+cookies.db	cookie	agkn.com	u	/	Creation Time	1332382664952494
+cookies.db	cookie	agkn.com	u	/	Expiration Time	1395454664952494
+cookies.db	cookie	agkn.com	u	/	Last Access Time	1332382664952494
+cookies.db	cookie	agkn.com	uuid	/	Creation Time	1332382664951494
+cookies.db	cookie	agkn.com	uuid	/	Expiration Time	1490062664951494
+cookies.db	cookie	agkn.com	uuid	/	Last Access Time	1332382664951494
+cookies.db	cookie	aintitcool.com	__utma	/	Creation Time	1333287122604891
+cookies.db	cookie	aintitcool.com	__utma	/	Expiration Time	1396359122000000
+cookies.db	cookie	aintitcool.com	__utma	/	Last Access Time	1333287122604891
+cookies.db	cookie	aintitcool.com	__utmb	/	Creation Time	1333287122605891
+cookies.db	cookie	aintitcool.com	__utmb	/	Expiration Time	1333288922000000
+cookies.db	cookie	aintitcool.com	__utmb	/	Last Access Time	1333287122605891
+cookies.db	cookie	aintitcool.com	__utmz	/	Creation Time	1333287122606891
+cookies.db	cookie	aintitcool.com	__utmz	/	Expiration Time	1349055122000000
+cookies.db	cookie	aintitcool.com	__utmz	/	Last Access Time	1333287122606891
+cookies.db	cookie	amazon-adsystem.com	ad-id	/	Creation Time	1332381427410430
+cookies.db	cookie	amazon-adsystem.com	ad-id	/	Expiration Time	2114380801000000
+cookies.db	cookie	amazon-adsystem.com	ad-id	/	Last Access Time	1333288009911913
+cookies.db	cookie	amazon-adsystem.com	ad-privacy	/	Creation Time	1332381428401430
+cookies.db	cookie	amazon-adsystem.com	ad-privacy	/	Expiration Time	2114380801000000
+cookies.db	cookie	amazon-adsystem.com	ad-privacy	/	Last Access Time	1333288009911913
+cookies.db	cookie	amazon.com	apn-user-id	/	Creation Time	1332381578186848
+cookies.db	cookie	amazon.com	apn-user-id	/	Expiration Time	2114380801000000
+cookies.db	cookie	amazon.com	apn-user-id	/	Last Access Time	1333287107668854
+cookies.db	cookie	amgdgt.com	ID	/	Creation Time	1332381514268135
+cookies.db	cookie	amgdgt.com	ID	/	Expiration Time	1647741493000000
+cookies.db	cookie	amgdgt.com	ID	/	Last Access Time	1332381514268135
+cookies.db	cookie	amgdgt.com	LO	/	Creation Time	1332381514268137
+cookies.db	cookie	amgdgt.com	LO	/	Expiration Time	1334973493000000
+cookies.db	cookie	amgdgt.com	LO	/	Last Access Time	1332381514268137
+cookies.db	cookie	amgdgt.com	UA	/	Creation Time	1332381514268136
+cookies.db	cookie	amgdgt.com	UA	/	Expiration Time	1334973493000000
+cookies.db	cookie	amgdgt.com	UA	/	Last Access Time	1332381514268136
+cookies.db	cookie	apmebf.com	S	/	Creation Time	1332381514881135
+cookies.db	cookie	apmebf.com	S	/	Expiration Time	1395453494000000
+cookies.db	cookie	apmebf.com	S	/	Last Access Time	1332381514881135
+cookies.db	cookie	apmebf.com	TT	/	Creation Time	1332381219727481
+cookies.db	cookie	apmebf.com	TT	/	Expiration Time	1395453199000000
+cookies.db	cookie	apmebf.com	TT	/	Last Access Time	1332381514506135
+cookies.db	cookie	apple.com	s_cvp35b	/	Creation Time	1331585856336901
+cookies.db	cookie	apple.com	s_cvp35b	/	Expiration Time	1489352256000000
+cookies.db	cookie	apple.com	s_cvp35b	/	Last Access Time	1331586147609026
+cookies.db	cookie	apple.com	s_invisit_n2_us	/	Creation Time	1331585856357901
+cookies.db	cookie	apple.com	s_invisit_n2_us	/	Expiration Time	1331587656000000
+cookies.db	cookie	apple.com	s_invisit_n2_us	/	Last Access Time	1331586147609026
+cookies.db	cookie	apple.com	s_pathLength	/	Creation Time	1331586164195026
+cookies.db	cookie	apple.com	s_pathLength	/	Expiration Time	1331587964000000
+cookies.db	cookie	apple.com	s_pathLength	/	Last Access Time	1331586164195026
+cookies.db	cookie	apple.com	s_ppv	/	Creation Time	1331586166386026
+cookies.db	cookie	apple.com	s_ppv	/	Expiration Time	1331587966000000
+cookies.db	cookie	apple.com	s_ppv	/	Last Access Time	1331586166386026
+cookies.db	cookie	apple.com	s_pv	/	Creation Time	1331586164148026
+cookies.db	cookie	apple.com	s_pv	/	Expiration Time	1331587964000000
+cookies.db	cookie	apple.com	s_pv	/	Last Access Time	1331586164148026
+cookies.db	cookie	apple.com	s_vi	/	Creation Time	1331585858329901
+cookies.db	cookie	apple.com	s_vi	/	Expiration Time	1489265800000000
+cookies.db	cookie	apple.com	s_vi	/	Last Access Time	1331586147609026
+cookies.db	cookie	apple.com	s_vnum_n2_us	/	Creation Time	1331585856357902
+cookies.db	cookie	apple.com	s_vnum_n2_us	/	Expiration Time	1489265856000000
+cookies.db	cookie	apple.com	s_vnum_n2_us	/	Last Access Time	1331586147609026
+cookies.db	cookie	arabic.cnn.com	ug	/	Creation Time	1333718736099309
+cookies.db	cookie	arabic.cnn.com	ug	/	Expiration Time	1365254736000000
+cookies.db	cookie	arabic.cnn.com	ug	/	Last Access Time	1333720626829808
+cookies.db	cookie	arabic.cnn.com	ugs	/	Creation Time	1333718736099310
+cookies.db	cookie	arabic.cnn.com	ugs	/	Expiration Time	1333812336000000
+cookies.db	cookie	arabic.cnn.com	ugs	/	Last Access Time	1333720626829808
+cookies.db	cookie	assets.tumblr.com	__utma	/	Creation Time	1333287112363855
+cookies.db	cookie	assets.tumblr.com	__utma	/	Expiration Time	1396359112000000
+cookies.db	cookie	assets.tumblr.com	__utma	/	Last Access Time	1333287112363855
+cookies.db	cookie	assets.tumblr.com	__utmb	/	Creation Time	1333287112363856
+cookies.db	cookie	assets.tumblr.com	__utmb	/	Expiration Time	1333288912000000
+cookies.db	cookie	assets.tumblr.com	__utmb	/	Last Access Time	1333287112363856
+cookies.db	cookie	assets.tumblr.com	__utmz	/	Creation Time	1333287112363858
+cookies.db	cookie	assets.tumblr.com	__utmz	/	Expiration Time	1349055112000000
+cookies.db	cookie	assets.tumblr.com	__utmz	/	Last Access Time	1333287112363858
+cookies.db	cookie	at.atwola.com	ATTAC	/	Creation Time	1333720538393450
+cookies.db	cookie	at.atwola.com	ATTAC	/	Expiration Time	1364824531000000
+cookies.db	cookie	at.atwola.com	ATTAC	/	Last Access Time	1333720538393450
+cookies.db	cookie	at.atwola.com	ATTACID	/	Creation Time	1333720538393445
+cookies.db	cookie	at.atwola.com	ATTACID	/	Expiration Time	1364824531000000
+cookies.db	cookie	at.atwola.com	ATTACID	/	Last Access Time	1333720538393445
+cookies.db	cookie	atdmt.com	AA002	/	Creation Time	1313708217946781
+cookies.db	cookie	atdmt.com	AA002	/	Expiration Time	1376697600000000
+cookies.db	cookie	atdmt.com	AA002	/	Last Access Time	1333288475087636
+cookies.db	cookie	atdmt.com	MUID	/	Creation Time	1313708217946782
+cookies.db	cookie	atdmt.com	MUID	/	Expiration Time	1376697600000000
+cookies.db	cookie	atdmt.com	MUID	/	Last Access Time	1333288475087636
+cookies.db	cookie	atwola.com	AxData	/	Creation Time	1333718736602309
+cookies.db	cookie	atwola.com	AxData	/	Expiration Time	1333805136000000
+cookies.db	cookie	atwola.com	AxData	/	Last Access Time	1333720536448445
+cookies.db	cookie	audienceiq.com	uid	/	Creation Time	1332384106419458
+cookies.db	cookie	audienceiq.com	uid	/	Expiration Time	1347936085000000
+cookies.db	cookie	audienceiq.com	uid	/	Last Access Time	1332384106419458
+cookies.db	cookie	bizographics.com	BizoData	/	Creation Time	1332381505803755
+cookies.db	cookie	bizographics.com	BizoData	/	Expiration Time	1348149505803755
+cookies.db	cookie	bizographics.com	BizoData	/	Last Access Time	1332381505803755
+cookies.db	cookie	bizographics.com	BizoID	/	Creation Time	1332381505803754
+cookies.db	cookie	bizographics.com	BizoID	/	Expiration Time	1348149505803754
+cookies.db	cookie	bizographics.com	BizoID	/	Last Access Time	1332381505803754
+cookies.db	cookie	bluekai.com	bk	/	Creation Time	1333720538554446
+cookies.db	cookie	bluekai.com	bk	/	Expiration Time	1349272531000000
+cookies.db	cookie	bluekai.com	bk	/	Last Access Time	1333720538554446
+cookies.db	cookie	bluekai.com	bkc	/	Creation Time	1333720538554447
+cookies.db	cookie	bluekai.com	bkc	/	Expiration Time	1349272531000000
+cookies.db	cookie	bluekai.com	bkc	/	Last Access Time	1333720538554447
+cookies.db	cookie	bluekai.com	bkdc	/	Creation Time	1333720538554449
+cookies.db	cookie	bluekai.com	bkdc	/	Expiration Time	1336312531000000
+cookies.db	cookie	bluekai.com	bkdc	/	Last Access Time	1333720538554449
+cookies.db	cookie	bluekai.com	bklc	/	Creation Time	1333720538554445
+cookies.db	cookie	bluekai.com	bklc	/	Expiration Time	1333893331000000
+cookies.db	cookie	bluekai.com	bklc	/	Last Access Time	1333720538554445
+cookies.db	cookie	bluekai.com	bko	/	Creation Time	1332381575423576
+cookies.db	cookie	bluekai.com	bko	/	Expiration Time	1347933554000000
+cookies.db	cookie	bluekai.com	bko	/	Last Access Time	1333720538431445
+cookies.db	cookie	bluekai.com	bkp1	/	Creation Time	1332380792726104
+cookies.db	cookie	bluekai.com	bkp1	/	Expiration Time	1347932772000000
+cookies.db	cookie	bluekai.com	bkp1	/	Last Access Time	1333720538431445
+cookies.db	cookie	bluekai.com	bkst	/	Creation Time	1333720538554448
+cookies.db	cookie	bluekai.com	bkst	/	Expiration Time	1349272531000000
+cookies.db	cookie	bluekai.com	bkst	/	Last Access Time	1333720538554448
+cookies.db	cookie	bluekai.com	bku	/	Creation Time	1332380792726106
+cookies.db	cookie	bluekai.com	bku	/	Expiration Time	1347932772000000
+cookies.db	cookie	bluekai.com	bku	/	Last Access Time	1333720538431445
+cookies.db	cookie	bluekai.com	bkw5	/	Creation Time	1332381575423578
+cookies.db	cookie	bluekai.com	bkw5	/	Expiration Time	1347933554000000
+cookies.db	cookie	bluekai.com	bkw5	/	Last Access Time	1333720538431445
+cookies.db	cookie	bnb.aintitcool.com	OAID	/	Creation Time	1333287122759891
+cookies.db	cookie	bnb.aintitcool.com	OAID	/	Expiration Time	1364823070000000
+cookies.db	cookie	bnb.aintitcool.com	OAID	/	Last Access Time	1333287122759891
+cookies.db	cookie	bnb.aintitcool.com	ebNewBandWidth_.bnb.aintitcool.com	/	Creation Time	1333287124552891
+cookies.db	cookie	bnb.aintitcool.com	ebNewBandWidth_.bnb.aintitcool.com	/	Expiration Time	1364823124000000
+cookies.db	cookie	bnb.aintitcool.com	ebNewBandWidth_.bnb.aintitcool.com	/	Last Access Time	1333287124552891
+cookies.db	cookie	bnmla.com	__qca	/	Creation Time	1333288261105382
+cookies.db	cookie	bnmla.com	__qca	/	Expiration Time	1490968261000000
+cookies.db	cookie	bnmla.com	__qca	/	Last Access Time	1333288261105382
+cookies.db	cookie	bnmla.com	guid	/	Creation Time	1333288261016382
+cookies.db	cookie	bnmla.com	guid	/	Expiration Time	2114265600000000
+cookies.db	cookie	bnmla.com	guid	/	Last Access Time	1333288261016382
+cookies.db	cookie	bnmla.com	ij	/	Creation Time	1333288261017382
+cookies.db	cookie	bnmla.com	ij	/	Expiration Time	2114265600000000
+cookies.db	cookie	bnmla.com	ij	/	Last Access Time	1333288261017382
+cookies.db	cookie	bnmla.com	imp	/	Creation Time	1333288261017383
+cookies.db	cookie	bnmla.com	imp	/	Expiration Time	2114265600000000
+cookies.db	cookie	bnmla.com	imp	/	Last Access Time	1333288261017383
+cookies.db	cookie	brilig.com	BriligContact	/contact	Creation Time	1333288368936443
+cookies.db	cookie	brilig.com	BriligContact	/contact	Expiration Time	2279368316000000
+cookies.db	cookie	brilig.com	BriligContact	/contact	Last Access Time	1333288368936443
+cookies.db	cookie	bs.serving-sys.com	eyeblaster	/	Creation Time	1333288484833047
+cookies.db	cookie	bs.serving-sys.com	eyeblaster	/	Expiration Time	1341050032000000
+cookies.db	cookie	bs.serving-sys.com	eyeblaster	/	Last Access Time	1333288484833047
+cookies.db	cookie	casalemedia.com	C7M5	/	Creation Time	1332383205672791
+cookies.db	cookie	casalemedia.com	C7M5	/	Expiration Time	1334802384000000
+cookies.db	cookie	casalemedia.com	C7M5	/	Last Access Time	1333288265758382
+cookies.db	cookie	casalemedia.com	CMD2	/	Creation Time	1333287113076572
+cookies.db	cookie	casalemedia.com	CMD2	/	Expiration Time	1335879060000000
+cookies.db	cookie	casalemedia.com	CMD2	/	Last Access Time	1333288265758382
+cookies.db	cookie	casalemedia.com	CMD4	/	Creation Time	1333288266234092
+cookies.db	cookie	casalemedia.com	CMD4	/	Expiration Time	1335880213000000
+cookies.db	cookie	casalemedia.com	CMD4	/	Last Access Time	1333288266234092
+cookies.db	cookie	casalemedia.com	CMDD	/	Creation Time	1333288266234091
+cookies.db	cookie	casalemedia.com	CMDD	/	Expiration Time	1333374613000000
+cookies.db	cookie	casalemedia.com	CMDD	/	Last Access Time	1333288266234091
+cookies.db	cookie	casalemedia.com	CMID	/	Creation Time	1333288266870443
+cookies.db	cookie	casalemedia.com	CMID	/	Expiration Time	1364824214000000
+cookies.db	cookie	casalemedia.com	CMID	/	Last Access Time	1333288266870443
+cookies.db	cookie	casalemedia.com	CMPP	/	Creation Time	1333288266870445
+cookies.db	cookie	casalemedia.com	CMPP	/	Expiration Time	1341064214000000
+cookies.db	cookie	casalemedia.com	CMPP	/	Last Access Time	1333288266870445
+cookies.db	cookie	casalemedia.com	CMPS	/	Creation Time	1333288266870444
+cookies.db	cookie	casalemedia.com	CMPS	/	Expiration Time	1341064214000000
+cookies.db	cookie	casalemedia.com	CMPS	/	Last Access Time	1333288266870444
+cookies.db	cookie	casalemedia.com	CMRUM2	/	Creation Time	1333288266871443
+cookies.db	cookie	casalemedia.com	CMRUM2	/	Expiration Time	1364824214000000
+cookies.db	cookie	casalemedia.com	CMRUM2	/	Last Access Time	1333288266871443
+cookies.db	cookie	casalemedia.com	CMST	/	Creation Time	1333288266871444
+cookies.db	cookie	casalemedia.com	CMST	/	Expiration Time	1333374614000000
+cookies.db	cookie	casalemedia.com	CMST	/	Last Access Time	1333288266871444
+cookies.db	cookie	chango.com	_i_ca	/	Creation Time	1333287115251996
+cookies.db	cookie	chango.com	_i_ca	/	Expiration Time	1333891862000000
+cookies.db	cookie	chango.com	_i_ca	/	Last Access Time	1333287115251996
+cookies.db	cookie	chango.com	_t	/	Creation Time	1333287115251995
+cookies.db	cookie	chango.com	_t	/	Expiration Time	1648647062000000
+cookies.db	cookie	chango.com	_t	/	Last Access Time	1333287115251995
+cookies.db	cookie	cnn.com	SelectedEdition	/	Creation Time	1333718722145310
+cookies.db	cookie	cnn.com	SelectedEdition	/	Expiration Time	4409558722000000
+cookies.db	cookie	cnn.com	SelectedEdition	/	Last Access Time	1333720626829808
+cookies.db	cookie	cnn.com	__qca	/	Creation Time	1332380841329022
+cookies.db	cookie	cnn.com	__qca	/	Expiration Time	1490060841000000
+cookies.db	cookie	cnn.com	__qca	/	Last Access Time	1333720626829808
+cookies.db	cookie	cnn.com	adDEmas	/	Creation Time	1333718702342654
+cookies.db	cookie	cnn.com	adDEmas	/	Expiration Time	1334334294000000
+cookies.db	cookie	cnn.com	adDEmas	/	Last Access Time	1333720626829808
+cookies.db	cookie	cnn.com	adDEon	/	Creation Time	1333718702342655
+cookies.db	cookie	cnn.com	adDEon	/	Expiration Time	1334334294000000
+cookies.db	cookie	cnn.com	adDEon	/	Last Access Time	1333720626829808
+cookies.db	cookie	cnn.com	rsi_segs_ttn	/	Creation Time	1333718702221654
+cookies.db	cookie	cnn.com	rsi_segs_ttn	/	Expiration Time	1336137902000000
+cookies.db	cookie	cnn.com	rsi_segs_ttn	/	Last Access Time	1333720626829808
+cookies.db	cookie	cnn.com	s_vi	/	Creation Time	1332380841304022
+cookies.db	cookie	cnn.com	s_vi	/	Expiration Time	1490060820000000
+cookies.db	cookie	cnn.com	s_vi	/	Last Access Time	1333720626829808
+cookies.db	cookie	collective-media.net	JY57	/	Creation Time	1333288313139817
+cookies.db	cookie	collective-media.net	JY57	/	Expiration Time	1335707460000000
+cookies.db	cookie	collective-media.net	JY57	/	Last Access Time	1333288313139817
+cookies.db	cookie	collective-media.net	apnx	/	Creation Time	1333288313139818
+cookies.db	cookie	collective-media.net	apnx	/	Expiration Time	1333317060000000
+cookies.db	cookie	collective-media.net	apnx	/	Last Access Time	1333288313139818
+cookies.db	cookie	collective-media.net	axm	/	Creation Time	1333288314615819
+cookies.db	cookie	collective-media.net	axm	/	Expiration Time	1333893061000000
+cookies.db	cookie	collective-media.net	axm	/	Last Access Time	1333288314615819
+cookies.db	cookie	collective-media.net	blue	/	Creation Time	1333288313139820
+cookies.db	cookie	collective-media.net	blue	/	Expiration Time	1333317060000000
+cookies.db	cookie	collective-media.net	blue	/	Last Access Time	1333288313139820
+cookies.db	cookie	collective-media.net	brix	/	Creation Time	1333288315271818
+cookies.db	cookie	collective-media.net	brix	/	Expiration Time	1333893062000000
+cookies.db	cookie	collective-media.net	brix	/	Last Access Time	1333288315271818
+cookies.db	cookie	collective-media.net	brlg	/	Creation Time	1333288315271817
+cookies.db	cookie	collective-media.net	brlg	/	Expiration Time	1333893062000000
+cookies.db	cookie	collective-media.net	brlg	/	Last Access Time	1333288315271817
+cookies.db	cookie	collective-media.net	cli	/	Creation Time	1333288312994817
+cookies.db	cookie	collective-media.net	cli	/	Expiration Time	1396360260000000
+cookies.db	cookie	collective-media.net	cli	/	Last Access Time	1333288312994817
+cookies.db	cookie	collective-media.net	dc	/	Creation Time	1333288316368817
+cookies.db	cookie	collective-media.net	dc	/	Expiration Time	1335880263000000
+cookies.db	cookie	collective-media.net	dc	/	Last Access Time	1333288316368817
+cookies.db	cookie	collective-media.net	exdp	/	Creation Time	1333288314615817
+cookies.db	cookie	collective-media.net	exdp	/	Expiration Time	1333893061000000
+cookies.db	cookie	collective-media.net	exdp	/	Last Access Time	1333288314615817
+cookies.db	cookie	collective-media.net	ibvr	/	Creation Time	1333288314615818
+cookies.db	cookie	collective-media.net	ibvr	/	Expiration Time	1333893061000000
+cookies.db	cookie	collective-media.net	ibvr	/	Last Access Time	1333288314615818
+cookies.db	cookie	collective-media.net	nadp	/	Creation Time	1333288313139819
+cookies.db	cookie	collective-media.net	nadp	/	Expiration Time	1333893060000000
+cookies.db	cookie	collective-media.net	nadp	/	Last Access Time	1333288313139819
+cookies.db	cookie	collective-media.net	qcdp	/	Creation Time	1333288313139821
+cookies.db	cookie	collective-media.net	qcdp	/	Expiration Time	1333374660000000
+cookies.db	cookie	collective-media.net	qcdp	/	Last Access Time	1333288313139821
+cookies.db	cookie	collective-media.net	targ	/	Creation Time	1333288314615820
+cookies.db	cookie	collective-media.net	targ	/	Expiration Time	1333893061000000
+cookies.db	cookie	collective-media.net	targ	/	Last Access Time	1333288314615820
+cookies.db	cookie	constantcontact.com	impcc	/	Creation Time	1332382123853330
+cookies.db	cookie	constantcontact.com	impcc	/	Expiration Time	1340158103000000
+cookies.db	cookie	constantcontact.com	impcc	/	Last Access Time	1332382123853330
+cookies.db	cookie	contextweb.com	C2W4	/	Creation Time	1332381515564135
+cookies.db	cookie	contextweb.com	C2W4	/	Expiration Time	1334800694000000
+cookies.db	cookie	contextweb.com	C2W4	/	Last Access Time	1332383385681197
+cookies.db	cookie	contextweb.com	V	/	Creation Time	1332383385724197
+cookies.db	cookie	contextweb.com	V	/	Expiration Time	1363487364000000
+cookies.db	cookie	contextweb.com	V	/	Last Access Time	1332383385724197
+cookies.db	cookie	contextweb.com	cw	/	Creation Time	1332381519388135
+cookies.db	cookie	contextweb.com	cw	/	Expiration Time	1332391498000000
+cookies.db	cookie	contextweb.com	cw	/	Last Access Time	1332383385681197
+cookies.db	cookie	contextweb.com	cwbh1	/	Creation Time	1332381517089136
+cookies.db	cookie	contextweb.com	cwbh1	/	Expiration Time	1334887096000000
+cookies.db	cookie	contextweb.com	cwbh1	/	Last Access Time	1332383385681197
+cookies.db	cookie	contextweb.com	pb_rtb_ev	/	Creation Time	1332383385724198
+cookies.db	cookie	contextweb.com	pb_rtb_ev	/	Expiration Time	1363919364000000
+cookies.db	cookie	contextweb.com	pb_rtb_ev	/	Last Access Time	1332383385724198
+cookies.db	cookie	contextweb.com	vf	/	Creation Time	1332381579583970
+cookies.db	cookie	contextweb.com	vf	/	Expiration Time	1332388800000000
+cookies.db	cookie	contextweb.com	vf	/	Last Access Time	1332383385681197
+cookies.db	cookie	criteo.com	uid	/	Creation Time	1332381499430754
+cookies.db	cookie	criteo.com	uid	/	Expiration Time	1363917477000000
+cookies.db	cookie	criteo.com	uid	/	Last Access Time	1333287648933843
+cookies.db	cookie	crwdcntrl.net	OAID	/	Creation Time	1333288267646309
+cookies.db	cookie	crwdcntrl.net	OAID	/	Expiration Time	1356616214000000
+cookies.db	cookie	crwdcntrl.net	OAID	/	Last Access Time	1333288267646309
+cookies.db	cookie	crwdcntrl.net	aud	/	Creation Time	1333288267646308
+cookies.db	cookie	crwdcntrl.net	aud	/	Expiration Time	1356616267646308
+cookies.db	cookie	crwdcntrl.net	aud	/	Last Access Time	1333288267646308
+cookies.db	cookie	crwdcntrl.net	cc	/	Creation Time	1333288267647308
+cookies.db	cookie	crwdcntrl.net	cc	/	Expiration Time	1356616267647308
+cookies.db	cookie	crwdcntrl.net	cc	/	Last Access Time	1333288267647308
+cookies.db	cookie	d.tradex.openx.com	OXRB	/	Creation Time	1314308952702565
+cookies.db	cookie	d.tradex.openx.com	OXRB	/	Expiration Time	1319579298000000
+cookies.db	cookie	d.tradex.openx.com	OXRB	/	Last Access Time	1314308952702565
+cookies.db	cookie	demdex.net	demdex	/	Creation Time	1332381240713179
+cookies.db	cookie	demdex.net	demdex	/	Expiration Time	1647950480000000
+cookies.db	cookie	demdex.net	demdex	/	Last Access Time	1332381240713179
+cookies.db	cookie	dimestore.com	pixel_ae663648	/	Creation Time	1332381516219135
+cookies.db	cookie	dimestore.com	pixel_ae663648	/	Expiration Time	1363917495000000
+cookies.db	cookie	dimestore.com	pixel_ae663648	/	Last Access Time	1332381516219135
+cookies.db	cookie	dlqm.net	ASD1	/	Creation Time	1333288403379908
+cookies.db	cookie	dlqm.net	ASD1	/	Expiration Time	1369288350000000
+cookies.db	cookie	dlqm.net	ASD1	/	Last Access Time	1333288403379908
+cookies.db	cookie	dmtry.com	aid	/	Creation Time	1332381944503488
+cookies.db	cookie	dmtry.com	aid	/	Expiration Time	1363831523000000
+cookies.db	cookie	dmtry.com	aid	/	Last Access Time	1332384105152458
+cookies.db	cookie	doubleclick.net	id	/	Creation Time	1313708154617699
+cookies.db	cookie	doubleclick.net	id	/	Expiration Time	1376780097000000
+cookies.db	cookie	doubleclick.net	id	/	Last Access Time	1333718737126309
+cookies.db	cookie	dpm.demdex.net	dpm	/	Creation Time	1332381240802179
+cookies.db	cookie	dpm.demdex.net	dpm	/	Expiration Time	1647950480000000
+cookies.db	cookie	dpm.demdex.net	dpm	/	Last Access Time	1332381240802179
+cookies.db	cookie	drudgereport.com	__qca	/	Creation Time	1332380781855101
+cookies.db	cookie	drudgereport.com	__qca	/	Expiration Time	1490060781000000
+cookies.db	cookie	drudgereport.com	__qca	/	Last Access Time	1333288474470456
+cookies.db	cookie	ebay.com	npii	/	Creation Time	1332381944107488
+cookies.db	cookie	ebay.com	npii	/	Expiration Time	1363917923000000
+cookies.db	cookie	ebay.com	npii	/	Last Access Time	1332381944107488
+cookies.db	cookie	edition.cnn.com	tnr:usrvtstg01	/	Creation Time	1333718727250309
+cookies.db	cookie	edition.cnn.com	tnr:usrvtstg01	/	Expiration Time	1506518727000000
+cookies.db	cookie	edition.cnn.com	tnr:usrvtstg01	/	Last Access Time	1333718727250309
+cookies.db	cookie	edition.cnn.com	ug	/	Creation Time	1333718727225309
+cookies.db	cookie	edition.cnn.com	ug	/	Expiration Time	1365254727000000
+cookies.db	cookie	edition.cnn.com	ug	/	Last Access Time	1333718727225309
+cookies.db	cookie	edition.cnn.com	ugs	/	Creation Time	1333718727225310
+cookies.db	cookie	edition.cnn.com	ugs	/	Expiration Time	1333812327000000
+cookies.db	cookie	edition.cnn.com	ugs	/	Last Access Time	1333718727225310
+cookies.db	cookie	embed.scribblelive.com	__utma	/	Creation Time	1332380806672101
+cookies.db	cookie	embed.scribblelive.com	__utma	/	Expiration Time	1395452806000000
+cookies.db	cookie	embed.scribblelive.com	__utma	/	Last Access Time	1332380806672101
+cookies.db	cookie	embed.scribblelive.com	__utmb	/	Creation Time	1332380806673101
+cookies.db	cookie	embed.scribblelive.com	__utmb	/	Expiration Time	1332382606000000
+cookies.db	cookie	embed.scribblelive.com	__utmb	/	Last Access Time	1332380806673101
+cookies.db	cookie	embed.scribblelive.com	__utmz	/	Creation Time	1332380806674101
+cookies.db	cookie	embed.scribblelive.com	__utmz	/	Expiration Time	1348148806000000
+cookies.db	cookie	embed.scribblelive.com	__utmz	/	Last Access Time	1332380806674101
+cookies.db	cookie	embed.scribblelive.com	_chartbeat2	/	Creation Time	1332380806730101
+cookies.db	cookie	embed.scribblelive.com	_chartbeat2	/	Expiration Time	1334972806000000
+cookies.db	cookie	embed.scribblelive.com	_chartbeat2	/	Last Access Time	1332380806730101
+cookies.db	cookie	en.wikipedia.org	mediaWiki.user.bucket%3Aext.articleFeedback-options	/	Creation Time	1313707976530305
+cookies.db	cookie	en.wikipedia.org	mediaWiki.user.bucket%3Aext.articleFeedback-options	/	Expiration Time	1316299976000000
+cookies.db	cookie	en.wikipedia.org	mediaWiki.user.bucket%3Aext.articleFeedback-options	/	Last Access Time	1313707976530305
+cookies.db	cookie	en.wikipedia.org	mediaWiki.user.bucket%3Aext.articleFeedback-tracking	/	Creation Time	1313707975474305
+cookies.db	cookie	en.wikipedia.org	mediaWiki.user.bucket%3Aext.articleFeedback-tracking	/	Expiration Time	1316299975000000
+cookies.db	cookie	en.wikipedia.org	mediaWiki.user.bucket%3Aext.articleFeedback-tracking	/	Last Access Time	1313707975474305
+cookies.db	cookie	eqads.com	EQUser	/	Creation Time	1332381526633421
+cookies.db	cookie	eqads.com	EQUser	/	Expiration Time	1340330305000000
+cookies.db	cookie	eqads.com	EQUser	/	Last Access Time	1332381526633421
+cookies.db	cookie	espn.go.com	userAB	/	Creation Time	1333287107650854
+cookies.db	cookie	espn.go.com	userAB	/	Expiration Time	1333891907000000
+cookies.db	cookie	espn.go.com	userAB	/	Last Access Time	1333288480551040
+cookies.db	cookie	everesttech.net	everest_g_v2	/	Creation Time	1333287470079061
+cookies.db	cookie	everesttech.net	everest_g_v2	/	Expiration Time	1393287417000000
+cookies.db	cookie	everesttech.net	everest_g_v2	/	Last Access Time	1333287470079061
+cookies.db	cookie	exelator.com	ud	/	Creation Time	1333288314895818
+cookies.db	cookie	exelator.com	ud	/	Expiration Time	1343656262000000
+cookies.db	cookie	exelator.com	ud	/	Last Access Time	1333288314895818
+cookies.db	cookie	exelator.com	xud	/	Creation Time	1333288314895817
+cookies.db	cookie	exelator.com	xud	/	Expiration Time	1343656262000000
+cookies.db	cookie	exelator.com	xud	/	Last Access Time	1333288314895817
+cookies.db	cookie	facebook.com	datr	/	Creation Time	1333288486902047
+cookies.db	cookie	facebook.com	datr	/	Expiration Time	1396360433000000
+cookies.db	cookie	facebook.com	datr	/	Last Access Time	1333718699401472
+cookies.db	cookie	fastclick.net	pluto	/	Creation Time	1333288189597127
+cookies.db	cookie	fastclick.net	pluto	/	Expiration Time	1396360136000000
+cookies.db	cookie	fastclick.net	pluto	/	Last Access Time	1333288189597127
+cookies.db	cookie	fetchback.com	act	/	Creation Time	1313708342448398
+cookies.db	cookie	fetchback.com	act	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	act	/	Last Access Time	1313708342448398
+cookies.db	cookie	fetchback.com	afl	/	Creation Time	1313708342447401
+cookies.db	cookie	fetchback.com	afl	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	afl	/	Last Access Time	1313708342447401
+cookies.db	cookie	fetchback.com	apd	/	Creation Time	1313708342447398
+cookies.db	cookie	fetchback.com	apd	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	apd	/	Last Access Time	1313708342447398
+cookies.db	cookie	fetchback.com	bpd	/	Creation Time	1313708342446400
+cookies.db	cookie	fetchback.com	bpd	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	bpd	/	Last Access Time	1313708342446400
+cookies.db	cookie	fetchback.com	cmp	/	Creation Time	1313708342445398
+cookies.db	cookie	fetchback.com	cmp	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	cmp	/	Last Access Time	1313708342445398
+cookies.db	cookie	fetchback.com	cre	/	Creation Time	1313708342539398
+cookies.db	cookie	fetchback.com	cre	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	cre	/	Last Access Time	1313708342539398
+cookies.db	cookie	fetchback.com	kwd	/	Creation Time	1313708342445400
+cookies.db	cookie	fetchback.com	kwd	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	kwd	/	Last Access Time	1313708342445400
+cookies.db	cookie	fetchback.com	ppd	/	Creation Time	1313708342447400
+cookies.db	cookie	fetchback.com	ppd	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	ppd	/	Last Access Time	1313708342447400
+cookies.db	cookie	fetchback.com	scg	/	Creation Time	1313708342447399
+cookies.db	cookie	fetchback.com	scg	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	scg	/	Last Access Time	1313708342447399
+cookies.db	cookie	fetchback.com	sit	/	Creation Time	1313708342446398
+cookies.db	cookie	fetchback.com	sit	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	sit	/	Last Access Time	1313708342446398
+cookies.db	cookie	fetchback.com	uid	/	Creation Time	1313708342538398
+cookies.db	cookie	fetchback.com	uid	/	Expiration Time	1471388285000000
+cookies.db	cookie	fetchback.com	uid	/	Last Access Time	1313708342538398
+cookies.db	cookie	flashtalking.com	flashtalkingad1	/	Creation Time	1313708359485478
+cookies.db	cookie	flashtalking.com	flashtalkingad1	/	Expiration Time	1376780302000000
+cookies.db	cookie	flashtalking.com	flashtalkingad1	/	Last Access Time	1332381515930135
+cookies.db	cookie	fwmrm.net	_cph	/	Creation Time	1333288012364916
+cookies.db	cookie	fwmrm.net	_cph	/	Expiration Time	1335879959000000
+cookies.db	cookie	fwmrm.net	_cph	/	Last Access Time	1333720538357445
+cookies.db	cookie	fwmrm.net	_sc	/	Creation Time	1333288012364917
+cookies.db	cookie	fwmrm.net	_sc	/	Expiration Time	1335879959000000
+cookies.db	cookie	fwmrm.net	_sc	/	Last Access Time	1333720538357445
+cookies.db	cookie	fwmrm.net	_uid	/	Creation Time	1333288012364914
+cookies.db	cookie	fwmrm.net	_uid	/	Expiration Time	1364823959000000
+cookies.db	cookie	fwmrm.net	_uid	/	Last Access Time	1333720538357445
+cookies.db	cookie	fwmrm.net	_vr	/	Creation Time	1333288012364915
+cookies.db	cookie	fwmrm.net	_vr	/	Expiration Time	1335879959000000
+cookies.db	cookie	fwmrm.net	_vr	/	Last Access Time	1333720538357445
+cookies.db	cookie	fwmrm.net	_wr	/	Creation Time	1333287121217895
+cookies.db	cookie	fwmrm.net	_wr	/	Expiration Time	1335879068000000
+cookies.db	cookie	fwmrm.net	_wr	/	Last Access Time	1333720538357445
+cookies.db	cookie	galleries-news.sky.com	__utma	/	Creation Time	1332380806031101
+cookies.db	cookie	galleries-news.sky.com	__utma	/	Expiration Time	1395452806000000
+cookies.db	cookie	galleries-news.sky.com	__utma	/	Last Access Time	1332380806031101
+cookies.db	cookie	galleries-news.sky.com	__utmb	/	Creation Time	1332380806032101
+cookies.db	cookie	galleries-news.sky.com	__utmb	/	Expiration Time	1332382606000000
+cookies.db	cookie	galleries-news.sky.com	__utmb	/	Last Access Time	1332380806032101
+cookies.db	cookie	galleries-news.sky.com	__utmz	/	Creation Time	1332380806034101
+cookies.db	cookie	galleries-news.sky.com	__utmz	/	Expiration Time	1348148806000000
+cookies.db	cookie	galleries-news.sky.com	__utmz	/	Last Access Time	1332380806034101
+cookies.db	cookie	gigya.com	ucid	/	Creation Time	1332380807007101
+cookies.db	cookie	gigya.com	ucid	/	Expiration Time	1647913586000000
+cookies.db	cookie	gigya.com	ucid	/	Last Access Time	1332380807007101
+cookies.db	cookie	go.com	CRBLM	/	Creation Time	1333287109790355
+cookies.db	cookie	go.com	CRBLM	/	Expiration Time	1334151109790355
+cookies.db	cookie	go.com	CRBLM	/	Last Access Time	1333288480551040
+cookies.db	cookie	go.com	CRBLM_LAST_UPDATE	/	Creation Time	1333287109790356
+cookies.db	cookie	go.com	CRBLM_LAST_UPDATE	/	Expiration Time	1964007109790356
+cookies.db	cookie	go.com	CRBLM_LAST_UPDATE	/	Last Access Time	1333288480551040
+cookies.db	cookie	go.com	DE2	/	Creation Time	1333287109790354
+cookies.db	cookie	go.com	DE2	/	Expiration Time	1333719109790354
+cookies.db	cookie	go.com	DE2	/	Last Access Time	1333288480551040
+cookies.db	cookie	go.com	DS	/	Creation Time	1333287109790353
+cookies.db	cookie	go.com	DS	/	Expiration Time	1333719109790353
+cookies.db	cookie	go.com	DS	/	Last Access Time	1333288480551040
+cookies.db	cookie	go.com	SWID	/	Creation Time	1332381227257030
+cookies.db	cookie	go.com	SWID	/	Expiration Time	1963533206000000
+cookies.db	cookie	go.com	SWID	/	Last Access Time	1333288480551040
+cookies.db	cookie	go.com	mbox	/	Creation Time	1333288007718913
+cookies.db	cookie	go.com	mbox	/	Expiration Time	1343655108000000
+cookies.db	cookie	go.com	mbox	/	Last Access Time	1333288480551040
+cookies.db	cookie	go.com	s_pers	/	Creation Time	1333288010148913
+cookies.db	cookie	go.com	s_pers	/	Expiration Time	1427896010000000
+cookies.db	cookie	go.com	s_pers	/	Last Access Time	1333288480551040
+cookies.db	cookie	go.com	s_vi	/	Creation Time	1332381231630047
+cookies.db	cookie	go.com	s_vi	/	Expiration Time	1490061210000000
+cookies.db	cookie	go.com	s_vi	/	Last Access Time	1333288480551040
+cookies.db	cookie	google.com	NID	/	Creation Time	1333287816814931
+cookies.db	cookie	google.com	NID	/	Expiration Time	1349098964000000
+cookies.db	cookie	google.com	NID	/	Last Access Time	1333718743252504
+cookies.db	cookie	google.com	PREF	/	Creation Time	1331586130706005
+cookies.db	cookie	google.com	PREF	/	Expiration Time	1394658073000000
+cookies.db	cookie	google.com	PREF	/	Last Access Time	1333718743252504
+cookies.db	cookie	google.com	SNID	/verify	Creation Time	1333287187957551
+cookies.db	cookie	google.com	SNID	/verify	Expiration Time	1349098335000000
+cookies.db	cookie	google.com	SNID	/verify	Last Access Time	1333287816711931
+cookies.db	cookie	gwallet.com	ra1_sid	/	Creation Time	1333288266883443
+cookies.db	cookie	gwallet.com	ra1_sid	/	Expiration Time	1364824214000000
+cookies.db	cookie	gwallet.com	ra1_sid	/	Last Access Time	1333288266883443
+cookies.db	cookie	gwallet.com	ra1_uid	/	Creation Time	1333288267343580
+cookies.db	cookie	gwallet.com	ra1_uid	/	Expiration Time	1364824214000000
+cookies.db	cookie	gwallet.com	ra1_uid	/	Last Access Time	1333288267343580
+cookies.db	cookie	hrblock.com	CSList	/	Creation Time	1332380783914101
+cookies.db	cookie	hrblock.com	CSList	/	Expiration Time	1340156763000000
+cookies.db	cookie	hrblock.com	CSList	/	Last Access Time	1332380783914101
+cookies.db	cookie	hrblock.com	PrefID	/	Creation Time	1332380783903101
+cookies.db	cookie	hrblock.com	PrefID	/	Expiration Time	1395495963000000
+cookies.db	cookie	hrblock.com	PrefID	/	Last Access Time	1332380783903101
+cookies.db	cookie	iesnare.com	token	/	Creation Time	1314308634058761
+cookies.db	cookie	iesnare.com	token	/	Expiration Time	1629668579000000
+cookies.db	cookie	iesnare.com	token	/	Last Access Time	1314308634058761
+cookies.db	cookie	imdb.com	__qca	/	Creation Time	1332381516254135
+cookies.db	cookie	imdb.com	__qca	/	Expiration Time	1490061516000000
+cookies.db	cookie	imdb.com	__qca	/	Last Access Time	1333287106940854
+cookies.db	cookie	imdb.com	__utma	/	Creation Time	1332381578107848
+cookies.db	cookie	imdb.com	__utma	/	Expiration Time	1395453578000000
+cookies.db	cookie	imdb.com	__utma	/	Last Access Time	1333287106940854
+cookies.db	cookie	imdb.com	__utmz	/	Creation Time	1332381578109849
+cookies.db	cookie	imdb.com	__utmz	/	Expiration Time	1348149578000000
+cookies.db	cookie	imdb.com	__utmz	/	Last Access Time	1333287106940854
+cookies.db	cookie	imdb.com	session-id	/	Creation Time	1332381424343430
+cookies.db	cookie	imdb.com	session-id	/	Expiration Time	1490036203000000
+cookies.db	cookie	imdb.com	session-id	/	Last Access Time	1333287106940854
+cookies.db	cookie	imdb.com	session-id-time	/	Creation Time	1332381424344430
+cookies.db	cookie	imdb.com	session-id-time	/	Expiration Time	1490036203000000
+cookies.db	cookie	imdb.com	session-id-time	/	Last Access Time	1333287106940854
+cookies.db	cookie	imdb.com	us	/	Creation Time	1333287111595769
+cookies.db	cookie	imdb.com	us	/	Expiration Time	1333891911000000
+cookies.db	cookie	imdb.com	us	/	Last Access Time	1333287111595769
+cookies.db	cookie	imdb.com	uu	/	Creation Time	1332381424340430
+cookies.db	cookie	imdb.com	uu	/	Expiration Time	2145744000000000
+cookies.db	cookie	imdb.com	uu	/	Last Access Time	1333287106940854
+cookies.db	cookie	imrworldwide.com	IMRID	/cgi-bin	Creation Time	1313708155548700
+cookies.db	cookie	imrworldwide.com	IMRID	/cgi-bin	Expiration Time	1376780098000000
+cookies.db	cookie	imrworldwide.com	IMRID	/cgi-bin	Last Access Time	1333720537126445
+cookies.db	cookie	imrworldwide.com	V5	/cgi-bin	Creation Time	1313708155548699
+cookies.db	cookie	imrworldwide.com	V5	/cgi-bin	Expiration Time	1376780098000000
+cookies.db	cookie	imrworldwide.com	V5	/cgi-bin	Last Access Time	1333720537126445
+cookies.db	cookie	insightexpressai.com	CheckedLSO	/	Creation Time	1333287117952091
+cookies.db	cookie	insightexpressai.com	CheckedLSO	/	Expiration Time	1422766800000000
+cookies.db	cookie	insightexpressai.com	CheckedLSO	/	Last Access Time	1333718698566313
+cookies.db	cookie	insightexpressai.com	DW	/	Creation Time	1333287109664353
+cookies.db	cookie	insightexpressai.com	DW	/	Expiration Time	1964007056000000
+cookies.db	cookie	insightexpressai.com	DW	/	Last Access Time	1333718698566313
+cookies.db	cookie	insightexpressai.com	DW_Time	/	Creation Time	1333287109664355
+cookies.db	cookie	insightexpressai.com	DW_Time	/	Expiration Time	1964007056000000
+cookies.db	cookie	insightexpressai.com	DW_Time	/	Last Access Time	1333718698566313
+cookies.db	cookie	insightexpressai.com	IXAI3240	/	Creation Time	1333288009361913
+cookies.db	cookie	insightexpressai.com	IXAI3240	/	Expiration Time	1491048000000000
+cookies.db	cookie	insightexpressai.com	IXAI3240	/	Last Access Time	1333718698566313
+cookies.db	cookie	insightexpressai.com	IXAIBannerCounter189939	/	Creation Time	1333718698671318
+cookies.db	cookie	insightexpressai.com	IXAIBannerCounter189939	/	Expiration Time	1491485092000000
+cookies.db	cookie	insightexpressai.com	IXAIBannerCounter189939	/	Last Access Time	1333718698671318
+cookies.db	cookie	insightexpressai.com	IXAIBanners3265	/	Creation Time	1333718698671319
+cookies.db	cookie	insightexpressai.com	IXAIBanners3265	/	Expiration Time	1491485092000000
+cookies.db	cookie	insightexpressai.com	IXAIBanners3265	/	Last Access Time	1333718698671319
+cookies.db	cookie	insightexpressai.com	IXAICampaignCounter3265	/	Creation Time	1333718698671316
+cookies.db	cookie	insightexpressai.com	IXAICampaignCounter3265	/	Expiration Time	1491485092000000
+cookies.db	cookie	insightexpressai.com	IXAICampaignCounter3265	/	Last Access Time	1333718698671316
+cookies.db	cookie	insightexpressai.com	IXAIControlCounter3265	/	Creation Time	1333718698671317
+cookies.db	cookie	insightexpressai.com	IXAIControlCounter3265	/	Expiration Time	1491485092000000
+cookies.db	cookie	insightexpressai.com	IXAIControlCounter3265	/	Last Access Time	1333718698671317
+cookies.db	cookie	interclick.com	T	/	Creation Time	1332380791748101
+cookies.db	cookie	interclick.com	T	/	Expiration Time	2279065571000000
+cookies.db	cookie	interclick.com	T	/	Last Access Time	1333288476574673
+cookies.db	cookie	interclick.com	oats	/	Creation Time	1333288370183447
+cookies.db	cookie	interclick.com	oats	/	Expiration Time	1335880317000000
+cookies.db	cookie	interclick.com	oats	/	Last Access Time	1333288476574673
+cookies.db	cookie	interclick.com	tpd	/	Creation Time	1333287116597310
+cookies.db	cookie	interclick.com	tpd	/	Expiration Time	1335879116000000
+cookies.db	cookie	interclick.com	tpd	/	Last Access Time	1333288476574673
+cookies.db	cookie	interclick.com	uid	/	Creation Time	1332380791856101
+cookies.db	cookie	interclick.com	uid	/	Expiration Time	2279065571000000
+cookies.db	cookie	interclick.com	uid	/	Last Access Time	1333288476574673
+cookies.db	cookie	invitemedia.com	camp_freq_p1	/	Creation Time	1333287123748892
+cookies.db	cookie	invitemedia.com	camp_freq_p1	/	Expiration Time	1364823071000000
+cookies.db	cookie	invitemedia.com	camp_freq_p1	/	Last Access Time	1333288262863382
+cookies.db	cookie	invitemedia.com	exchange_uid	/	Creation Time	1313708218587781
+cookies.db	cookie	invitemedia.com	exchange_uid	/	Expiration Time	1345244161000000
+cookies.db	cookie	invitemedia.com	exchange_uid	/	Last Access Time	1333288262863382
+cookies.db	cookie	invitemedia.com	impressions_p1	/	Creation Time	1333287123749891
+cookies.db	cookie	invitemedia.com	impressions_p1	/	Expiration Time	1364823123749891
+cookies.db	cookie	invitemedia.com	impressions_p1	/	Last Access Time	1333288262863382
+cookies.db	cookie	invitemedia.com	io_freq_p1	/	Creation Time	1333287123749892
+cookies.db	cookie	invitemedia.com	io_freq_p1	/	Expiration Time	1364823071000000
+cookies.db	cookie	invitemedia.com	io_freq_p1	/	Last Access Time	1333288262863382
+cookies.db	cookie	invitemedia.com	partnerUID	/	Creation Time	1333288262925382
+cookies.db	cookie	invitemedia.com	partnerUID	/	Expiration Time	1364824210000000
+cookies.db	cookie	invitemedia.com	partnerUID	/	Last Access Time	1333288262925382
+cookies.db	cookie	invitemedia.com	segments_p1	/	Creation Time	1313708218093781
+cookies.db	cookie	invitemedia.com	segments_p1	/	Expiration Time	1345244161000000
+cookies.db	cookie	invitemedia.com	segments_p1	/	Last Access Time	1333288262863382
+cookies.db	cookie	invitemedia.com	subID	/	Creation Time	1333287123748891
+cookies.db	cookie	invitemedia.com	subID	/	Expiration Time	1364823071000000
+cookies.db	cookie	invitemedia.com	subID	/	Last Access Time	1333288262863382
+cookies.db	cookie	invitemedia.com	uid	/	Creation Time	1313708217611782
+cookies.db	cookie	invitemedia.com	uid	/	Expiration Time	1376780160000000
+cookies.db	cookie	invitemedia.com	uid	/	Last Access Time	1333288262863382
+cookies.db	cookie	keisu02.eproof.com	adGardenerV	/	Creation Time	1332380791466101
+cookies.db	cookie	keisu02.eproof.com	adGardenerV	/	Expiration Time	1363484735000000
+cookies.db	cookie	keisu02.eproof.com	adGardenerV	/	Last Access Time	1333288476411036
+cookies.db	cookie	legolas-media.com	lgbi	/	Creation Time	1332380806488104
+cookies.db	cookie	legolas-media.com	lgbi	/	Expiration Time	1332985585000000
+cookies.db	cookie	legolas-media.com	lgbi	/	Last Access Time	1332380806488104
+cookies.db	cookie	legolas-media.com	lgdc	/	Creation Time	1332380806488102
+cookies.db	cookie	legolas-media.com	lgdc	/	Expiration Time	1426988785000000
+cookies.db	cookie	legolas-media.com	lgdc	/	Last Access Time	1332380806488102
+cookies.db	cookie	legolas-media.com	lgtix	/	Creation Time	1332380806488101
+cookies.db	cookie	legolas-media.com	lgtix	/	Expiration Time	1426988785000000
+cookies.db	cookie	legolas-media.com	lgtix	/	Last Access Time	1332380806488101
+cookies.db	cookie	legolas-media.com	ui	/	Creation Time	1332380806488103
+cookies.db	cookie	legolas-media.com	ui	/	Expiration Time	1426988785000000
+cookies.db	cookie	legolas-media.com	ui	/	Last Access Time	1332380806488103
+cookies.db	cookie	lijit.com	ljt_csync	/	Creation Time	1332381239893179
+cookies.db	cookie	lijit.com	ljt_csync	/	Expiration Time	2120781217000000
+cookies.db	cookie	lijit.com	ljt_csync	/	Last Access Time	1332381239893179
+cookies.db	cookie	lijit.com	ljt_reader	/	Creation Time	1332381240708179
+cookies.db	cookie	lijit.com	ljt_reader	/	Expiration Time	1363917220000000
+cookies.db	cookie	lijit.com	ljt_reader	/	Last Access Time	1332381240708179
+cookies.db	cookie	lijit.com	ljtrtb	/	Creation Time	1332381240788179
+cookies.db	cookie	lijit.com	ljtrtb	/	Expiration Time	1363917220000000
+cookies.db	cookie	lijit.com	ljtrtb	/	Last Access Time	1332381240788179
+cookies.db	cookie	lijit.com	tpro	/	Creation Time	1332381239888179
+cookies.db	cookie	lijit.com	tpro	/	Expiration Time	1363917217000000
+cookies.db	cookie	lijit.com	tpro	/	Last Access Time	1332381239888179
+cookies.db	cookie	lijit.com	tpro_inst	/	Creation Time	1332381239891179
+cookies.db	cookie	lijit.com	tpro_inst	/	Expiration Time	1363917217000000
+cookies.db	cookie	lijit.com	tpro_inst	/	Last Access Time	1332381239891179
+cookies.db	cookie	linkedin.com	__qca	/	Creation Time	1314308642180657
+cookies.db	cookie	linkedin.com	__qca	/	Expiration Time	2147385600000000
+cookies.db	cookie	linkedin.com	__qca	/	Last Access Time	1314308989700872
+cookies.db	cookie	linkedin.com	__utma	/	Creation Time	1314308969253014
+cookies.db	cookie	linkedin.com	__utma	/	Expiration Time	1377380969000000
+cookies.db	cookie	linkedin.com	__utma	/	Last Access Time	1314309032193367
+cookies.db	cookie	linkedin.com	__utmb	/	Creation Time	1314308969253015
+cookies.db	cookie	linkedin.com	__utmb	/	Expiration Time	1314310769000000
+cookies.db	cookie	linkedin.com	__utmb	/	Last Access Time	1314309032193367
+cookies.db	cookie	linkedin.com	__utmv	/	Creation Time	1314308969254016
+cookies.db	cookie	linkedin.com	__utmv	/	Expiration Time	1377380969000000
+cookies.db	cookie	linkedin.com	__utmv	/	Last Access Time	1314309032193367
+cookies.db	cookie	linkedin.com	__utmz	/	Creation Time	1314308969254015
+cookies.db	cookie	linkedin.com	__utmz	/	Expiration Time	1330076969000000
+cookies.db	cookie	linkedin.com	__utmz	/	Last Access Time	1314309032193367
+cookies.db	cookie	linkedin.com	_leo_profile	/	Creation Time	1314308900793702
+cookies.db	cookie	linkedin.com	_leo_profile	/	Expiration Time	1316900900793702
+cookies.db	cookie	linkedin.com	_leo_profile	/	Last Access Time	1314309027292367
+cookies.db	cookie	linkedin.com	_lipt	/	Creation Time	1314308933818722
+cookies.db	cookie	linkedin.com	_lipt	/	Expiration Time	1316900879000000
+cookies.db	cookie	linkedin.com	_lipt	/	Last Access Time	1314308993834332
+cookies.db	cookie	linkedin.com	bcookie	/	Creation Time	1314308640485792
+cookies.db	cookie	linkedin.com	bcookie	/	Expiration Time	3461792287485792
+cookies.db	cookie	linkedin.com	bcookie	/	Last Access Time	1314308989700872
+cookies.db	cookie	lucidmedia.com	2	/	Creation Time	1332381513522135
+cookies.db	cookie	lucidmedia.com	2	/	Expiration Time	1363917493000000
+cookies.db	cookie	lucidmedia.com	2	/	Last Access Time	1332381513522135
+cookies.db	cookie	marvel.com	__utma	/	Creation Time	1333288385198092
+cookies.db	cookie	marvel.com	__utma	/	Expiration Time	1396360385000000
+cookies.db	cookie	marvel.com	__utma	/	Last Access Time	1333288385198092
+cookies.db	cookie	marvel.com	__utmb	/	Creation Time	1333288385198093
+cookies.db	cookie	marvel.com	__utmb	/	Expiration Time	1333290185000000
+cookies.db	cookie	marvel.com	__utmb	/	Last Access Time	1333288385198093
+cookies.db	cookie	marvel.com	__utmz	/	Creation Time	1333288385198095
+cookies.db	cookie	marvel.com	__utmz	/	Expiration Time	1349056385000000
+cookies.db	cookie	marvel.com	__utmz	/	Last Access Time	1333288385198095
+cookies.db	cookie	marvel.com	autologin[ip]	/	Creation Time	1333288376189443
+cookies.db	cookie	marvel.com	autologin[ip]	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	autologin[ip]	/	Last Access Time	1333288376189443
+cookies.db	cookie	marvel.com	autologin[login]	/	Creation Time	1333288376189445
+cookies.db	cookie	marvel.com	autologin[login]	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	autologin[login]	/	Last Access Time	1333288376189445
+cookies.db	cookie	marvel.com	autologin[md5hash]	/	Creation Time	1333288376189447
+cookies.db	cookie	marvel.com	autologin[md5hash]	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	autologin[md5hash]	/	Last Access Time	1333288376189447
+cookies.db	cookie	marvel.com	autologin[timeout]	/	Creation Time	1333288376189444
+cookies.db	cookie	marvel.com	autologin[timeout]	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	autologin[timeout]	/	Last Access Time	1333288376189444
+cookies.db	cookie	marvel.com	core_u	/	Creation Time	1333288376189452
+cookies.db	cookie	marvel.com	core_u	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	core_u	/	Last Access Time	1333288376189452
+cookies.db	cookie	marvel.com	core_x	/	Creation Time	1333288376189453
+cookies.db	cookie	marvel.com	core_x	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	core_x	/	Last Access Time	1333288376189453
+cookies.db	cookie	marvel.com	ebNewBandWidth_.marvel.com	/	Creation Time	1313708149644699
+cookies.db	cookie	marvel.com	ebNewBandWidth_.marvel.com	/	Expiration Time	1345244149000000
+cookies.db	cookie	marvel.com	ebNewBandWidth_.marvel.com	/	Last Access Time	1333288372763443
+cookies.db	cookie	marvel.com	gn_country	/	Creation Time	1333288382121338
+cookies.db	cookie	marvel.com	gn_country	/	Expiration Time	1333893182000000
+cookies.db	cookie	marvel.com	gn_country	/	Last Access Time	1333288382121338
+cookies.db	cookie	marvel.com	universe3Token	/	Creation Time	1333288376189450
+cookies.db	cookie	marvel.com	universe3Token	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	universe3Token	/	Last Access Time	1333288376189450
+cookies.db	cookie	marvel.com	universe3UserID	/	Creation Time	1333288376189448
+cookies.db	cookie	marvel.com	universe3UserID	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	universe3UserID	/	Last Access Time	1333288376189448
+cookies.db	cookie	marvel.com	universe3UserName	/	Creation Time	1333288376189449
+cookies.db	cookie	marvel.com	universe3UserName	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	universe3UserName	/	Last Access Time	1333288376189449
+cookies.db	cookie	marvel.com	universe3_session	/	Creation Time	1333288376189451
+cookies.db	cookie	marvel.com	universe3_session	/	Expiration Time	1364824322000000
+cookies.db	cookie	marvel.com	universe3_session	/	Last Access Time	1333288376189451
+cookies.db	cookie	mathtag.com	mt_mop	/	Creation Time	1333288266362091
+cookies.db	cookie	mathtag.com	mt_mop	/	Expiration Time	1427896213000000
+cookies.db	cookie	mathtag.com	mt_mop	/	Last Access Time	1333288266362091
+cookies.db	cookie	mathtag.com	ts	/	Creation Time	1333287113249995
+cookies.db	cookie	mathtag.com	ts	/	Expiration Time	1364823060000000
+cookies.db	cookie	mathtag.com	ts	/	Last Access Time	1333288266239091
+cookies.db	cookie	mathtag.com	uuid	/	Creation Time	1332380788733103
+cookies.db	cookie	mathtag.com	uuid	/	Expiration Time	1363916768000000
+cookies.db	cookie	mathtag.com	uuid	/	Last Access Time	1333288266239091
+cookies.db	cookie	media01.linkedin.com	NSC_MC_WT_NFEJB-QSPYZ_IUUQ	/	Creation Time	1314308968814014
+cookies.db	cookie	media01.linkedin.com	NSC_MC_WT_NFEJB-QSPYZ_IUUQ	/	Expiration Time	1314310858000000
+cookies.db	cookie	media01.linkedin.com	NSC_MC_WT_NFEJB-QSPYZ_IUUQ	/	Last Access Time	1314309032730367
+cookies.db	cookie	media6degrees.com	acs	/	Creation Time	1333288266702444
+cookies.db	cookie	media6degrees.com	acs	/	Expiration Time	1348840213000000
+cookies.db	cookie	media6degrees.com	acs	/	Last Access Time	1333288266702444
+cookies.db	cookie	media6degrees.com	clid	/	Creation Time	1333288266701444
+cookies.db	cookie	media6degrees.com	clid	/	Expiration Time	1348840213000000
+cookies.db	cookie	media6degrees.com	clid	/	Last Access Time	1333288266701444
+cookies.db	cookie	media6degrees.com	ipinfo	/	Creation Time	1332380791064104
+cookies.db	cookie	media6degrees.com	ipinfo	/	Expiration Time	1347932770000000
+cookies.db	cookie	media6degrees.com	ipinfo	/	Last Access Time	1333288266241091
+cookies.db	cookie	media6degrees.com	rdrlst	/	Creation Time	1333288266702443
+cookies.db	cookie	media6degrees.com	rdrlst	/	Expiration Time	1348840213000000
+cookies.db	cookie	media6degrees.com	rdrlst	/	Last Access Time	1333288266702443
+cookies.db	cookie	media6degrees.com	sglst	/	Creation Time	1333288266701445
+cookies.db	cookie	media6degrees.com	sglst	/	Expiration Time	1348840213000000
+cookies.db	cookie	media6degrees.com	sglst	/	Last Access Time	1333288266701445
+cookies.db	cookie	media6degrees.com	vstcnt	/	Creation Time	1333288266701443
+cookies.db	cookie	media6degrees.com	vstcnt	/	Expiration Time	1348840213000000
+cookies.db	cookie	media6degrees.com	vstcnt	/	Last Access Time	1333288266701443
+cookies.db	cookie	mediaplex.com	mojo3	/	Creation Time	1333287470808060
+cookies.db	cookie	mediaplex.com	mojo3	/	Expiration Time	1396329744000000
+cookies.db	cookie	mediaplex.com	mojo3	/	Last Access Time	1333288291565303
+cookies.db	cookie	mediaplex.com	svid	/	Creation Time	1332381515474135
+cookies.db	cookie	mediaplex.com	svid	/	Expiration Time	1426959439000000
+cookies.db	cookie	mediaplex.com	svid	/	Last Access Time	1333288291565303
+cookies.db	cookie	mookie1.com	OAX	/	Creation Time	1333288293333629
+cookies.db	cookie	mookie1.com	OAX	/	Expiration Time	1367416240000000
+cookies.db	cookie	mookie1.com	OAX	/	Last Access Time	1333288293333629
+cookies.db	cookie	mookie1.com	RMFM	/	Creation Time	1333288293632554
+cookies.db	cookie	mookie1.com	RMFM	/	Expiration Time	1396360240000000
+cookies.db	cookie	mookie1.com	RMFM	/	Last Access Time	1333288293632554
+cookies.db	cookie	mookie1.com	id	/	Creation Time	1333288293332628
+cookies.db	cookie	mookie1.com	id	/	Expiration Time	1367416240000000
+cookies.db	cookie	mookie1.com	id	/	Last Access Time	1333288293332628
+cookies.db	cookie	mookie1.com	mdata	/	Creation Time	1333288293333628
+cookies.db	cookie	mookie1.com	mdata	/	Expiration Time	1367416240000000
+cookies.db	cookie	mookie1.com	mdata	/	Last Access Time	1333288293333628
+cookies.db	cookie	netseer.com	netseer_v3_vi	/	Creation Time	1332381513732135
+cookies.db	cookie	netseer.com	netseer_v3_vi	/	Expiration Time	1395453513732135
+cookies.db	cookie	netseer.com	netseer_v3_vi	/	Last Access Time	1332381513732135
+cookies.db	cookie	network.realmedia.com	NSC_o1efm_qppm_iuuq	/	Creation Time	1333288475692679
+cookies.db	cookie	network.realmedia.com	NSC_o1efm_qppm_iuuq	/	Expiration Time	1333288482000000
+cookies.db	cookie	network.realmedia.com	NSC_o1efm_qppm_iuuq	/	Last Access Time	1333288475692679
+cookies.db	cookie	nexac.com	na_tc	/	Creation Time	1333288370309443
+cookies.db	cookie	nexac.com	na_tc	/	Expiration Time	1385848800000000
+cookies.db	cookie	nexac.com	na_tc	/	Last Access Time	1333288370309443
+cookies.db	cookie	openx.net	i	/	Creation Time	1333288266615443
+cookies.db	cookie	openx.net	i	/	Expiration Time	1396360213000000
+cookies.db	cookie	openx.net	i	/	Last Access Time	1333288266615443
+cookies.db	cookie	orbengine.com	xa	/	Creation Time	1332381240044179
+cookies.db	cookie	orbengine.com	xa	/	Expiration Time	1347933219000000
+cookies.db	cookie	orbengine.com	xa	/	Last Access Time	1332381240044179
+cookies.db	cookie	oreck.com	CSList	/	Creation Time	1332382484801500
+cookies.db	cookie	oreck.com	CSList	/	Expiration Time	1340158464000000
+cookies.db	cookie	oreck.com	CSList	/	Last Access Time	1332382484801500
+cookies.db	cookie	oreck.com	PrefID	/	Creation Time	1332382484800500
+cookies.db	cookie	oreck.com	PrefID	/	Expiration Time	1395497664000000
+cookies.db	cookie	oreck.com	PrefID	/	Last Access Time	1332382484800500
+cookies.db	cookie	oreck.com	te_tof	/	Creation Time	1332382484801499
+cookies.db	cookie	oreck.com	te_tof	/	Expiration Time	1363918464000000
+cookies.db	cookie	oreck.com	te_tof	/	Last Access Time	1332382484801499
+cookies.db	cookie	outbrain.com	_fcap_CAM3	/	Creation Time	1332380842156023
+cookies.db	cookie	outbrain.com	_fcap_CAM3	/	Expiration Time	1332467242156023
+cookies.db	cookie	outbrain.com	_fcap_CAM3	/	Last Access Time	1332380842156023
+cookies.db	cookie	outbrain.com	_lvd2	/	Creation Time	1332380842155024
+cookies.db	cookie	outbrain.com	_lvd2	/	Expiration Time	1332945301000000
+cookies.db	cookie	outbrain.com	_lvd2	/	Last Access Time	1332380842155024
+cookies.db	cookie	outbrain.com	_lvs2	/	Creation Time	1332380842155023
+cookies.db	cookie	outbrain.com	_lvs2	/	Expiration Time	1366249642155023
+cookies.db	cookie	outbrain.com	_lvs2	/	Last Access Time	1332380842155023
+cookies.db	cookie	outbrain.com	_rcc2	/	Creation Time	1332380842156022
+cookies.db	cookie	outbrain.com	_rcc2	/	Expiration Time	1366249642156022
+cookies.db	cookie	outbrain.com	_rcc2	/	Last Access Time	1332380842156022
+cookies.db	cookie	outbrain.com	obuid	/	Creation Time	1332380803478101
+cookies.db	cookie	outbrain.com	obuid	/	Expiration Time	1363484782000000
+cookies.db	cookie	outbrain.com	obuid	/	Last Access Time	1332380803478101
+cookies.db	cookie	outbrain.com	recs-7a3073c4c16558dd1b14db733b46ab68	/	Creation Time	1332380842156024
+cookies.db	cookie	outbrain.com	recs-7a3073c4c16558dd1b14db733b46ab68	/	Expiration Time	1332381142156024
+cookies.db	cookie	outbrain.com	recs-7a3073c4c16558dd1b14db733b46ab68	/	Last Access Time	1332380842156024
+cookies.db	cookie	ox-d.enveromedia.com	OX_u	/	Creation Time	1333288262802382
+cookies.db	cookie	ox-d.enveromedia.com	OX_u	/	Expiration Time	1364824262802382
+cookies.db	cookie	ox-d.enveromedia.com	OX_u	/	Last Access Time	1333288262802382
+cookies.db	cookie	p-td.com	uid	/	Creation Time	1333288266664443
+cookies.db	cookie	p-td.com	uid	/	Expiration Time	1348840213000000
+cookies.db	cookie	p-td.com	uid	/	Last Access Time	1333288266664443
+cookies.db	cookie	p.rightaction.com	USER	/	Creation Time	1332380817126022
+cookies.db	cookie	p.rightaction.com	USER	/	Expiration Time	3479864443000000
+cookies.db	cookie	p.rightaction.com	USER	/	Last Access Time	1332380817126022
+cookies.db	cookie	photobucket.com	External	/	Creation Time	1333288266867443
+cookies.db	cookie	photobucket.com	External	/	Expiration Time	1364824214000000
+cookies.db	cookie	photobucket.com	External	/	Last Access Time	1333288266867443
+cookies.db	cookie	photobucket.com	Hint	/	Creation Time	1333288266867445
+cookies.db	cookie	photobucket.com	Hint	/	Expiration Time	1333290014000000
+cookies.db	cookie	photobucket.com	Hint	/	Last Access Time	1333288266867445
+cookies.db	cookie	photobucket.com	PBLinkID	/	Creation Time	1333288268132044
+cookies.db	cookie	photobucket.com	PBLinkID	/	Expiration Time	1364824268132044
+cookies.db	cookie	photobucket.com	PBLinkID	/	Last Access Time	1333288268132044
+cookies.db	cookie	photobucket.com	__utma	/	Creation Time	1333288265480382
+cookies.db	cookie	photobucket.com	__utma	/	Expiration Time	1396360265000000
+cookies.db	cookie	photobucket.com	__utma	/	Last Access Time	1333288265480382
+cookies.db	cookie	photobucket.com	__utmb	/	Creation Time	1333288265487382
+cookies.db	cookie	photobucket.com	__utmb	/	Expiration Time	1333290065000000
+cookies.db	cookie	photobucket.com	__utmb	/	Last Access Time	1333288265487382
+cookies.db	cookie	photobucket.com	__utmz	/	Creation Time	1333288265487384
+cookies.db	cookie	photobucket.com	__utmz	/	Expiration Time	1349056265000000
+cookies.db	cookie	photobucket.com	__utmz	/	Last Access Time	1333288265487384
+cookies.db	cookie	photobucket.com	daily	/	Creation Time	1333288265550382
+cookies.db	cookie	photobucket.com	daily	/	Expiration Time	1333374665000000
+cookies.db	cookie	photobucket.com	daily	/	Last Access Time	1333288265550382
+cookies.db	cookie	photobucket.com	pb_userid	/	Creation Time	1333288260198383
+cookies.db	cookie	photobucket.com	pb_userid	/	Expiration Time	2147483646000000
+cookies.db	cookie	photobucket.com	pb_userid	/	Last Access Time	1333288260198383
+cookies.db	cookie	photobucket.com	pbtr	/	Creation Time	1333288268632390
+cookies.db	cookie	photobucket.com	pbtr	/	Expiration Time	1364824268000000
+cookies.db	cookie	photobucket.com	pbtr	/	Last Access Time	1333288268632390
+cookies.db	cookie	photobucket.com	puid	/	Creation Time	1333288266867444
+cookies.db	cookie	photobucket.com	puid	/	Expiration Time	2147385599000000
+cookies.db	cookie	photobucket.com	puid	/	Last Access Time	1333288266867444
+cookies.db	cookie	photobucket.com	searchsolbase-off	/	Creation Time	1333288260199386
+cookies.db	cookie	photobucket.com	searchsolbase-off	/	Expiration Time	1333291806000000
+cookies.db	cookie	photobucket.com	searchsolbase-off	/	Last Access Time	1333288260199386
+cookies.db	cookie	pixel.rubiconproject.com	rpx	/	Creation Time	1333287649095843
+cookies.db	cookie	pixel.rubiconproject.com	rpx	/	Expiration Time	1335879596000000
+cookies.db	cookie	pixel.rubiconproject.com	rpx	/	Last Access Time	1333287649095843
+cookies.db	cookie	player.vimeo.com	__utma	/	Creation Time	1333287122756891
+cookies.db	cookie	player.vimeo.com	__utma	/	Expiration Time	1396359122000000
+cookies.db	cookie	player.vimeo.com	__utma	/	Last Access Time	1333287122756891
+cookies.db	cookie	player.vimeo.com	__utmb	/	Creation Time	1333287122756892
+cookies.db	cookie	player.vimeo.com	__utmb	/	Expiration Time	1333288922000000
+cookies.db	cookie	player.vimeo.com	__utmb	/	Last Access Time	1333287122756892
+cookies.db	cookie	player.vimeo.com	__utmz	/	Creation Time	1333287122757892
+cookies.db	cookie	player.vimeo.com	__utmz	/	Expiration Time	1349055122000000
+cookies.db	cookie	player.vimeo.com	__utmz	/	Last Access Time	1333287122757892
+cookies.db	cookie	pointroll.com	PRbu	/	Creation Time	1332381316452924
+cookies.db	cookie	pointroll.com	PRbu	/	Expiration Time	1395453295000000
+cookies.db	cookie	pointroll.com	PRbu	/	Last Access Time	1333287114760995
+cookies.db	cookie	pointroll.com	PRgo	/	Creation Time	1333287114802995
+cookies.db	cookie	pointroll.com	PRgo	/	Expiration Time	1396359062000000
+cookies.db	cookie	pointroll.com	PRgo	/	Last Access Time	1333287114802995
+cookies.db	cookie	politicalticker.blogs.cnn.com	tnr:usrvtstg01	/2012/03/21/romney-tries-to-clean-up-etch-a-sketch-mess/	Creation Time	1332380841012022
+cookies.db	cookie	politicalticker.blogs.cnn.com	tnr:usrvtstg01	/2012/03/21/romney-tries-to-clean-up-etch-a-sketch-mess/	Expiration Time	1505180841000000
+cookies.db	cookie	politicalticker.blogs.cnn.com	tnr:usrvtstg01	/2012/03/21/romney-tries-to-clean-up-etch-a-sketch-mess/	Last Access Time	1332380841012022
+cookies.db	cookie	politicalticker.blogs.cnn.com	ug	/	Creation Time	1332380840970022
+cookies.db	cookie	politicalticker.blogs.cnn.com	ug	/	Expiration Time	1363916840000000
+cookies.db	cookie	politicalticker.blogs.cnn.com	ug	/	Last Access Time	1332380840970022
+cookies.db	cookie	pro-market.net	anLink	/	Creation Time	1333287113338995
+cookies.db	cookie	pro-market.net	anLink	/	Expiration Time	1333459860000000
+cookies.db	cookie	pro-market.net	anLink	/	Last Access Time	1333287113338995
+cookies.db	cookie	pro-market.net	anProfile	/	Creation Time	1332380792074101
+cookies.db	cookie	pro-market.net	anProfile	/	Expiration Time	1347932771000000
+cookies.db	cookie	pro-market.net	anProfile	/	Last Access Time	1333287113299995
+cookies.db	cookie	pubmatic.com	KADUSERCOOKIE	/	Creation Time	1332381499430755
+cookies.db	cookie	pubmatic.com	KADUSERCOOKIE	/	Expiration Time	1363917478000000
+cookies.db	cookie	pubmatic.com	KADUSERCOOKIE	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_107	/	Creation Time	1332381505612754
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_107	/	Expiration Time	1395453485000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_107	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_148	/	Creation Time	1332381514332135
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_148	/	Expiration Time	1363485493000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_148	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_153	/	Creation Time	1332380810193101
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_153	/	Expiration Time	1334972789000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_153	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_16	/	Creation Time	1332381514253135
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_16	/	Expiration Time	1395453493000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_16	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_171	/	Creation Time	1332381526442421
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_171	/	Expiration Time	1395453759000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_171	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_200	/	Creation Time	1332381526309547
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_200	/	Expiration Time	1334973505000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_200	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_22	/	Creation Time	1332381240434179
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_22	/	Expiration Time	1395453219000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_22	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_240	/	Creation Time	1332381490520703
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_240	/	Expiration Time	1347933469000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_240	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_262	/	Creation Time	1332380810407101
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_262	/	Expiration Time	1395452789000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_262	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_27	/	Creation Time	1332381505489754
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_27	/	Expiration Time	1395453484000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_27	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_53	/	Creation Time	1314308953101565
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_53	/	Expiration Time	1377380887000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_53	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_57	/	Creation Time	1332381554398301
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_57	/	Expiration Time	1426989533000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_57	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_58	/	Creation Time	1332381505534754
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_58	/	Expiration Time	1340157473000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_58	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_80	/	Creation Time	1332381526355644
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_80	/	Expiration Time	1395453474000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_80	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_97	/	Creation Time	1332381545810421
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_97	/	Expiration Time	1334973525000000
+cookies.db	cookie	pubmatic.com	KRTBCOOKIE_97	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	PUBMDCID	/	Creation Time	1332381579756968
+cookies.db	cookie	pubmatic.com	PUBMDCID	/	Expiration Time	1363917529000000
+cookies.db	cookie	pubmatic.com	PUBMDCID	/	Last Access Time	1333288266066091
+cookies.db	cookie	pubmatic.com	PUBRETARGET	/	Creation Time	1333288267494308
+cookies.db	cookie	pubmatic.com	PUBRETARGET	/	Expiration Time	1426989533000000
+cookies.db	cookie	pubmatic.com	PUBRETARGET	/	Last Access Time	1333288267494308
+cookies.db	cookie	pubmatic.com	__qca	/	Creation Time	1332381516203135
+cookies.db	cookie	pubmatic.com	__qca	/	Expiration Time	1490061516000000
+cookies.db	cookie	pubmatic.com	__qca	/	Last Access Time	1333288266066091
+cookies.db	cookie	quantserve.com	d	/	Creation Time	1333287112046783
+cookies.db	cookie	quantserve.com	d	/	Expiration Time	1341063059000000
+cookies.db	cookie	quantserve.com	d	/	Last Access Time	1333288474889210
+cookies.db	cookie	quantserve.com	mc	/	Creation Time	1313708155427699
+cookies.db	cookie	quantserve.com	mc	/	Expiration Time	1471560898000000
+cookies.db	cookie	quantserve.com	mc	/	Last Access Time	1333288474889210
+cookies.db	cookie	questionmarket.com	CS1	/	Creation Time	1333288402722908
+cookies.db	cookie	questionmarket.com	CS1	/	Expiration Time	1369288349000000
+cookies.db	cookie	questionmarket.com	CS1	/	Last Access Time	1333288402722908
+cookies.db	cookie	questionmarket.com	ES	/	Creation Time	1333288403219907
+cookies.db	cookie	questionmarket.com	ES	/	Expiration Time	1369288350000000
+cookies.db	cookie	questionmarket.com	ES	/	Last Access Time	1333288403219907
+cookies.db	cookie	realmedia.com	OAX	/	Creation Time	1332380806097101
+cookies.db	cookie	realmedia.com	OAX	/	Expiration Time	1395452785000000
+cookies.db	cookie	realmedia.com	OAX	/	Last Access Time	1333288474973636
+cookies.db	cookie	realmedia.com	RMFD	/	Creation Time	1333288369677443
+cookies.db	cookie	realmedia.com	RMFD	/	Expiration Time	1396360316000000
+cookies.db	cookie	realmedia.com	RMFD	/	Last Access Time	1333288474973636
+cookies.db	cookie	realmedia.com	mooker	/	Creation Time	1332381505850754
+cookies.db	cookie	realmedia.com	mooker	/	Expiration Time	1340157485000000
+cookies.db	cookie	realmedia.com	mooker	/	Last Access Time	1333288474973636
+cookies.db	cookie	relestar.com	uid	/	Creation Time	1332380819517022
+cookies.db	cookie	relestar.com	uid	/	Expiration Time	1490060798000000
+cookies.db	cookie	relestar.com	uid	/	Last Access Time	1332380819517022
+cookies.db	cookie	revsci.net	NETID01	/	Creation Time	1332380808647107
+cookies.db	cookie	revsci.net	NETID01	/	Expiration Time	2341532788000000
+cookies.db	cookie	revsci.net	NETID01	/	Last Access Time	1333718698569313
+cookies.db	cookie	revsci.net	NETSEGS_A09801	/	Creation Time	1333718699648654
+cookies.db	cookie	revsci.net	NETSEGS_A09801	/	Expiration Time	1336137893000000
+cookies.db	cookie	revsci.net	NETSEGS_A09801	/	Last Access Time	1333718699648654
+cookies.db	cookie	revsci.net	pudm_AAAA	/	Creation Time	1333718699646656
+cookies.db	cookie	revsci.net	pudm_AAAA	/	Expiration Time	1365254693000000
+cookies.db	cookie	revsci.net	pudm_AAAA	/	Last Access Time	1333718699646656
+cookies.db	cookie	revsci.net	rsiPus_AAAA	/	Creation Time	1333288008823914
+cookies.db	cookie	revsci.net	rsiPus_AAAA	/	Expiration Time	1490968008823914
+cookies.db	cookie	revsci.net	rsiPus_AAAA	/	Last Access Time	1333718698569313
+cookies.db	cookie	revsci.net	rtc_AAAA	/	Creation Time	1333718699646657
+cookies.db	cookie	revsci.net	rtc_AAAA	/	Expiration Time	1365254693000000
+cookies.db	cookie	revsci.net	rtc_AAAA	/	Last Access Time	1333718699646657
+cookies.db	cookie	revsci.net	rts_AAAA	/	Creation Time	1333718699648655
+cookies.db	cookie	revsci.net	rts_AAAA	/	Expiration Time	1365254693000000
+cookies.db	cookie	revsci.net	rts_AAAA	/	Last Access Time	1333718699648655
+cookies.db	cookie	rfihub.com	a	/	Creation Time	1333288291673304
+cookies.db	cookie	rfihub.com	a	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	a	/	Last Access Time	1333288291673304
+cookies.db	cookie	rfihub.com	a1	/	Creation Time	1333288291672303
+cookies.db	cookie	rfihub.com	a1	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	a1	/	Last Access Time	1333288291672303
+cookies.db	cookie	rfihub.com	a3	/	Creation Time	1332381526651422
+cookies.db	cookie	rfihub.com	a3	/	Expiration Time	1410141506000000
+cookies.db	cookie	rfihub.com	a3	/	Last Access Time	1333288290981303
+cookies.db	cookie	rfihub.com	b	/	Creation Time	1333288291160304
+cookies.db	cookie	rfihub.com	b	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	b	/	Last Access Time	1333288291160304
+cookies.db	cookie	rfihub.com	c	/	Creation Time	1333288291160307
+cookies.db	cookie	rfihub.com	c	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	c	/	Last Access Time	1333288291160307
+cookies.db	cookie	rfihub.com	e	/	Creation Time	1333288291673303
+cookies.db	cookie	rfihub.com	e	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	e	/	Last Access Time	1333288291673303
+cookies.db	cookie	rfihub.com	f	/	Creation Time	1333288291160308
+cookies.db	cookie	rfihub.com	f	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	f	/	Last Access Time	1333288291160308
+cookies.db	cookie	rfihub.com	g	/	Creation Time	1333288291160305
+cookies.db	cookie	rfihub.com	g	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	g	/	Last Access Time	1333288291160305
+cookies.db	cookie	rfihub.com	o	/	Creation Time	1333288291673307
+cookies.db	cookie	rfihub.com	o	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	o	/	Last Access Time	1333288291673307
+cookies.db	cookie	rfihub.com	r	/	Creation Time	1333288291673306
+cookies.db	cookie	rfihub.com	r	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	r	/	Last Access Time	1333288291673306
+cookies.db	cookie	rfihub.com	s	/	Creation Time	1333288291160309
+cookies.db	cookie	rfihub.com	s	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	s	/	Last Access Time	1333288291160309
+cookies.db	cookie	rfihub.com	t	/	Creation Time	1333288291672305
+cookies.db	cookie	rfihub.com	t	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	t	/	Last Access Time	1333288291672305
+cookies.db	cookie	rfihub.com	t2	/	Creation Time	1332381526651424
+cookies.db	cookie	rfihub.com	t2	/	Expiration Time	1410141506000000
+cookies.db	cookie	rfihub.com	t2	/	Last Access Time	1333288290981303
+cookies.db	cookie	rfihub.com	u	/	Creation Time	1333288291672306
+cookies.db	cookie	rfihub.com	u	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	u	/	Last Access Time	1333288291672306
+cookies.db	cookie	rfihub.com	v	/	Creation Time	1333288291160303
+cookies.db	cookie	rfihub.com	v	/	Expiration Time	1411048238000000
+cookies.db	cookie	rfihub.com	v	/	Last Access Time	1333288291160303
+cookies.db	cookie	rlcdn.com	rlas3	/	Creation Time	1332380817159023
+cookies.db	cookie	rlcdn.com	rlas3	/	Expiration Time	1347932796000000
+cookies.db	cookie	rlcdn.com	rlas3	/	Last Access Time	1332380817159023
+cookies.db	cookie	rs.gwallet.com	RA1balancer	/	Creation Time	1332381516667135
+cookies.db	cookie	rs.gwallet.com	RA1balancer	/	Expiration Time	1482381241000000
+cookies.db	cookie	rs.gwallet.com	RA1balancer	/	Last Access Time	1333288266688443
+cookies.db	cookie	ru4.com	C1780853	/	Creation Time	1332381505302756
+cookies.db	cookie	ru4.com	C1780853	/	Expiration Time	1377820800000000
+cookies.db	cookie	ru4.com	C1780853	/	Last Access Time	1332381505302756
+cookies.db	cookie	ru4.com	M62795-37036736	/	Creation Time	1332381505302757
+cookies.db	cookie	ru4.com	M62795-37036736	/	Expiration Time	1335045484000000
+cookies.db	cookie	ru4.com	M62795-37036736	/	Last Access Time	1332381505302757
+cookies.db	cookie	ru4.com	M62795-37036742	/	Creation Time	1332381505302758
+cookies.db	cookie	ru4.com	M62795-37036742	/	Expiration Time	1335045484000000
+cookies.db	cookie	ru4.com	M62795-37036742	/	Last Access Time	1332381505302758
+cookies.db	cookie	ru4.com	M62795-52786	/	Creation Time	1332381296320040
+cookies.db	cookie	ru4.com	M62795-52786	/	Expiration Time	1335045275000000
+cookies.db	cookie	ru4.com	M62795-52786	/	Last Access Time	1332381489739703
+cookies.db	cookie	ru4.com	O179638	/	Creation Time	1332381505302755
+cookies.db	cookie	ru4.com	O179638	/	Expiration Time	1379800684000000
+cookies.db	cookie	ru4.com	O179638	/	Last Access Time	1332381505302755
+cookies.db	cookie	ru4.com	X1ID	/	Creation Time	1332380791037101
+cookies.db	cookie	ru4.com	X1ID	/	Expiration Time	1379799970000000
+cookies.db	cookie	ru4.com	X1ID	/	Last Access Time	1332381489739703
+cookies.db	cookie	rubiconproject.com	au	/	Creation Time	1332380795460102
+cookies.db	cookie	rubiconproject.com	au	/	Expiration Time	1584668775000000
+cookies.db	cookie	rubiconproject.com	au	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	cd	/	Creation Time	1333288479227673
+cookies.db	cookie	rubiconproject.com	cd	/	Expiration Time	1364824426000000
+cookies.db	cookie	rubiconproject.com	cd	/	Last Access Time	1333288479227673
+cookies.db	cookie	rubiconproject.com	csi15	/	Creation Time	1333288475645679
+cookies.db	cookie	rubiconproject.com	csi15	/	Expiration Time	1333893275645679
+cookies.db	cookie	rubiconproject.com	csi15	/	Last Access Time	1333288475645679
+cookies.db	cookie	rubiconproject.com	csi9	/	Creation Time	1333288476122308
+cookies.db	cookie	rubiconproject.com	csi9	/	Expiration Time	1333893276122308
+cookies.db	cookie	rubiconproject.com	csi9	/	Last Access Time	1333288476122308
+cookies.db	cookie	rubiconproject.com	khaos	/	Creation Time	1333288369040443
+cookies.db	cookie	rubiconproject.com	khaos	/	Expiration Time	1585576316000000
+cookies.db	cookie	rubiconproject.com	khaos	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	lm	/	Creation Time	1332382484668500
+cookies.db	cookie	rubiconproject.com	lm	/	Expiration Time	1363918484668500
+cookies.db	cookie	rubiconproject.com	lm	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_1185	/	Creation Time	1333287113741997
+cookies.db	cookie	rubiconproject.com	put_1185	/	Expiration Time	1338471061000000
+cookies.db	cookie	rubiconproject.com	put_1185	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_1197	/	Creation Time	1332380806680103
+cookies.db	cookie	rubiconproject.com	put_1197	/	Expiration Time	1334972786000000
+cookies.db	cookie	rubiconproject.com	put_1197	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_1430	/	Creation Time	1332380792452103
+cookies.db	cookie	rubiconproject.com	put_1430	/	Expiration Time	1347932771000000
+cookies.db	cookie	rubiconproject.com	put_1430	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_1512	/	Creation Time	1333287113641997
+cookies.db	cookie	rubiconproject.com	put_1512	/	Expiration Time	1335879060000000
+cookies.db	cookie	rubiconproject.com	put_1512	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_1902	/	Creation Time	1332380792546103
+cookies.db	cookie	rubiconproject.com	put_1902	/	Expiration Time	1334972772000000
+cookies.db	cookie	rubiconproject.com	put_1902	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2025	/	Creation Time	1332380792497102
+cookies.db	cookie	rubiconproject.com	put_2025	/	Expiration Time	1395452771000000
+cookies.db	cookie	rubiconproject.com	put_2025	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2054	/	Creation Time	1333287649095844
+cookies.db	cookie	rubiconproject.com	put_2054	/	Expiration Time	1335879596000000
+cookies.db	cookie	rubiconproject.com	put_2054	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2081	/	Creation Time	1332381401620249
+cookies.db	cookie	rubiconproject.com	put_2081	/	Expiration Time	1334973380000000
+cookies.db	cookie	rubiconproject.com	put_2081	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2100	/	Creation Time	1332380792449103
+cookies.db	cookie	rubiconproject.com	put_2100	/	Expiration Time	1334972771000000
+cookies.db	cookie	rubiconproject.com	put_2100	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2101	/	Creation Time	1332382484883500
+cookies.db	cookie	rubiconproject.com	put_2101	/	Expiration Time	1334974464000000
+cookies.db	cookie	rubiconproject.com	put_2101	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2146	/	Creation Time	1332381490550704
+cookies.db	cookie	rubiconproject.com	put_2146	/	Expiration Time	1334973469000000
+cookies.db	cookie	rubiconproject.com	put_2146	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2147	/	Creation Time	1332381401186249
+cookies.db	cookie	rubiconproject.com	put_2147	/	Expiration Time	1334973380000000
+cookies.db	cookie	rubiconproject.com	put_2147	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2181	/	Creation Time	1333287470258062
+cookies.db	cookie	rubiconproject.com	put_2181	/	Expiration Time	1333373817000000
+cookies.db	cookie	rubiconproject.com	put_2181	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2236	/	Creation Time	1332380816746024
+cookies.db	cookie	rubiconproject.com	put_2236	/	Expiration Time	1334972796000000
+cookies.db	cookie	rubiconproject.com	put_2236	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2245	/	Creation Time	1332380792547103
+cookies.db	cookie	rubiconproject.com	put_2245	/	Expiration Time	1334972772000000
+cookies.db	cookie	rubiconproject.com	put_2245	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2249	/	Creation Time	1332380809306102
+cookies.db	cookie	rubiconproject.com	put_2249	/	Expiration Time	1334972788000000
+cookies.db	cookie	rubiconproject.com	put_2249	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2271	/	Creation Time	1332380792417103
+cookies.db	cookie	rubiconproject.com	put_2271	/	Expiration Time	1334972771000000
+cookies.db	cookie	rubiconproject.com	put_2271	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2307	/	Creation Time	1332380816777024
+cookies.db	cookie	rubiconproject.com	put_2307	/	Expiration Time	1334972796000000
+cookies.db	cookie	rubiconproject.com	put_2307	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2309	/	Creation Time	1332381490550705
+cookies.db	cookie	rubiconproject.com	put_2309	/	Expiration Time	1334973469000000
+cookies.db	cookie	rubiconproject.com	put_2309	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	put_2323	/	Creation Time	1332380819788024
+cookies.db	cookie	rubiconproject.com	put_2323	/	Expiration Time	1334972799000000
+cookies.db	cookie	rubiconproject.com	put_2323	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	rdk	/	Creation Time	1333288476122305
+cookies.db	cookie	rubiconproject.com	rdk	/	Expiration Time	1333288536122305
+cookies.db	cookie	rubiconproject.com	rdk	/	Last Access Time	1333288476122305
+cookies.db	cookie	rubiconproject.com	rdk10	/	Creation Time	1333288476080708
+cookies.db	cookie	rubiconproject.com	rdk10	/	Expiration Time	1333288486080708
+cookies.db	cookie	rubiconproject.com	rdk10	/	Last Access Time	1333288476080708
+cookies.db	cookie	rubiconproject.com	rdk15	/	Creation Time	1333288475644680
+cookies.db	cookie	rubiconproject.com	rdk15	/	Expiration Time	1333288485644680
+cookies.db	cookie	rubiconproject.com	rdk15	/	Last Access Time	1333288475644680
+cookies.db	cookie	rubiconproject.com	rdk9	/	Creation Time	1333288476122306
+cookies.db	cookie	rubiconproject.com	rdk9	/	Expiration Time	1333288486122306
+cookies.db	cookie	rubiconproject.com	rdk9	/	Last Access Time	1333288476122306
+cookies.db	cookie	rubiconproject.com	rpb	/	Creation Time	1333287649094843
+cookies.db	cookie	rubiconproject.com	rpb	/	Expiration Time	1335879596000000
+cookies.db	cookie	rubiconproject.com	rpb	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	ruid	/	Creation Time	1333287112157002
+cookies.db	cookie	rubiconproject.com	ruid	/	Expiration Time	1341063112157002
+cookies.db	cookie	rubiconproject.com	ruid	/	Last Access Time	1333288474949210
+cookies.db	cookie	rubiconproject.com	ses10	/	Creation Time	1333288476080709
+cookies.db	cookie	rubiconproject.com	ses10	/	Expiration Time	1333353652080709
+cookies.db	cookie	rubiconproject.com	ses10	/	Last Access Time	1333288476080709
+cookies.db	cookie	rubiconproject.com	ses15	/	Creation Time	1333288475644681
+cookies.db	cookie	rubiconproject.com	ses15	/	Expiration Time	1333353652644681
+cookies.db	cookie	rubiconproject.com	ses15	/	Last Access Time	1333288475644681
+cookies.db	cookie	rubiconproject.com	ses9	/	Creation Time	1333288476122307
+cookies.db	cookie	rubiconproject.com	ses9	/	Expiration Time	1333353652122307
+cookies.db	cookie	rubiconproject.com	ses9	/	Last Access Time	1333288476122307
+cookies.db	cookie	scorecardresearch.com	UID	/	Creation Time	1332380782042101
+cookies.db	cookie	scorecardresearch.com	UID	/	Expiration Time	1394588761000000
+cookies.db	cookie	scorecardresearch.com	UID	/	Last Access Time	1333720537901445
+cookies.db	cookie	scorecardresearch.com	UIDR	/	Creation Time	1332380782042102
+cookies.db	cookie	scorecardresearch.com	UIDR	/	Expiration Time	1394588761000000
+cookies.db	cookie	scorecardresearch.com	UIDR	/	Last Access Time	1333720537901445
+cookies.db	cookie	scorecardresearch.com	evlu	/	Creation Time	1332381296787040
+cookies.db	cookie	scorecardresearch.com	evlu	/	Expiration Time	1335011019000000
+cookies.db	cookie	scorecardresearch.com	evlu	/	Last Access Time	1333720537901445
+cookies.db	cookie	serving-sys.com	A3	/	Creation Time	1333288486719047
+cookies.db	cookie	serving-sys.com	A3	/	Expiration Time	1341050034000000
+cookies.db	cookie	serving-sys.com	A3	/	Last Access Time	1333288486719047
+cookies.db	cookie	serving-sys.com	B4	/	Creation Time	1333288293196303
+cookies.db	cookie	serving-sys.com	B4	/	Expiration Time	1341049840000000
+cookies.db	cookie	serving-sys.com	B4	/	Last Access Time	1333288484801047
+cookies.db	cookie	serving-sys.com	C4	/	Creation Time	1332382124299332
+cookies.db	cookie	serving-sys.com	C4	/	Expiration Time	1340143703000000
+cookies.db	cookie	serving-sys.com	C4	/	Last Access Time	1333288484801047
+cookies.db	cookie	serving-sys.com	D1	/	Creation Time	1332382303977061
+cookies.db	cookie	serving-sys.com	D1	/	Expiration Time	1340143883000000
+cookies.db	cookie	serving-sys.com	D1	/	Last Access Time	1333288484801047
+cookies.db	cookie	serving-sys.com	u2	/	Creation Time	1332382124299333
+cookies.db	cookie	serving-sys.com	u2	/	Expiration Time	1340143703000000
+cookies.db	cookie	serving-sys.com	u2	/	Last Access Time	1333288484801047
+cookies.db	cookie	simpli.fi	uid	/	Creation Time	1332381240217179
+cookies.db	cookie	simpli.fi	uid	/	Expiration Time	1363917219000000
+cookies.db	cookie	simpli.fi	uid	/	Last Access Time	1332381513525135
+cookies.db	cookie	sky.com	anonId	/	Creation Time	1332380803479103
+cookies.db	cookie	sky.com	anonId	/	Expiration Time	1363916784000000
+cookies.db	cookie	sky.com	anonId	/	Last Access Time	1332380803479103
+cookies.db	cookie	sky.com	rsi_segs	/	Creation Time	1332380808884101
+cookies.db	cookie	sky.com	rsi_segs	/	Expiration Time	1334800008000000
+cookies.db	cookie	sky.com	rsi_segs	/	Last Access Time	1332380808884101
+cookies.db	cookie	sky.com	s_nr	/	Creation Time	1332380808828101
+cookies.db	cookie	sky.com	s_nr	/	Expiration Time	1363916808000000
+cookies.db	cookie	sky.com	s_nr	/	Last Access Time	1332380808828101
+cookies.db	cookie	sky.com	s_vi	/	Creation Time	1332380808762101
+cookies.db	cookie	sky.com	s_vi	/	Expiration Time	1490060788000000
+cookies.db	cookie	sky.com	s_vi	/	Last Access Time	1332380808762101
+cookies.db	cookie	skype.com	SC	/	Creation Time	1314310628532313
+cookies.db	cookie	skype.com	SC	/	Expiration Time	1315624624000000
+cookies.db	cookie	skype.com	SC	/	Last Access Time	1314310628532313
+cookies.db	cookie	skype.com	__utma	/	Creation Time	1314310624432313
+cookies.db	cookie	skype.com	__utma	/	Expiration Time	1377382624000000
+cookies.db	cookie	skype.com	__utma	/	Last Access Time	1314310624432313
+cookies.db	cookie	skype.com	__utmb	/	Creation Time	1314310624432314
+cookies.db	cookie	skype.com	__utmb	/	Expiration Time	1314312424000000
+cookies.db	cookie	skype.com	__utmb	/	Last Access Time	1314310624432314
+cookies.db	cookie	skype.com	__utmz	/	Creation Time	1314310624433314
+cookies.db	cookie	skype.com	__utmz	/	Expiration Time	1330078624000000
+cookies.db	cookie	skype.com	__utmz	/	Last Access Time	1314310624433314
+cookies.db	cookie	skype.com	channel	/	Creation Time	1314308622415536
+cookies.db	cookie	skype.com	channel	/	Expiration Time	1322084622000000
+cookies.db	cookie	skype.com	channel	/	Last Access Time	1314310618808313
+cookies.db	cookie	skype.com	gpv_p23	/	Creation Time	1314310624219313
+cookies.db	cookie	skype.com	gpv_p23	/	Expiration Time	1314312424000000
+cookies.db	cookie	skype.com	gpv_p23	/	Last Access Time	1314310624219313
+cookies.db	cookie	skype.com	mbox	/	Creation Time	1314310624054313
+cookies.db	cookie	skype.com	mbox	/	Expiration Time	1316902625000000
+cookies.db	cookie	skype.com	mbox	/	Last Access Time	1314310624054313
+cookies.db	cookie	skype.com	s_nr	/	Creation Time	1314310624217313
+cookies.db	cookie	skype.com	s_nr	/	Expiration Time	1469830624000000
+cookies.db	cookie	skype.com	s_nr	/	Last Access Time	1314310624217313
+cookies.db	cookie	skype.com	s_sv_122_p1	/	Creation Time	1314310626059313
+cookies.db	cookie	skype.com	s_sv_122_p1	/	Expiration Time	1377382626000000
+cookies.db	cookie	skype.com	s_sv_122_p1	/	Last Access Time	1314310626059313
+cookies.db	cookie	skype.com	s_vi	/	Creation Time	1314308622586536
+cookies.db	cookie	skype.com	s_vi	/	Expiration Time	1471988568000000
+cookies.db	cookie	skype.com	s_vi	/	Last Access Time	1314310618808313
+cookies.db	cookie	skype.com	skype_s_vi	/	Creation Time	1314308740963502
+cookies.db	cookie	skype.com	skype_s_vi	/	Expiration Time	1472161486000000
+cookies.db	cookie	skype.com	skype_s_vi	/	Last Access Time	1314310618808313
+cookies.db	cookie	sports.yahoo.com	YWP_VOLUME	/	Creation Time	1333288405630907
+cookies.db	cookie	sports.yahoo.com	YWP_VOLUME	/	Expiration Time	1364824405000000
+cookies.db	cookie	sports.yahoo.com	YWP_VOLUME	/	Last Access Time	1333288405630907
+cookies.db	cookie	sports.yahoo.com	fpc10001467053656	/	Creation Time	1333288407196907
+cookies.db	cookie	sports.yahoo.com	fpc10001467053656	/	Expiration Time	1364824407000000
+cookies.db	cookie	sports.yahoo.com	fpc10001467053656	/	Last Access Time	1333288407196907
+cookies.db	cookie	sports.yahoo.com	fpc1000652015138	/	Creation Time	1333288407424907
+cookies.db	cookie	sports.yahoo.com	fpc1000652015138	/	Expiration Time	1364824407000000
+cookies.db	cookie	sports.yahoo.com	fpc1000652015138	/	Last Access Time	1333288407424907
+cookies.db	cookie	sports.yahoo.com	ysc_nt	/	Creation Time	1333288405221907
+cookies.db	cookie	sports.yahoo.com	ysc_nt	/	Expiration Time	1333299205000000
+cookies.db	cookie	sports.yahoo.com	ysc_nt	/	Last Access Time	1333288405221907
+cookies.db	cookie	sports.yahoo.com	ywadp10001467053656	/	Creation Time	1333288405635907
+cookies.db	cookie	sports.yahoo.com	ywadp10001467053656	/	Expiration Time	1427896405000000
+cookies.db	cookie	sports.yahoo.com	ywadp10001467053656	/	Last Access Time	1333288405635907
+cookies.db	cookie	sports.yahoo.com	ywadp1000652015138	/	Creation Time	1333288406968907
+cookies.db	cookie	sports.yahoo.com	ywadp1000652015138	/	Expiration Time	1427896406000000
+cookies.db	cookie	sports.yahoo.com	ywadp1000652015138	/	Last Access Time	1333288406968907
+cookies.db	cookie	spotxchange.com	partner-0	/	Creation Time	1332381240557179
+cookies.db	cookie	spotxchange.com	partner-0	/	Expiration Time	1342749220000000
+cookies.db	cookie	spotxchange.com	partner-0	/	Last Access Time	1332381240557179
+cookies.db	cookie	statcounter.com	is_unique	/	Creation Time	1332380806847101
+cookies.db	cookie	statcounter.com	is_unique	/	Expiration Time	1490060786000000
+cookies.db	cookie	statcounter.com	is_unique	/	Last Access Time	1332380806847101
+cookies.db	cookie	static.addtoany.com	__utma	/	Creation Time	1313708158788699
+cookies.db	cookie	static.addtoany.com	__utma	/	Expiration Time	1376780158000000
+cookies.db	cookie	static.addtoany.com	__utma	/	Last Access Time	1313708158788699
+cookies.db	cookie	static.addtoany.com	__utmb	/	Creation Time	1313708158788700
+cookies.db	cookie	static.addtoany.com	__utmb	/	Expiration Time	1313709958000000
+cookies.db	cookie	static.addtoany.com	__utmb	/	Last Access Time	1313708158788700
+cookies.db	cookie	static.addtoany.com	__utmz	/	Creation Time	1313708158788702
+cookies.db	cookie	static.addtoany.com	__utmz	/	Expiration Time	1329476158000000
+cookies.db	cookie	static.addtoany.com	__utmz	/	Last Access Time	1313708158788702
+cookies.db	cookie	tacoda.at.atwola.com	ANRTT	/	Creation Time	1333720538393446
+cookies.db	cookie	tacoda.at.atwola.com	ANRTT	/	Expiration Time	1334325331000000
+cookies.db	cookie	tacoda.at.atwola.com	ANRTT	/	Last Access Time	1333720538393446
+cookies.db	cookie	tacoda.at.atwola.com	N	/	Creation Time	1333720538393449
+cookies.db	cookie	tacoda.at.atwola.com	N	/	Expiration Time	1364824531000000
+cookies.db	cookie	tacoda.at.atwola.com	N	/	Last Access Time	1333720538393449
+cookies.db	cookie	tacoda.at.atwola.com	TData	/	Creation Time	1333720538393448
+cookies.db	cookie	tacoda.at.atwola.com	TData	/	Expiration Time	1364824531000000
+cookies.db	cookie	tacoda.at.atwola.com	TData	/	Last Access Time	1333720538393448
+cookies.db	cookie	tacoda.at.atwola.com	Tsid	/	Creation Time	1333720538393447
+cookies.db	cookie	tacoda.at.atwola.com	Tsid	/	Expiration Time	1333720711000000
+cookies.db	cookie	tacoda.at.atwola.com	Tsid	/	Last Access Time	1333720538393447
+cookies.db	cookie	tacoda.at.atwola.com	bkids	/	Creation Time	1333720538393451
+cookies.db	cookie	tacoda.at.atwola.com	bkids	/	Expiration Time	1336312531000000
+cookies.db	cookie	tacoda.at.atwola.com	bkids	/	Last Access Time	1333720538393451
+cookies.db	cookie	tag.admeld.com	D41U	/	Creation Time	1332381489727703
+cookies.db	cookie	tag.admeld.com	D41U	/	Expiration Time	1334800668000000
+cookies.db	cookie	tag.admeld.com	D41U	/	Last Access Time	1333288265900214
+cookies.db	cookie	tag.admeld.com	meld_sess	/	Creation Time	1314308953160565
+cookies.db	cookie	tag.admeld.com	meld_sess	/	Expiration Time	1345844899000000
+cookies.db	cookie	tag.admeld.com	meld_sess	/	Last Access Time	1333288265900214
+cookies.db	cookie	tap.rubiconproject.com	dq	/	Creation Time	1333288479227674
+cookies.db	cookie	tap.rubiconproject.com	dq	/	Expiration Time	1364824426000000
+cookies.db	cookie	tap.rubiconproject.com	dq	/	Last Access Time	1333288479227674
+cookies.db	cookie	tap2-cdn.rubiconproject.com	pux	/	Creation Time	1333288476263036
+cookies.db	cookie	tap2-cdn.rubiconproject.com	pux	/	Expiration Time	1341064476000000
+cookies.db	cookie	tap2-cdn.rubiconproject.com	pux	/	Last Access Time	1333288476263036
+cookies.db	cookie	teracent.net	imp	/tase	Creation Time	1332380885685821
+cookies.db	cookie	teracent.net	imp	/tase	Expiration Time	1347932865000000
+cookies.db	cookie	teracent.net	imp	/tase	Last Access Time	1332380885685821
+cookies.db	cookie	teracent.net	uid	/tase	Creation Time	1332380885638821
+cookies.db	cookie	teracent.net	uid	/tase	Expiration Time	1347932865000000
+cookies.db	cookie	teracent.net	uid	/tase	Last Access Time	1332380885638821
+cookies.db	cookie	theleagueofheroes.yuku.com	__utma	/	Creation Time	1333288292350303
+cookies.db	cookie	theleagueofheroes.yuku.com	__utma	/	Expiration Time	1396360292000000
+cookies.db	cookie	theleagueofheroes.yuku.com	__utma	/	Last Access Time	1333288292350303
+cookies.db	cookie	theleagueofheroes.yuku.com	__utmb	/	Creation Time	1333288292351303
+cookies.db	cookie	theleagueofheroes.yuku.com	__utmb	/	Expiration Time	1333290092000000
+cookies.db	cookie	theleagueofheroes.yuku.com	__utmb	/	Last Access Time	1333288292351303
+cookies.db	cookie	theleagueofheroes.yuku.com	__utmz	/	Creation Time	1333288292351305
+cookies.db	cookie	theleagueofheroes.yuku.com	__utmz	/	Expiration Time	1349056292000000
+cookies.db	cookie	theleagueofheroes.yuku.com	__utmz	/	Last Access Time	1333288292351305
+cookies.db	cookie	thisnext.com	__gads	/	Creation Time	1333288312935817
+cookies.db	cookie	thisnext.com	__gads	/	Expiration Time	1396360259000000
+cookies.db	cookie	thisnext.com	__gads	/	Last Access Time	1333288312935817
+cookies.db	cookie	thisnext.com	__utma	/	Creation Time	1333288316114817
+cookies.db	cookie	thisnext.com	__utma	/	Expiration Time	1396360316000000
+cookies.db	cookie	thisnext.com	__utma	/	Last Access Time	1333288316114817
+cookies.db	cookie	thisnext.com	__utmb	/	Creation Time	1333288316115817
+cookies.db	cookie	thisnext.com	__utmb	/	Expiration Time	1333290116000000
+cookies.db	cookie	thisnext.com	__utmb	/	Last Access Time	1333288316115817
+cookies.db	cookie	thisnext.com	__utmz	/	Creation Time	1333288316116817
+cookies.db	cookie	thisnext.com	__utmz	/	Expiration Time	1349056316000000
+cookies.db	cookie	thisnext.com	__utmz	/	Last Access Time	1333288316116817
+cookies.db	cookie	tinyurl.com	tinyUUID	/	Creation Time	1332380809333101
+cookies.db	cookie	tinyurl.com	tinyUUID	/	Expiration Time	1363916788000000
+cookies.db	cookie	tinyurl.com	tinyUUID	/	Last Access Time	1332380809333101
+cookies.db	cookie	tools.google.com	__utma	/chrome/intl/en/	Creation Time	1313417982318795
+cookies.db	cookie	tools.google.com	__utma	/chrome/intl/en/	Expiration Time	1376489982000000
+cookies.db	cookie	tools.google.com	__utma	/chrome/intl/en/	Last Access Time	1313417982318795
+cookies.db	cookie	tribalfusion.com	ANON_ID	/	Creation Time	1333288267413580
+cookies.db	cookie	tribalfusion.com	ANON_ID	/	Expiration Time	1341064214000000
+cookies.db	cookie	tribalfusion.com	ANON_ID	/	Last Access Time	1333288267413580
+cookies.db	cookie	triggit.com	trgu	/	Creation Time	1314308952691565
+cookies.db	cookie	triggit.com	trgu	/	Expiration Time	1472083200000000
+cookies.db	cookie	triggit.com	trgu	/	Last Access Time	1332381526332644
+cookies.db	cookie	tubemogul.com	_tmid	/	Creation Time	1332381519283135
+cookies.db	cookie	tubemogul.com	_tmid	/	Expiration Time	1363917498000000
+cookies.db	cookie	tubemogul.com	_tmid	/	Last Access Time	1332381519283135
+cookies.db	cookie	tumblr.com	__qca	/	Creation Time	1332381328541923
+cookies.db	cookie	tumblr.com	__qca	/	Expiration Time	1490061328000000
+cookies.db	cookie	tumblr.com	__qca	/	Last Access Time	1333287109565353
+cookies.db	cookie	turn.com	fc	/	Creation Time	1332381239795183
+cookies.db	cookie	turn.com	fc	/	Expiration Time	1347933219000000
+cookies.db	cookie	turn.com	fc	/	Last Access Time	1333288262864382
+cookies.db	cookie	turn.com	rds	/	Creation Time	1333288266844444
+cookies.db	cookie	turn.com	rds	/	Expiration Time	1348840266000000
+cookies.db	cookie	turn.com	rds	/	Last Access Time	1333288266844444
+cookies.db	cookie	turn.com	rrs	/	Creation Time	1333288266844443
+cookies.db	cookie	turn.com	rrs	/	Expiration Time	1348840266000000
+cookies.db	cookie	turn.com	rrs	/	Last Access Time	1333288266844443
+cookies.db	cookie	turn.com	rv	/	Creation Time	1333288266846443
+cookies.db	cookie	turn.com	rv	/	Expiration Time	1348840266000000
+cookies.db	cookie	turn.com	rv	/	Last Access Time	1333288266846443
+cookies.db	cookie	turn.com	uid	/	Creation Time	1333288266614443
+cookies.db	cookie	turn.com	uid	/	Expiration Time	1348840213000000
+cookies.db	cookie	turn.com	uid	/	Last Access Time	1333288266614443
+cookies.db	cookie	twitter.com	__utma	/	Creation Time	1314564081094855
+cookies.db	cookie	twitter.com	__utma	/	Expiration Time	1377636081000000
+cookies.db	cookie	twitter.com	__utma	/	Last Access Time	1333718727275309
+cookies.db	cookie	twitter.com	auth_token	/	Creation Time	1314564075147921
+cookies.db	cookie	twitter.com	auth_token	/	Expiration Time	1945716049000000
+cookies.db	cookie	twitter.com	auth_token	/	Last Access Time	1333718727275309
+cookies.db	cookie	twitter.com	guest_id	/	Creation Time	1313708215901781
+cookies.db	cookie	twitter.com	guest_id	/	Expiration Time	1376822035000000
+cookies.db	cookie	twitter.com	guest_id	/	Last Access Time	1333718727275309
+cookies.db	cookie	twitter.com	pid	/	Creation Time	1333718727729309
+cookies.db	cookie	twitter.com	pid	/	Expiration Time	1396790721000000
+cookies.db	cookie	twitter.com	pid	/	Last Access Time	1333718727729309
+cookies.db	cookie	twitter.com	twll	/	Creation Time	1314564075147923
+cookies.db	cookie	twitter.com	twll	/	Expiration Time	1630140049000000
+cookies.db	cookie	twitter.com	twll	/	Last Access Time	1333718727275309
+cookies.db	cookie	undertone.com	A28X	/	Creation Time	1332381514805135
+cookies.db	cookie	undertone.com	A28X	/	Expiration Time	1334800693000000
+cookies.db	cookie	undertone.com	A28X	/	Last Access Time	1332381574883301
+cookies.db	cookie	upressonline.com	__utma	/	Creation Time	1332380910386821
+cookies.db	cookie	upressonline.com	__utma	/	Expiration Time	1395452910000000
+cookies.db	cookie	upressonline.com	__utma	/	Last Access Time	1332380910386821
+cookies.db	cookie	upressonline.com	__utmb	/	Creation Time	1332380910387821
+cookies.db	cookie	upressonline.com	__utmb	/	Expiration Time	1332382710000000
+cookies.db	cookie	upressonline.com	__utmb	/	Last Access Time	1332380910387821
+cookies.db	cookie	upressonline.com	__utmz	/	Creation Time	1332380910389821
+cookies.db	cookie	upressonline.com	__utmz	/	Expiration Time	1348148910000000
+cookies.db	cookie	upressonline.com	__utmz	/	Last Access Time	1332380910389821
+cookies.db	cookie	viglink.com	vglnk.Agent.p	/	Creation Time	1333288262504382
+cookies.db	cookie	viglink.com	vglnk.Agent.p	/	Expiration Time	1648648209000000
+cookies.db	cookie	viglink.com	vglnk.Agent.p	/	Last Access Time	1333288262504382
+cookies.db	cookie	visiblemeasures.com	uid	/	Creation Time	1333288012472913
+cookies.db	cookie	visiblemeasures.com	uid	/	Expiration Time	1364823959000000
+cookies.db	cookie	visiblemeasures.com	uid	/	Last Access Time	1333288012472913
+cookies.db	cookie	visualdna.com	vdnaSessionId	/	Creation Time	1332381516772136
+cookies.db	cookie	visualdna.com	vdnaSessionId	/	Expiration Time	1332388696000000
+cookies.db	cookie	visualdna.com	vdnaSessionId	/	Last Access Time	1332381516772136
+cookies.db	cookie	visualdna.com	vdnaWidgetMC	/	Creation Time	1332381516772135
+cookies.db	cookie	visualdna.com	vdnaWidgetMC	/	Expiration Time	1647741496000000
+cookies.db	cookie	visualdna.com	vdnaWidgetMC	/	Last Access Time	1332381516772135
+cookies.db	cookie	vizu.com	VZ_anonID	/	Creation Time	1332381516166135
+cookies.db	cookie	vizu.com	VZ_anonID	/	Expiration Time	2278461495000000
+cookies.db	cookie	vizu.com	VZ_anonID	/	Last Access Time	1332381584200639
+cookies.db	cookie	vizu.com	ptc	/	Creation Time	1332381584779933
+cookies.db	cookie	vizu.com	ptc	/	Expiration Time	1363917584000000
+cookies.db	cookie	vizu.com	ptc	/	Last Access Time	1332381584779933
+cookies.db	cookie	vizu.com	wtc	/	Creation Time	1332381584769933
+cookies.db	cookie	vizu.com	wtc	/	Expiration Time	1363917584000000
+cookies.db	cookie	vizu.com	wtc	/	Last Access Time	1332381584769933
+cookies.db	cookie	voicefive.com	UID	/	Creation Time	1332381317035923
+cookies.db	cookie	voicefive.com	UID	/	Expiration Time	1394589296000000
+cookies.db	cookie	voicefive.com	UID	/	Last Access Time	1333287830064931
+cookies.db	cookie	voicefive.com	UIDR	/	Creation Time	1332381317035924
+cookies.db	cookie	voicefive.com	UIDR	/	Expiration Time	1394589296000000
+cookies.db	cookie	voicefive.com	UIDR	/	Last Access Time	1333287830064931
+cookies.db	cookie	voicefive.com	ar_p133917183	/	Creation Time	1332381316907923
+cookies.db	cookie	voicefive.com	ar_p133917183	/	Expiration Time	1340157296000000
+cookies.db	cookie	voicefive.com	ar_p133917183	/	Last Access Time	1333287830064931
+cookies.db	cookie	voicefive.com	ar_s_p133917183	/	Creation Time	1332381327088923
+cookies.db	cookie	voicefive.com	ar_s_p133917183	/	Expiration Time	1334973306000000
+cookies.db	cookie	voicefive.com	ar_s_p133917183	/	Last Access Time	1333287830064931
+cookies.db	cookie	w55c.net	matchaccuen	/	Creation Time	1332380809324101
+cookies.db	cookie	w55c.net	matchaccuen	/	Expiration Time	1334972809000000
+cookies.db	cookie	w55c.net	matchaccuen	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	matchadbrite	/	Creation Time	1332380809357103
+cookies.db	cookie	w55c.net	matchadbrite	/	Expiration Time	1334972809000000
+cookies.db	cookie	w55c.net	matchadbrite	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	matchadmeld	/	Creation Time	1332381490352703
+cookies.db	cookie	w55c.net	matchadmeld	/	Expiration Time	1334973490000000
+cookies.db	cookie	w55c.net	matchadmeld	/	Last Access Time	1332381490352703
+cookies.db	cookie	w55c.net	matchbluekai	/	Creation Time	1332380809323101
+cookies.db	cookie	w55c.net	matchbluekai	/	Expiration Time	1334972809000000
+cookies.db	cookie	w55c.net	matchbluekai	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	matchgoogle	/	Creation Time	1332380809511101
+cookies.db	cookie	w55c.net	matchgoogle	/	Expiration Time	1334972809000000
+cookies.db	cookie	w55c.net	matchgoogle	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	matchrubicon	/	Creation Time	1332380809324102
+cookies.db	cookie	w55c.net	matchrubicon	/	Expiration Time	1334972809000000
+cookies.db	cookie	w55c.net	matchrubicon	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	matchspotx	/	Creation Time	1332380809511102
+cookies.db	cookie	w55c.net	matchspotx	/	Expiration Time	1334972809000000
+cookies.db	cookie	w55c.net	matchspotx	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	matchtargus	/	Creation Time	1332380809357102
+cookies.db	cookie	w55c.net	matchtargus	/	Expiration Time	1333244809000000
+cookies.db	cookie	w55c.net	matchtargus	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	matchturl	/	Creation Time	1332380809357101
+cookies.db	cookie	w55c.net	matchturl	/	Expiration Time	1334972809000000
+cookies.db	cookie	w55c.net	matchturl	/	Last Access Time	1332381490133703
+cookies.db	cookie	w55c.net	wfivefivec	/	Creation Time	1332381505324754
+cookies.db	cookie	w55c.net	wfivefivec	/	Expiration Time	1395453484000000
+cookies.db	cookie	w55c.net	wfivefivec	/	Last Access Time	1332381505324754
+cookies.db	cookie	wtp101.com	tuuid	/	Creation Time	1332383205457791
+cookies.db	cookie	wtp101.com	tuuid	/	Expiration Time	1395455184000000
+cookies.db	cookie	wtp101.com	tuuid	/	Last Access Time	1332383205457791
+cookies.db	cookie	www.cnn.com	tnr:usrvtstg01	/	Creation Time	1333718700614654
+cookies.db	cookie	www.cnn.com	tnr:usrvtstg01	/	Expiration Time	1506518700000000
+cookies.db	cookie	www.cnn.com	tnr:usrvtstg01	/	Last Access Time	1333718700614654
+cookies.db	cookie	www.cnn.com	ug	/	Creation Time	1333718700490654
+cookies.db	cookie	www.cnn.com	ug	/	Expiration Time	1365254700000000
+cookies.db	cookie	www.cnn.com	ug	/	Last Access Time	1333718700490654
+cookies.db	cookie	www.cnn.com	ugs	/	Creation Time	1333718700490655
+cookies.db	cookie	www.cnn.com	ugs	/	Expiration Time	1333812300000000
+cookies.db	cookie	www.cnn.com	ugs	/	Last Access Time	1333718700490655
+cookies.db	cookie	www.linkedin.com	NSC_MC_QH_MFP	/	Creation Time	1314309042154634
+cookies.db	cookie	www.linkedin.com	NSC_MC_QH_MFP	/	Expiration Time	1314310932000000
+cookies.db	cookie	www.linkedin.com	NSC_MC_QH_MFP	/	Last Access Time	1314309042154634
+cookies.db	cookie	www.linkedin.com	NSC_MC_WT_DTQ_IUUQ	/	Creation Time	1314309033619367
+cookies.db	cookie	www.linkedin.com	NSC_MC_WT_DTQ_IUUQ	/	Expiration Time	1314310023000000
+cookies.db	cookie	www.linkedin.com	NSC_MC_WT_DTQ_IUUQ	/	Last Access Time	1314309033619367
+cookies.db	cookie	www.linkedin.com	NSC_MC_WT_FU_IUUQ	/	Creation Time	1314308641651995
+cookies.db	cookie	www.linkedin.com	NSC_MC_WT_FU_IUUQ	/	Expiration Time	1314310531000000
+cookies.db	cookie	www.linkedin.com	NSC_MC_WT_FU_IUUQ	/	Last Access Time	1314308991390872
+cookies.db	cookie	www.linkedin.com	leo_auth_token	/	Creation Time	1314308900792703
+cookies.db	cookie	www.linkedin.com	leo_auth_token	/	Expiration Time	1322084899792703
+cookies.db	cookie	www.linkedin.com	leo_auth_token	/	Last Access Time	1314309027292367
+cookies.db	cookie	www.linkedin.com	visit	/	Creation Time	1314308810398867
+cookies.db	cookie	www.linkedin.com	visit	/	Expiration Time	3461792402000000
+cookies.db	cookie	www.linkedin.com	visit	/	Last Access Time	1314309012136020
+cookies.db	cookie	www.oncampusweb.com	OAID	/	Creation Time	1332380909076821
+cookies.db	cookie	www.oncampusweb.com	OAID	/	Expiration Time	1363916888000000
+cookies.db	cookie	www.oncampusweb.com	OAID	/	Last Access Time	1332380909076821
+cookies.db	cookie	www.thisnext.com	browser	/	Creation Time	1333288311609817
+cookies.db	cookie	www.thisnext.com	browser	/	Expiration Time	1648648258000000
+cookies.db	cookie	www.thisnext.com	browser	/	Last Access Time	1333288311609817
+cookies.db	cookie	www.ugdturner.com	ug1	/	Creation Time	1332380840336022
+cookies.db	cookie	www.ugdturner.com	ug1	/	Expiration Time	1490060818000000
+cookies.db	cookie	www.ugdturner.com	ug1	/	Last Access Time	1333718699522472
+cookies.db	cookie	xgraph.net	_mpush	/	Creation Time	1313708218493781
+cookies.db	cookie	xgraph.net	_mpush	/	Expiration Time	1313794561000000
+cookies.db	cookie	xgraph.net	_mpush	/	Last Access Time	1313708218493781
+cookies.db	cookie	xgraph.net	_xgcid	/	Creation Time	1313708217955781
+cookies.db	cookie	xgraph.net	_xgcid	/	Expiration Time	1408316160000000
+cookies.db	cookie	xgraph.net	_xgcid	/	Last Access Time	1313708217955781
+cookies.db	cookie	xgraph.net	_xguid	/	Creation Time	1313708217955782
+cookies.db	cookie	xgraph.net	_xguid	/	Expiration Time	1408316160000000
+cookies.db	cookie	xgraph.net	_xguid	/	Last Access Time	1313708217955782
+cookies.db	cookie	yabuka.com	tc	/	Creation Time	1332381401032248
+cookies.db	cookie	yabuka.com	tc	/	Expiration Time	1332795380000000
+cookies.db	cookie	yabuka.com	tc	/	Last Access Time	1332381401032248
+cookies.db	cookie	yadro.ru	VID	/	Creation Time	1333288350379208
+cookies.db	cookie	yadro.ru	VID	/	Expiration Time	1364760000000000
+cookies.db	cookie	yadro.ru	VID	/	Last Access Time	1333288350379208
+cookies.db	cookie	yahoo.com	B	/	Creation Time	1332380791577101
+cookies.db	cookie	yahoo.com	B	/	Expiration Time	1395604800000000
+cookies.db	cookie	yahoo.com	B	/	Last Access Time	1333288474504456
+cookies.db	cookie	yahoo.com	adxf	/	Creation Time	1333288405276907
+cookies.db	cookie	yahoo.com	adxf	/	Expiration Time	1451520000000000
+cookies.db	cookie	yahoo.com	adxf	/	Last Access Time	1333288474504456
+cookies.db	cookie	yahoo.com	adxid	/	Creation Time	1333288405276908
+cookies.db	cookie	yahoo.com	adxid	/	Expiration Time	1451520000000000
+cookies.db	cookie	yahoo.com	adxid	/	Last Access Time	1333288474504456
+cookies.db	cookie	youtube.com	PREF	/	Creation Time	1332380911244821
+cookies.db	cookie	youtube.com	PREF	/	Expiration Time	1332985711000000
+cookies.db	cookie	youtube.com	PREF	/	Last Access Time	1332380911244821
+cookies.db	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Creation Time	1332380909314822
+cookies.db	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Expiration Time	1353116888000000
+cookies.db	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Last Access Time	1332380909314822
+cookies.db	cookie	yuku.com	YUG	/	Creation Time	1333288258829384
+cookies.db	cookie	yuku.com	YUG	/	Expiration Time	1343288204000000
+cookies.db	cookie	yuku.com	YUG	/	Last Access Time	1333288258829384
+cookies.db	cookie	yuku.com	__gads	/	Creation Time	1333288260774382
+cookies.db	cookie	yuku.com	__gads	/	Expiration Time	1396360207000000
+cookies.db	cookie	yuku.com	__gads	/	Last Access Time	1333288260774382
+cookies.db	cookie	yuku.com	__qca	/	Creation Time	1333288261890382
+cookies.db	cookie	yuku.com	__qca	/	Expiration Time	1490968261000000
+cookies.db	cookie	yuku.com	__qca	/	Last Access Time	1333288261890382
+cookies.db	cookie	zedo.com	FFad	/	Creation Time	1333718705462655
+cookies.db	cookie	zedo.com	FFad	/	Expiration Time	1333774800000000
+cookies.db	cookie	zedo.com	FFad	/	Last Access Time	1333718705462655
+cookies.db	cookie	zedo.com	FFcat	/	Creation Time	1333718705462654
+cookies.db	cookie	zedo.com	FFcat	/	Expiration Time	1333774800000000
+cookies.db	cookie	zedo.com	FFcat	/	Last Access Time	1333718705462654
+cookies.db	cookie	zedo.com	FFgeo	/	Creation Time	1333718705216654
+cookies.db	cookie	zedo.com	FFgeo	/	Expiration Time	1365254698000000
+cookies.db	cookie	zedo.com	FFgeo	/	Last Access Time	1333718705216654
+cookies.db	cookie	zedo.com	PI	/	Creation Time	1332380809570101
+cookies.db	cookie	zedo.com	PI	/	Expiration Time	1334972809000000
+cookies.db	cookie	zedo.com	PI	/	Last Access Time	1333718704161654
+cookies.db	cookie	zedo.com	ZEDOIDA	/	Creation Time	1332380783326104
+cookies.db	cookie	zedo.com	ZEDOIDA	/	Expiration Time	1647740762000000
+cookies.db	cookie	zedo.com	ZEDOIDA	/	Last Access Time	1333718704161654
+cookies.db	cookie	zedo.com	ZEDOIDX	/	Creation Time	1332380783431101
+cookies.db	cookie	zedo.com	ZEDOIDX	/	Expiration Time	1334972762000000
+cookies.db	cookie	zedo.com	ZEDOIDX	/	Last Access Time	1333718704161654
+cookies.db	cookie	zedo.com	__qca	/	Creation Time	1332380809774101
+cookies.db	cookie	zedo.com	__qca	/	Expiration Time	1490060809000000
+cookies.db	cookie	zedo.com	__qca	/	Last Access Time	1333718704161654
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	WMF-DP	/	Creation Time	1683302444841666
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	WMF-DP	/	Expiration Time	1683331200000000
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	WMF-DP	/	Last Access Time	1683302444841666
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	WMF-Last-Access	/	Creation Time	1683302444811189
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	WMF-Last-Access	/	Expiration Time	1686052800000000
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	WMF-Last-Access	/	Last Access Time	1683302444811189
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	enwikiwmE-sessionTickLastTickTime	/	Creation Time	1683302445447194
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	enwikiwmE-sessionTickLastTickTime	/	Expiration Time	1685894445000000
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	enwikiwmE-sessionTickLastTickTime	/	Last Access Time	1683302445447194
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	enwikiwmE-sessionTickTickCount	/	Creation Time	1683302445447894
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	enwikiwmE-sessionTickTickCount	/	Expiration Time	1685894445000000
+firefox_10_cookies.sqlite	cookie	en.wikipedia.org	enwikiwmE-sessionTickTickCount	/	Last Access Time	1683302445448173
+firefox_10_cookies.sqlite	cookie	login.wikimedia.org	WMF-Last-Access	/	Creation Time	1683302445387295
+firefox_10_cookies.sqlite	cookie	login.wikimedia.org	WMF-Last-Access	/	Expiration Time	1686052800000000
+firefox_10_cookies.sqlite	cookie	login.wikimedia.org	WMF-Last-Access	/	Last Access Time	1683302445387295
+firefox_10_cookies.sqlite	cookie	wikipedia.org	WMF-Last-Access-Global	/	Creation Time	1683302441098256
+firefox_10_cookies.sqlite	cookie	wikipedia.org	WMF-Last-Access-Global	/	Expiration Time	1686052800000000
+firefox_10_cookies.sqlite	cookie	wikipedia.org	WMF-Last-Access-Global	/	Last Access Time	1683302441098256
+firefox_10_cookies.sqlite	cookie	www.wikipedia.org	WMF-Last-Access	/	Creation Time	1683302441097909
+firefox_10_cookies.sqlite	cookie	www.wikipedia.org	WMF-Last-Access	/	Expiration Time	1686052800000000
+firefox_10_cookies.sqlite	cookie	www.wikipedia.org	WMF-Last-Access	/	Last Access Time	1683302441097909
+firefox_10_cookies.sqlite	cookie	youtube.com	GPS	/	Creation Time	1683302437805438
+firefox_10_cookies.sqlite	cookie	youtube.com	GPS	/	Expiration Time	1683304237000000
+firefox_10_cookies.sqlite	cookie	youtube.com	GPS	/	Last Access Time	1683302437805438
+firefox_10_cookies.sqlite	cookie	youtube.com	PREF	/	Creation Time	1683302440561329
+firefox_10_cookies.sqlite	cookie	youtube.com	PREF	/	Expiration Time	1746374448000000
+firefox_10_cookies.sqlite	cookie	youtube.com	PREF	/	Last Access Time	1683302448981164
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-15hnjrt	/	Creation Time	1683302451771563
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-15hnjrt	/	Expiration Time	1683302456000000
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-15hnjrt	/	Last Access Time	1683302451771563
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-1tzw2b8	/	Creation Time	1683302451807884
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-1tzw2b8	/	Expiration Time	1683302456000000
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-1tzw2b8	/	Last Access Time	1683302451933996
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-oby3rm	/	Creation Time	1683302448926498
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-oby3rm	/	Expiration Time	1683302453000000
+firefox_10_cookies.sqlite	cookie	youtube.com	ST-oby3rm	/	Last Access Time	1683302448926498
+firefox_10_cookies.sqlite	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Creation Time	1683302437806132
+firefox_10_cookies.sqlite	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Expiration Time	1698854437000000
+firefox_10_cookies.sqlite	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Last Access Time	1683302437806132
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	tuuid	/	Creation Time	1383170164735175
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	tuuid	/	Expiration Time	1446242164000000
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	tuuid	/	Last Access Time	1383170164813059
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	um	/	Creation Time	1383170164813274
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	um	/	Expiration Time	1446242164000000
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	um	/	Last Access Time	1383170164813274
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	umeh	/	Creation Time	1383170164813406
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	umeh	/	Expiration Time	1446242164000000
+firefox_2_cookies.sqlite	cookie	ad.360yield.com	umeh	/	Last Access Time	1383170164813406
+firefox_2_cookies.sqlite	cookie	adform.net	GCM	/	Creation Time	1383170164516613
+firefox_2_cookies.sqlite	cookie	adform.net	GCM	/	Expiration Time	1383256564000000
+firefox_2_cookies.sqlite	cookie	adform.net	GCM	/	Last Access Time	1383170164516613
+firefox_2_cookies.sqlite	cookie	adform.net	TPC	/	Creation Time	1383170141146036
+firefox_2_cookies.sqlite	cookie	adform.net	TPC	/	Expiration Time	1385762141000000
+firefox_2_cookies.sqlite	cookie	adform.net	TPC	/	Last Access Time	1383170141146036
+firefox_2_cookies.sqlite	cookie	adform.net	uid	/	Creation Time	1383170140281698
+firefox_2_cookies.sqlite	cookie	adform.net	uid	/	Expiration Time	1388354177000000
+firefox_2_cookies.sqlite	cookie	adform.net	uid	/	Last Access Time	1383170177851916
+firefox_2_cookies.sqlite	cookie	adformdsp.net	uid	/	Creation Time	1383170140789958
+firefox_2_cookies.sqlite	cookie	adformdsp.net	uid	/	Expiration Time	1388354140000000
+firefox_2_cookies.sqlite	cookie	adformdsp.net	uid	/	Last Access Time	1383170140789958
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utma	/	Creation Time	1383170166311835
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utma	/	Expiration Time	1446242166000000
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utma	/	Last Access Time	1383170166321866
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utmb	/	Creation Time	1383170166313132
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utmb	/	Expiration Time	1383171966000000
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utmb	/	Last Access Time	1383170166322225
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utmz	/	Creation Time	1383170166315365
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utmz	/	Expiration Time	1398938166000000
+firefox_2_cookies.sqlite	cookie	ads.aha.is	__utmz	/	Last Access Time	1383170166323035
+firefox_2_cookies.sqlite	cookie	adscale.de	uu	/	Creation Time	1383170165032489
+firefox_2_cookies.sqlite	cookie	adscale.de	uu	/	Expiration Time	1414506164000000
+firefox_2_cookies.sqlite	cookie	adscale.de	uu	/	Last Access Time	1383170165032489
+firefox_2_cookies.sqlite	cookie	adtech.de	JEB2	/	Creation Time	1383170165157281
+firefox_2_cookies.sqlite	cookie	adtech.de	JEB2	/	Expiration Time	1446242164000000
+firefox_2_cookies.sqlite	cookie	adtech.de	JEB2	/	Last Access Time	1383170165157281
+firefox_2_cookies.sqlite	cookie	atemda.com	UM1	/	Creation Time	1383170166058029
+firefox_2_cookies.sqlite	cookie	atemda.com	UM1	/	Expiration Time	1388354166000000
+firefox_2_cookies.sqlite	cookie	atemda.com	UM1	/	Last Access Time	1383170166058029
+firefox_2_cookies.sqlite	cookie	atemda.com	vi	/	Creation Time	1383170166058218
+firefox_2_cookies.sqlite	cookie	atemda.com	vi	/	Expiration Time	1388354166000000
+firefox_2_cookies.sqlite	cookie	atemda.com	vi	/	Last Access Time	1383170166058218
+firefox_2_cookies.sqlite	cookie	code.google.com	__utma	/	Creation Time	1383170231640790
+firefox_2_cookies.sqlite	cookie	code.google.com	__utma	/	Expiration Time	1446242260000000
+firefox_2_cookies.sqlite	cookie	code.google.com	__utma	/	Last Access Time	1383170260809839
+firefox_2_cookies.sqlite	cookie	code.google.com	__utmb	/	Creation Time	1383170231641585
+firefox_2_cookies.sqlite	cookie	code.google.com	__utmb	/	Expiration Time	1383172060000000
+firefox_2_cookies.sqlite	cookie	code.google.com	__utmb	/	Last Access Time	1383170260810155
+firefox_2_cookies.sqlite	cookie	code.google.com	__utmz	/	Creation Time	1383170231642997
+firefox_2_cookies.sqlite	cookie	code.google.com	__utmz	/	Expiration Time	1398938260000000
+firefox_2_cookies.sqlite	cookie	code.google.com	__utmz	/	Last Access Time	1383170260810857
+firefox_2_cookies.sqlite	cookie	criteo.com	eid	/	Creation Time	1383170164858780
+firefox_2_cookies.sqlite	cookie	criteo.com	eid	/	Expiration Time	1398891364000000
+firefox_2_cookies.sqlite	cookie	criteo.com	eid	/	Last Access Time	1383170164858780
+firefox_2_cookies.sqlite	cookie	criteo.com	uid	/	Creation Time	1383170164858445
+firefox_2_cookies.sqlite	cookie	criteo.com	uid	/	Expiration Time	1414706164000000
+firefox_2_cookies.sqlite	cookie	criteo.com	uid	/	Last Access Time	1383170164858637
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFV2WILa7fQernrFA7qoJ2hYSl7KPpTp2ArkF_ADOGHDoJkf_T98KbOE_4K-WvPqqLEOyU5ou855DbCy8spo3E0jspuDW	Creation Time	1383170288250594
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFV2WILa7fQernrFA7qoJ2hYSl7KPpTp2ArkF_ADOGHDoJkf_T98KbOE_4K-WvPqqLEOyU5ou855DbCy8spo3E0jspuDW	Expiration Time	1383171188000000
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFV2WILa7fQernrFA7qoJ2hYSl7KPpTp2ArkF_ADOGHDoJkf_T98KbOE_4K-WvPqqLEOyU5ou855DbCy8spo3E0jspuDW	Last Access Time	1383170288250594
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFXMBjczWytZr76oI_IYcr9prEZ785wGaBSqVSCjMDyg4T3jlOae5PH22hTzO7RJCnCnfBF7m5lXAEdyHdRyInhdLLL4T	Creation Time	1383170346729312
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFXMBjczWytZr76oI_IYcr9prEZ785wGaBSqVSCjMDyg4T3jlOae5PH22hTzO7RJCnCnfBF7m5lXAEdyHdRyInhdLLL4T	Expiration Time	1383171246000000
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFXMBjczWytZr76oI_IYcr9prEZ785wGaBSqVSCjMDyg4T3jlOae5PH22hTzO7RJCnCnfBF7m5lXAEdyHdRyInhdLLL4T	Last Access Time	1383170346729312
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFXhVVbUFYynkBxsEFawddUqQOGC-1BHfe6ImANqt-y1Wlwt9_RCN2U2RgN4Vy0UDmoWjVNglP_xL39Hiy1HtUr2wXOSW	Creation Time	1383170342841341
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFXhVVbUFYynkBxsEFawddUqQOGC-1BHfe6ImANqt-y1Wlwt9_RCN2U2RgN4Vy0UDmoWjVNglP_xL39Hiy1HtUr2wXOSW	Expiration Time	1383171242000000
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFXhVVbUFYynkBxsEFawddUqQOGC-1BHfe6ImANqt-y1Wlwt9_RCN2U2RgN4Vy0UDmoWjVNglP_xL39Hiy1HtUr2wXOSW	Last Access Time	1383170342841341
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFbJ3PrLgGQ0_9S6BeDUDe4kR_Um9Wkx7-HMV5T0sapHaMS_5OmrQkFHYmBezPnAi2GUIIa9X_gAv3VSE3I4HmAaJo3Jf	Creation Time	1383170321489779
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFbJ3PrLgGQ0_9S6BeDUDe4kR_Um9Wkx7-HMV5T0sapHaMS_5OmrQkFHYmBezPnAi2GUIIa9X_gAv3VSE3I4HmAaJo3Jf	Expiration Time	1383171221000000
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFbJ3PrLgGQ0_9S6BeDUDe4kR_Um9Wkx7-HMV5T0sapHaMS_5OmrQkFHYmBezPnAi2GUIIa9X_gAv3VSE3I4HmAaJo3Jf	Last Access Time	1383170321489779
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFekH6BwTHjknn8l99Y6LmSuDhm8pnXzh9dh6gWrlOTf-KecGNd8Ra0d5a0X4ryKFpG8eNt83bjUZn6pWOAnfjXJQBHvC	Creation Time	1383170319755085
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFekH6BwTHjknn8l99Y6LmSuDhm8pnXzh9dh6gWrlOTf-KecGNd8Ra0d5a0X4ryKFpG8eNt83bjUZn6pWOAnfjXJQBHvC	Expiration Time	1383171219000000
+firefox_2_cookies.sqlite	cookie	docs.google.com	S	/comments/d/AAHRpnXsk6DqtIr180bzsYLGKZhYAcebVkvoa_8Rskf4-WvEFFekH6BwTHjknn8l99Y6LmSuDhm8pnXzh9dh6gWrlOTf-KecGNd8Ra0d5a0X4ryKFpG8eNt83bjUZn6pWOAnfjXJQBHvC	Last Access Time	1383170319755085
+firefox_2_cookies.sqlite	cookie	domdex.com	PIXELtbbtyr	/	Creation Time	1383170208748515
+firefox_2_cookies.sqlite	cookie	domdex.com	PIXELtbbtyr	/	Expiration Time	1383775008000000
+firefox_2_cookies.sqlite	cookie	domdex.com	PIXELtbbtyr	/	Last Access Time	1383170208748515
+firefox_2_cookies.sqlite	cookie	doubleclick.net	_drt_	/	Creation Time	1383170191222454
+firefox_2_cookies.sqlite	cookie	doubleclick.net	_drt_	/	Expiration Time	1383213391000000
+firefox_2_cookies.sqlite	cookie	doubleclick.net	_drt_	/	Last Access Time	1383170191849729
+firefox_2_cookies.sqlite	cookie	doubleclick.net	id	/	Creation Time	1383170164658051
+firefox_2_cookies.sqlite	cookie	doubleclick.net	id	/	Expiration Time	1446242164000000
+firefox_2_cookies.sqlite	cookie	doubleclick.net	id	/	Last Access Time	1383170164658051
+firefox_2_cookies.sqlite	cookie	everesttech.net	everest_g_v2	/	Creation Time	1383170219576635
+firefox_2_cookies.sqlite	cookie	everesttech.net	everest_g_v2	/	Expiration Time	1443170219000000
+firefox_2_cookies.sqlite	cookie	everesttech.net	everest_g_v2	/	Last Access Time	1383170219576635
+firefox_2_cookies.sqlite	cookie	everesttech.net	gglck	/	Creation Time	1383170219576328
+firefox_2_cookies.sqlite	cookie	everesttech.net	gglck	/	Expiration Time	1385762219000000
+firefox_2_cookies.sqlite	cookie	everesttech.net	gglck	/	Last Access Time	1383170219576328
+firefox_2_cookies.sqlite	cookie	ibillboard.com	ibbid	/	Creation Time	1383170166013783
+firefox_2_cookies.sqlite	cookie	ibillboard.com	ibbid	/	Expiration Time	1927666800000000
+firefox_2_cookies.sqlite	cookie	ibillboard.com	ibbid	/	Last Access Time	1383170166013783
+firefox_2_cookies.sqlite	cookie	ih.adscale.de	tu	/adscale-ih/	Creation Time	1383170165032321
+firefox_2_cookies.sqlite	cookie	ih.adscale.de	tu	/adscale-ih/	Expiration Time	1385762164000000
+firefox_2_cookies.sqlite	cookie	ih.adscale.de	tu	/adscale-ih/	Last Access Time	1383170165032321
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	DW	/	Creation Time	1383170208749086
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	DW	/	Expiration Time	2013890208000000
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	DW	/	Last Access Time	1383170208749086
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	DW_Time	/	Creation Time	1383170208749374
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	DW_Time	/	Expiration Time	2013890208000000
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	DW_Time	/	Last Access Time	1383170208749374
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	IXAI4184	/	Creation Time	1383170208749241
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	IXAI4184	/	Expiration Time	1540900800000000
+firefox_2_cookies.sqlite	cookie	insightexpressai.com	IXAI4184	/	Last Access Time	1383170219579784
+firefox_2_cookies.sqlite	cookie	mbl.is	__utma	/	Creation Time	1383170139800642
+firefox_2_cookies.sqlite	cookie	mbl.is	__utma	/	Expiration Time	1446242163000000
+firefox_2_cookies.sqlite	cookie	mbl.is	__utma	/	Last Access Time	1383170163076799
+firefox_2_cookies.sqlite	cookie	mbl.is	__utmb	/	Creation Time	1383170139801016
+firefox_2_cookies.sqlite	cookie	mbl.is	__utmb	/	Expiration Time	1383171963000000
+firefox_2_cookies.sqlite	cookie	mbl.is	__utmb	/	Last Access Time	1383170163077904
+firefox_2_cookies.sqlite	cookie	mbl.is	__utmz	/	Creation Time	1383170139801838
+firefox_2_cookies.sqlite	cookie	mbl.is	__utmz	/	Expiration Time	1398938163000000
+firefox_2_cookies.sqlite	cookie	mbl.is	__utmz	/	Last Access Time	1383170163079735
+firefox_2_cookies.sqlite	cookie	mbl.is	_mod_cnt	/	Creation Time	1383170134617359
+firefox_2_cookies.sqlite	cookie	mbl.is	_mod_cnt	/	Expiration Time	1446242162000000
+firefox_2_cookies.sqlite	cookie	mbl.is	_mod_cnt	/	Last Access Time	1383170162464209
+firefox_2_cookies.sqlite	cookie	netflix.com	memclid	/	Creation Time	1383170209617792
+firefox_2_cookies.sqlite	cookie	netflix.com	memclid	/	Expiration Time	1414706220000000
+firefox_2_cookies.sqlite	cookie	netflix.com	memclid	/	Last Access Time	1383170220122515
+firefox_2_cookies.sqlite	cookie	outbrain.com	_fcap_CAM4	/	Creation Time	1383170207373657
+firefox_2_cookies.sqlite	cookie	outbrain.com	_fcap_CAM4	/	Expiration Time	1383775018000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	_fcap_CAM4	/	Last Access Time	1383170218333574
+firefox_2_cookies.sqlite	cookie	outbrain.com	_lvd2	/	Creation Time	1383170207373416
+firefox_2_cookies.sqlite	cookie	outbrain.com	_lvd2	/	Expiration Time	1383734698000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	_lvd2	/	Last Access Time	1383170218333302
+firefox_2_cookies.sqlite	cookie	outbrain.com	_lvs2	/	Creation Time	1383170207373279
+firefox_2_cookies.sqlite	cookie	outbrain.com	_lvs2	/	Expiration Time	1417039018000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	_lvs2	/	Last Access Time	1383170218333091
+firefox_2_cookies.sqlite	cookie	outbrain.com	_ofcap_DOC1	/	Creation Time	1383170207373775
+firefox_2_cookies.sqlite	cookie	outbrain.com	_ofcap_DOC1	/	Expiration Time	1383775018000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	_ofcap_DOC1	/	Last Access Time	1383170218333704
+firefox_2_cookies.sqlite	cookie	outbrain.com	_rcc2	/	Creation Time	1383170207373539
+firefox_2_cookies.sqlite	cookie	outbrain.com	_rcc2	/	Expiration Time	1417039018000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	_rcc2	/	Last Access Time	1383170218333440
+firefox_2_cookies.sqlite	cookie	outbrain.com	_utastes_1	/	Creation Time	1383170207373890
+firefox_2_cookies.sqlite	cookie	outbrain.com	_utastes_1	/	Expiration Time	1443650218000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	_utastes_1	/	Last Access Time	1383170218333827
+firefox_2_cookies.sqlite	cookie	outbrain.com	obuid	/	Creation Time	1383170207373087
+firefox_2_cookies.sqlite	cookie	outbrain.com	obuid	/	Expiration Time	1390946208000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	obuid	/	Last Access Time	1383170207373087
+firefox_2_cookies.sqlite	cookie	outbrain.com	recs-29a61287d70800edd5066e728d03e176	/	Creation Time	1383170207374006
+firefox_2_cookies.sqlite	cookie	outbrain.com	recs-29a61287d70800edd5066e728d03e176	/	Expiration Time	1383170518000000
+firefox_2_cookies.sqlite	cookie	outbrain.com	recs-29a61287d70800edd5066e728d03e176	/	Last Access Time	1383170218333955
+firefox_2_cookies.sqlite	cookie	p-td.com	uid	/	Creation Time	1383170214824419
+firefox_2_cookies.sqlite	cookie	p-td.com	uid	/	Expiration Time	1398722214000000
+firefox_2_cookies.sqlite	cookie	p-td.com	uid	/	Last Access Time	1383170214824419
+firefox_2_cookies.sqlite	cookie	pixel.rubiconproject.com	rpx	/	Creation Time	1383170164602443
+firefox_2_cookies.sqlite	cookie	pixel.rubiconproject.com	rpx	/	Expiration Time	1385762164000000
+firefox_2_cookies.sqlite	cookie	pixel.rubiconproject.com	rpx	/	Last Access Time	1383170164602443
+firefox_2_cookies.sqlite	cookie	plaso.kiddaland.net	_ga	/	Creation Time	1383170270440422
+firefox_2_cookies.sqlite	cookie	plaso.kiddaland.net	_ga	/	Expiration Time	1446242346000000
+firefox_2_cookies.sqlite	cookie	plaso.kiddaland.net	_ga	/	Last Access Time	1383170346497889
+firefox_2_cookies.sqlite	cookie	plaso.kiddaland.net	aftzc	/	Creation Time	1383170270986017
+firefox_2_cookies.sqlite	cookie	plaso.kiddaland.net	aftzc	/	Expiration Time	1383775070000000
+firefox_2_cookies.sqlite	cookie	plaso.kiddaland.net	aftzc	/	Last Access Time	1383170337205313
+firefox_2_cookies.sqlite	cookie	ppjol.com	u	/	Creation Time	1383170191243126
+firefox_2_cookies.sqlite	cookie	ppjol.com	u	/	Expiration Time	1414706219000000
+firefox_2_cookies.sqlite	cookie	ppjol.com	u	/	Last Access Time	1383170219947272
+firefox_2_cookies.sqlite	cookie	pubmatic.com	KRTBCOOKIE_391	/	Creation Time	1383170164662699
+firefox_2_cookies.sqlite	cookie	pubmatic.com	KRTBCOOKIE_391	/	Expiration Time	1385762164000000
+firefox_2_cookies.sqlite	cookie	pubmatic.com	KRTBCOOKIE_391	/	Last Access Time	1383170164662699
+firefox_2_cookies.sqlite	cookie	pubmatic.com	PUBRETARGET	/	Creation Time	1383170164662856
+firefox_2_cookies.sqlite	cookie	pubmatic.com	PUBRETARGET	/	Expiration Time	1385762164000000
+firefox_2_cookies.sqlite	cookie	pubmatic.com	PUBRETARGET	/	Last Access Time	1383170164662856
+firefox_2_cookies.sqlite	cookie	quantserve.com	mc	/	Creation Time	1383170189892219
+firefox_2_cookies.sqlite	cookie	quantserve.com	mc	/	Expiration Time	1430517389000000
+firefox_2_cookies.sqlite	cookie	quantserve.com	mc	/	Last Access Time	1383170189907556
+firefox_2_cookies.sqlite	cookie	rubiconproject.com	put_2676	/	Creation Time	1383170164602570
+firefox_2_cookies.sqlite	cookie	rubiconproject.com	put_2676	/	Expiration Time	1385762164000000
+firefox_2_cookies.sqlite	cookie	rubiconproject.com	put_2676	/	Last Access Time	1383170164602570
+firefox_2_cookies.sqlite	cookie	rubiconproject.com	rpb	/	Creation Time	1383170164602238
+firefox_2_cookies.sqlite	cookie	rubiconproject.com	rpb	/	Expiration Time	1385762164000000
+firefox_2_cookies.sqlite	cookie	rubiconproject.com	rpb	/	Last Access Time	1383170164602238
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utma	/	Creation Time	1383170163992499
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utma	/	Expiration Time	1446242163000000
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utma	/	Last Access Time	1383170163997686
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utmb	/	Creation Time	1383170163992911
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utmb	/	Expiration Time	1383171963000000
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utmb	/	Last Access Time	1383170163998033
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utmz	/	Creation Time	1383170163993741
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utmz	/	Expiration Time	1398938163000000
+firefox_2_cookies.sqlite	cookie	s.greenqloud.com	__utmz	/	Last Access Time	1383170163998777
+firefox_2_cookies.sqlite	cookie	scorecardresearch.com	UID	/	Creation Time	1383170189676242
+firefox_2_cookies.sqlite	cookie	scorecardresearch.com	UID	/	Expiration Time	1445378189000000
+firefox_2_cookies.sqlite	cookie	scorecardresearch.com	UID	/	Last Access Time	1383170189693078
+firefox_2_cookies.sqlite	cookie	scorecardresearch.com	UIDR	/	Creation Time	1383170189676443
+firefox_2_cookies.sqlite	cookie	scorecardresearch.com	UIDR	/	Expiration Time	1445378189000000
+firefox_2_cookies.sqlite	cookie	scorecardresearch.com	UIDR	/	Last Access Time	1383170189693153
+firefox_2_cookies.sqlite	cookie	server.adformdsp.net	cid	/	Creation Time	1383170140789734
+firefox_2_cookies.sqlite	cookie	server.adformdsp.net	cid	/	Expiration Time	1388354140000000
+firefox_2_cookies.sqlite	cookie	server.adformdsp.net	cid	/	Last Access Time	1383170140789734
+firefox_2_cookies.sqlite	cookie	serving-sys.com	A4	/	Creation Time	1383170208891129
+firefox_2_cookies.sqlite	cookie	serving-sys.com	A4	/	Expiration Time	1390931819000000
+firefox_2_cookies.sqlite	cookie	serving-sys.com	A4	/	Last Access Time	1383170219954260
+firefox_2_cookies.sqlite	cookie	serving-sys.com	C4	/	Creation Time	1383170214767967
+firefox_2_cookies.sqlite	cookie	serving-sys.com	C4	/	Expiration Time	1390931814000000
+firefox_2_cookies.sqlite	cookie	serving-sys.com	C4	/	Last Access Time	1383170214767967
+firefox_2_cookies.sqlite	cookie	serving-sys.com	D1	/	Creation Time	1383170214768014
+firefox_2_cookies.sqlite	cookie	serving-sys.com	D1	/	Expiration Time	1390931814000000
+firefox_2_cookies.sqlite	cookie	serving-sys.com	D1	/	Last Access Time	1383170214768014
+firefox_2_cookies.sqlite	cookie	serving-sys.com	u2	/	Creation Time	1383170208891281
+firefox_2_cookies.sqlite	cookie	serving-sys.com	u2	/	Expiration Time	1390931819000000
+firefox_2_cookies.sqlite	cookie	serving-sys.com	u2	/	Last Access Time	1383170219954409
+firefox_2_cookies.sqlite	cookie	smartadserver.com	TestIfCookieP	/	Creation Time	1383170165103124
+firefox_2_cookies.sqlite	cookie	smartadserver.com	TestIfCookieP	/	Expiration Time	1414270565000000
+firefox_2_cookies.sqlite	cookie	smartadserver.com	TestIfCookieP	/	Last Access Time	1383170165103124
+firefox_2_cookies.sqlite	cookie	smartadserver.com	csync	/	Creation Time	1383170165103247
+firefox_2_cookies.sqlite	cookie	smartadserver.com	csync	/	Expiration Time	1414270565000000
+firefox_2_cookies.sqlite	cookie	smartadserver.com	csync	/	Last Access Time	1383170165103247
+firefox_2_cookies.sqlite	cookie	smartadserver.com	pid	/	Creation Time	1383170165102937
+firefox_2_cookies.sqlite	cookie	smartadserver.com	pid	/	Expiration Time	1414270565000000
+firefox_2_cookies.sqlite	cookie	smartadserver.com	pid	/	Last Access Time	1383170165102937
+firefox_2_cookies.sqlite	cookie	tag.admeld.com	meld_sess	/	Creation Time	1383170164603298
+firefox_2_cookies.sqlite	cookie	tag.admeld.com	meld_sess	/	Expiration Time	1398948664000000
+firefox_2_cookies.sqlite	cookie	tag.admeld.com	meld_sess	/	Last Access Time	1383170164603298
+firefox_2_cookies.sqlite	cookie	theonion.com	__gads	/	Creation Time	1383170190479852
+firefox_2_cookies.sqlite	cookie	theonion.com	__gads	/	Expiration Time	1446242190000000
+firefox_2_cookies.sqlite	cookie	theonion.com	__gads	/	Last Access Time	1383170190479852
+firefox_2_cookies.sqlite	cookie	theonion.com	__qca	/	Creation Time	1383170189583653
+firefox_2_cookies.sqlite	cookie	theonion.com	__qca	/	Expiration Time	1430505578000000
+firefox_2_cookies.sqlite	cookie	theonion.com	__qca	/	Last Access Time	1383170189583653
+firefox_2_cookies.sqlite	cookie	theonion.com	__utma	/	Creation Time	1383170189527751
+firefox_2_cookies.sqlite	cookie	theonion.com	__utma	/	Expiration Time	1446242228000000
+firefox_2_cookies.sqlite	cookie	theonion.com	__utma	/	Last Access Time	1383170228412128
+firefox_2_cookies.sqlite	cookie	theonion.com	__utmb	/	Creation Time	1383170189528693
+firefox_2_cookies.sqlite	cookie	theonion.com	__utmb	/	Expiration Time	1383172028000000
+firefox_2_cookies.sqlite	cookie	theonion.com	__utmb	/	Last Access Time	1383170228412927
+firefox_2_cookies.sqlite	cookie	theonion.com	__utmz	/	Creation Time	1383170189530004
+firefox_2_cookies.sqlite	cookie	theonion.com	__utmz	/	Expiration Time	1398938228000000
+firefox_2_cookies.sqlite	cookie	theonion.com	__utmz	/	Last Access Time	1383170228414931
+firefox_2_cookies.sqlite	cookie	tns-cs.net	i00	/	Creation Time	1383170136292675
+firefox_2_cookies.sqlite	cookie	tns-cs.net	i00	/	Expiration Time	1698530136000000
+firefox_2_cookies.sqlite	cookie	tns-cs.net	i00	/	Last Access Time	1383170136313419
+firefox_2_cookies.sqlite	cookie	track.adform.net	C	/	Creation Time	1383170139967018
+firefox_2_cookies.sqlite	cookie	track.adform.net	C	/	Expiration Time	1388354139000000
+firefox_2_cookies.sqlite	cookie	track.adform.net	C	/	Last Access Time	1383170139967018
+firefox_2_cookies.sqlite	cookie	track.adform.net	cid	/	Creation Time	1383170140281486
+firefox_2_cookies.sqlite	cookie	track.adform.net	cid	/	Expiration Time	1388354177000000
+firefox_2_cookies.sqlite	cookie	track.adform.net	cid	/	Last Access Time	1383170177851722
+firefox_2_cookies.sqlite	cookie	turn.com	uid	/	Creation Time	1383170164648622
+firefox_2_cookies.sqlite	cookie	turn.com	uid	/	Expiration Time	1398722164000000
+firefox_2_cookies.sqlite	cookie	turn.com	uid	/	Last Access Time	1383170164648622
+firefox_2_cookies.sqlite	cookie	twitter.com	pid	/	Creation Time	1383170162874294
+firefox_2_cookies.sqlite	cookie	twitter.com	pid	/	Expiration Time	1430474162000000
+firefox_2_cookies.sqlite	cookie	twitter.com	pid	/	Last Access Time	1383170162874294
+firefox_2_cookies.sqlite	cookie	www.mbl.is	_chartbeat2	/	Creation Time	1383170141173744
+firefox_2_cookies.sqlite	cookie	www.mbl.is	_chartbeat2	/	Expiration Time	1385762168000000
+firefox_2_cookies.sqlite	cookie	www.mbl.is	_chartbeat2	/	Last Access Time	1383170168843484
+firefox_2_cookies.sqlite	cookie	www.mbl.is	_chartbeat_uuniq	/	Creation Time	1383170141174534
+firefox_2_cookies.sqlite	cookie	www.mbl.is	_chartbeat_uuniq	/	Expiration Time	1385762168000000
+firefox_2_cookies.sqlite	cookie	www.mbl.is	_chartbeat_uuniq	/	Last Access Time	1383170168844415
+firefox_2_cookies.sqlite	cookie	www.theonion.com	_chartbeat2	/	Creation Time	1383170191090470
+firefox_2_cookies.sqlite	cookie	www.theonion.com	_chartbeat2	/	Expiration Time	1385762219000000
+firefox_2_cookies.sqlite	cookie	www.theonion.com	_chartbeat2	/	Last Access Time	1383170219843500
+firefox_2_cookies.sqlite	cookie	www.theonion.com	_chartbeat_uuniq	/	Creation Time	1383170191091521
+firefox_2_cookies.sqlite	cookie	www.theonion.com	_chartbeat_uuniq	/	Expiration Time	1385762219000000
+firefox_2_cookies.sqlite	cookie	www.theonion.com	_chartbeat_uuniq	/	Last Access Time	1383170219844489
+firefox_2_cookies.sqlite	cookie	www.theonion.com	afnsUUID	/	Creation Time	1383170189451561
+firefox_2_cookies.sqlite	cookie	www.theonion.com	afnsUUID	/	Expiration Time	1414706189000000
+firefox_2_cookies.sqlite	cookie	www.theonion.com	afnsUUID	/	Last Access Time	1383170189451561
+firefox_2_cookies.sqlite	cookie	www.theonion.com	afns_last_ad	/	Creation Time	1383170208791611
+firefox_2_cookies.sqlite	cookie	www.theonion.com	afns_last_ad	/	Expiration Time	1383191808000000
+firefox_2_cookies.sqlite	cookie	www.theonion.com	afns_last_ad	/	Last Access Time	1383170208791611
+firefox_2_cookies.sqlite	cookie	yieldlab.net	id	/	Creation Time	1383170165876254
+firefox_2_cookies.sqlite	cookie	yieldlab.net	id	/	Expiration Time	1414706165000000
+firefox_2_cookies.sqlite	cookie	yieldlab.net	id	/	Last Access Time	1383170165876254
+firefox_2_cookies.sqlite	cookie	youtube.com	PREF	/	Creation Time	1383170189586743
+firefox_2_cookies.sqlite	cookie	youtube.com	PREF	/	Expiration Time	1404208169000000
+firefox_2_cookies.sqlite	cookie	youtube.com	PREF	/	Last Access Time	1383170189586743
+firefox_2_cookies.sqlite	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Creation Time	1383170189586575
+firefox_2_cookies.sqlite	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Expiration Time	1404208169000000
+firefox_2_cookies.sqlite	cookie	youtube.com	VISITOR_INFO1_LIVE	/	Last Access Time	1383170189586575
