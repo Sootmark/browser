@@ -4,7 +4,7 @@ Browser history for forensics: the pages visited and the files downloaded, from 
 
 ```toml
 [dependencies]
-sootmark-browser = "0.5"
+sootmark-browser = "0.6"
 ```
 
 ```rust
@@ -41,7 +41,7 @@ for problem in &history.problems {
 - Limits: SQLite zeroes freed cells when `secure_delete` is on, and the browsers commonly delete that way (plaso's browser files have their freed space zeroed), so deleted history is found mostly in the write-ahead log's older pages and in the database file under them, until a checkpoint overwrites the file and the log restarts: read the `-wal` with the database. Recovery runs on every `read`; on plaso's files (up to 10 MiB) it takes 0.2 to 2.5 ms in a release build, most of `read`'s time, and grows with the database.
 - `detect(name, data)` and `Kind::of(&database)`: which database a file is, from its tables (`urls` and `visits`; `moz_places` and `moz_historyvisits`; `moz_downloads`), or from its name when only the start of the file is at hand; an ESE database named `WebCacheV01.dat` is a WebCache.
 - Columns are read by name: one a version lacks reads as `None`, one it added is ignored. Damage is reported, never a panic: a visit whose page row is gone is kept without its URL, metadata that isn't JSON is reported and the rest of the download kept, and the SQLite reader's own findings (damaged pages, a foreign log) are passed on.
-- Beyond history: `read_cookies` (Chromium's `Cookies`, both column spellings, and Firefox's `cookies.sqlite`: host, name, value as stored, path, created, last sent, expiry, secure, HTTP-only), `read_autofill` (Chromium's `Web Data`: each value typed in a form field, how often, first and last), `read_extension_activity` (Chromium's `Extension Activity`: each extension's API calls and events with the page they acted on, strings and URLs joined) and `read_preferences` (Chromium's `Preferences`: the extensions installed, with name, version, folder, installation time, origin and granted APIs, and the sites given permissions); and Safari's history (`History.db` and the older `History.plist`) through `read`.
+- Beyond history: `read_cookies` (Chromium's `Cookies`, both column spellings, and Firefox's `cookies.sqlite`: host, name, value as stored, path, created, last sent, expiry, secure, HTTP-only), `read_autofill` (Chromium's `Web Data`: each value typed in a form field, how often, first and last), `read_extension_activity` (Chromium's `Extension Activity`: each extension's API calls and events with the page they acted on, strings and URLs joined) and `read_preferences` (Chromium's `Preferences`: the extensions installed, with name, version, folder, installation time, origin and granted APIs, and the sites given permissions); and Safari's history (`History.db` and the older `History.plist`) and downloads (`Downloads.plist`) through `read`.
 
 ## Not yet
 
@@ -63,7 +63,7 @@ for problem in &history.problems {
 | Databases made by `tests/fixtures/recovery/gen.sh` in write-ahead log mode, deleting with `secure_delete` on after a checkpoint, as the browsers do: a Chromium `History` whose log forgets a site (two pages, three visits), deletes two visits of a kept page, rewrites a visit's duration and deletes a download with its URL chain; a Firefox `places.sqlite` with visits deleted (`secure_delete` off) before the checkpoint, a site forgotten, a visit deleted and frecencies changed in the log, and two visits recorded and deleted in one transaction | Chromium: the 5 deleted visits whole with their rowids (from the superseded frame), their URLs from the 2 recovered pages and the live one, the download with its two-URL chain; the rewritten visit and the kept page's older count not reported. Firefox: the 7 deleted visits (2 from the page as the log has it now, 1 from a superseded frame, 4 from the file's copy) and the forgotten page only. Each file alone: nothing, and the two freeblock visits |
 | plaso's files and the synthetic ones above | no deleted entry: their freeblocks and their one freelist page are zeroed, and what isn't zero between their cell pointers and cells is stale cell pointers (checked byte by byte, independently of the reader) |
 | Property tests: arbitrary bytes, arbitrary pages behind a real header, every fixture (those with deleted records too) and the logs (with older page versions to recover too) damaged and cut anywhere | read or refused, never a panic |
-- Cookies, form history, extensions and Safari: plaso's test files (`tests/fixtures/plaso/`), every one of the 2,136 events its `chrome_17_cookies`, `chrome_66_cookies`, `firefox_2_cookies`, `firefox_10_cookies`, `chrome_autofill`, `chrome_extension_activity`, `chrome_preferences`, `safari_historydb` and `safari_history` parsers read, read the same (`tests/extras.rs`).
+- Cookies, form history, extensions and Safari: plaso's test files (`tests/fixtures/plaso/`), every one of the 2,144 events its `chrome_17_cookies`, `chrome_66_cookies`, `firefox_2_cookies`, `firefox_10_cookies`, `chrome_autofill`, `chrome_extension_activity`, `chrome_preferences`, `safari_historydb`, `safari_history` and `safari_downloads` parsers read, read the same (`tests/extras.rs`).
 
 ## Licence
 

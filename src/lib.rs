@@ -76,6 +76,8 @@ pub enum Kind {
     SafariHistory,
     /// Safari's older `History.plist`.
     SafariHistoryPlist,
+    /// Safari's `Downloads.plist`: downloads only.
+    SafariDownloads,
     /// Chromium's `Cookies` (table `cookies`) or Firefox's
     /// `cookies.sqlite` (table `moz_cookies`): read with [`read_cookies`].
     Cookies,
@@ -102,6 +104,7 @@ impl Kind {
             ("WebCacheV01.dat", Self::WebCache),
             ("History.db", Self::SafariHistory),
             ("History.plist", Self::SafariHistoryPlist),
+            ("Downloads.plist", Self::SafariDownloads),
             ("Cookies", Self::Cookies),
             ("cookies.sqlite", Self::Cookies),
             ("Web Data", Self::Autofill),
@@ -151,7 +154,7 @@ pub fn detect(name: &str, data: &[u8]) -> Option<Kind> {
     }
     let named = Kind::from_name(name);
     if data.starts_with(b"bplist") || data.trim_ascii_start().starts_with(b"<?xml") {
-        return named.filter(|k| *k == Kind::SafariHistoryPlist);
+        return named.filter(|k| matches!(k, Kind::SafariHistoryPlist | Kind::SafariDownloads));
     }
     if data.trim_ascii_start().starts_with(b"{") {
         return named.filter(|k| *k == Kind::Preferences);
@@ -436,7 +439,15 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
         return read_webcache(database);
     }
     if database.starts_with(b"bplist") || database.trim_ascii_start().starts_with(b"<?xml") {
+        let downloads = plist::parse(database)
+            .is_ok_and(|parsed| parsed.value.get("DownloadHistory").is_some());
         let mut problems = Vec::new();
+        if downloads {
+            let mut history = History::of_visits(Kind::SafariDownloads, Vec::new(), Vec::new());
+            history.downloads = safari::downloads(database, &mut problems);
+            history.problems = problems;
+            return Ok(history);
+        }
         let visits = safari::history_plist(database, &mut problems);
         return Ok(History::of_visits(
             Kind::SafariHistoryPlist,
@@ -459,6 +470,7 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
         // `Kind::of` names SQLite databases only; a WebCache reads as one.
         Kind::WebCache => return read_webcache(database),
         Kind::SafariHistoryPlist
+        | Kind::SafariDownloads
         | Kind::Cookies
         | Kind::Autofill
         | Kind::ExtensionActivity

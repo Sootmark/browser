@@ -36,3 +36,4 @@ gzip-compressed (gzip -9n), otherwise unmodified (SHA-256 of the originals):
   firefox/firefox_2_cookies.sqlite     0b2cc4f0bb782b0be5160bbcf425d12d382903c1ae029b00bf2bfe4333205a95
   safari/History.db                    2e87d99d0bc7765e523ee1250828e82fb350780c0c28020db6bb0b0ce8d3f351
   plist/History.plist                  f0b7da783abf82182fca8603ef269ce8c934a4fe291595fb87cf325bda6265a4
+  plist/Downloads.plist                38f46a836f9c07e8d368c51c63b0f909105729f3ee4c0c7da5cb50d498c7a509

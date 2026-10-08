@@ -94,6 +94,32 @@ fn chromium_rows(got: &mut BTreeSet<String>) {
     }
 }
 
+/// Safari's downloads: their start and end, as plaso's
+/// `safari_downloads` gives them.
+fn safari_download_rows(got: &mut BTreeSet<String>) {
+    let data = fixture("Downloads.plist");
+    assert_eq!(
+        detect("Downloads.plist", &data),
+        Some(Kind::SafariDownloads)
+    );
+    let history = browser::read(&data, &[]).unwrap();
+    assert_eq!(history.problems, Vec::<String>::new());
+    for download in &history.downloads {
+        for (desc, time) in [("Start Time", download.start), ("End Time", download.end)] {
+            if let Some(time) = time {
+                got.insert(format!(
+                    "Downloads.plist\tdownload\t{}\t{}\t{}\t{}\t{desc}\t{}",
+                    download.url,
+                    download.target_path,
+                    download.received_bytes.unwrap_or_default(),
+                    download.total_bytes.unwrap_or_default(),
+                    micros(time)
+                ));
+            }
+        }
+    }
+}
+
 /// Safari's visits.
 fn safari_rows(got: &mut BTreeSet<String>) {
     for name in ["History.db", "History.plist"] {
@@ -144,6 +170,7 @@ fn as_plaso_reads_them() {
     cookie_rows(&mut got);
     chromium_rows(&mut got);
     safari_rows(&mut got);
+    safari_download_rows(&mut got);
     preference_rows(&mut got);
     let expected: BTreeSet<&str> = include_str!("oracle/plaso-extras.tsv").lines().collect();
     let got_refs: BTreeSet<&str> = got.iter().map(String::as_str).collect();
