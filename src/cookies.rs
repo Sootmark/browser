@@ -1,13 +1,16 @@
 //! Cookies: Chromium's `Cookies` (table `cookies`; times in `WebKit`
 //! microseconds, `secure`/`httponly` renamed `is_secure`/`is_httponly` in
 //! Chrome 66) and Firefox's `cookies.sqlite` (table `moz_cookies`;
-//! creation and last access in Unix microseconds, expiry in seconds). The
-//! value is read as stored: Chromium encrypts it (`encrypted_value`) since
-//! Chrome 80, and that isn't decrypted.
+//! creation and last access in Unix microseconds, expiry in seconds); and
+//! Safari's, in a file of their own (`binarycookies`). The value is read
+//! as stored: Chromium encrypts it (`encrypted_value`) since Chrome 80, and
+//! that isn't decrypted. Google Analytics' cookies are decoded
+//! (`analytics`).
 
 use common::time::Ts;
 use sqlite::Database;
 
+use crate::analytics::{self, GoogleAnalytics};
 use crate::table::{self, Named};
 
 /// Which browser a cookie is from.
@@ -17,6 +20,8 @@ pub enum CookieStore {
     Chromium,
     /// Firefox.
     Firefox,
+    /// Safari (`Cookies.binarycookies`).
+    Safari,
 }
 
 /// A cookie.
@@ -24,7 +29,7 @@ pub enum CookieStore {
 pub struct Cookie {
     /// Which browser.
     pub store: CookieStore,
-    /// The row id.
+    /// The row id; for Safari, where its record starts in the file.
     pub rowid: i64,
     /// The host it's for (`.example.com`).
     pub host: String,
@@ -46,15 +51,20 @@ pub struct Cookie {
     pub http_only: bool,
     /// Kept across sessions (Chromium).
     pub persistent: Option<bool>,
+    /// What its value says, when it is a Google Analytics cookie
+    /// (`__utma`, `__utmb`, `__utmt`, `__utmz`).
+    pub analytics: Option<GoogleAnalytics>,
 }
 
-/// Every cookie of a cookie database.
+/// Every cookie of a cookie database, Google Analytics' decoded.
 pub(crate) fn read(db: &Database<'_>, problems: &mut Vec<String>) -> Vec<Cookie> {
-    if db.table("cookies").is_some() {
+    let mut cookies = if db.table("cookies").is_some() {
         table::read(db, "cookies", problems, chromium)
     } else {
         table::read(db, "moz_cookies", problems, firefox)
-    }
+    };
+    analytics::decode_all(&mut cookies, problems);
+    cookies
 }
 
 fn chromium(row: &Named<'_>) -> Cookie {
@@ -78,6 +88,7 @@ fn chromium(row: &Named<'_>) -> Cookie {
         secure: flag("is_secure", "secure").unwrap_or(false),
         http_only: flag("is_httponly", "httponly").unwrap_or(false),
         persistent: flag("is_persistent", "persistent"),
+        analytics: None,
     }
 }
 
@@ -103,5 +114,6 @@ fn firefox(row: &Named<'_>) -> Cookie {
         secure: row.flag("isSecure").unwrap_or(false),
         http_only: row.flag("isHttpOnly").unwrap_or(false),
         persistent: None,
+        analytics: None,
     }
 }

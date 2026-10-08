@@ -1,10 +1,10 @@
 # browser
 
-Browser history for forensics: the pages visited and the files downloaded, from Chromium's `History` (Chrome, Edge, Brave, Opera, Vivaldi), Firefox's `places.sqlite` and `downloads.sqlite`, and Internet Explorer and legacy Edge's `WebCacheV01.dat`, with the deleted visits, pages and downloads the SQLite databases still hold. Three dependencies, its siblings `sootmark-common` (times), `sootmark-sqlite` and `sootmark-ese` (the databases, read without SQLite or ESE).
+Browser artifacts for forensics: the pages visited and the files downloaded, from Chromium's `History` (Chrome, Edge, Brave, Opera, Vivaldi), Firefox's `places.sqlite` and `downloads.sqlite`, Safari, Opera 12 and Internet Explorer and legacy Edge's `WebCacheV01.dat`, with the deleted visits, pages and downloads the SQLite databases still hold; and cookies (Safari's binary ones too) with Google Analytics' decoded, the disk caches of Chromium and Firefox, form history, extensions, Edge's load statistics and Java's cache index files. Four dependencies, its siblings `sootmark-common` (times), `sootmark-sqlite`, `sootmark-ese` and `sootmark-plist` (the databases and property lists, read without SQLite, ESE or Apple's libraries).
 
 ```toml
 [dependencies]
-sootmark-browser = "0.6"
+sootmark-browser = "0.7"
 ```
 
 ```rust
@@ -43,12 +43,22 @@ for problem in &history.problems {
 - Columns are read by name: one a version lacks reads as `None`, one it added is ignored. Damage is reported, never a panic: a visit whose page row is gone is kept without its URL, metadata that isn't JSON is reported and the rest of the download kept, and the SQLite reader's own findings (damaged pages, a foreign log) are passed on.
 - Beyond history: `read_cookies` (Chromium's `Cookies`, both column spellings, and Firefox's `cookies.sqlite`: host, name, value as stored, path, created, last sent, expiry, secure, HTTP-only), `read_autofill` (Chromium's `Web Data`: each value typed in a form field, how often, first and last), `read_extension_activity` (Chromium's `Extension Activity`: each extension's API calls and events with the page they acted on, strings and URLs joined) and `read_preferences` (Chromium's `Preferences`: the extensions installed, with name, version, folder, installation time, origin and granted APIs, and the sites given permissions); and Safari's history (`History.db` and the older `History.plist`) and downloads (`Downloads.plist`) through `read`.
 
+- Safari's `Cookies.binarycookies` (`read_binary_cookies`): each cookie's domain, name, value, path, creation and expiry, secure and HTTP-only, from its big-endian frame and little-endian pages, its checksum checked.
+- Google Analytics' cookies (`__utma`, `__utmb`, `__utmt`, `__utmz`), decoded in every cookie reader (`Cookie::analytics`): the visitor's id, first, previous and last visit and sessions; the session's pages and last time; the campaign's sources and variables (source, campaign, medium, the words searched, the referring path), URL-decoded. A value of another shape is reported.
+- Edge's `load_statistics.db` (`read_load_statistics`): each resource a site's pages loaded from another host, its type and last load, and the host redirects.
+- Opera 12 and older: `global_history.dat` through `read` (each page's title, URL, last visit and popularity index, as `Visit::frecency`) and `typed_history.xml` (`read_opera_typed_history`: what was typed in the address bar, when, typed out or picked from the suggestions).
+- Java's deployment cache index files (`read_java_idx`, versions 6.02 to 6.05): the URL a JAR, applet or JNLP was downloaded from, the server's IP address, its size, when it was modified, expires, was validated and downloaded (the `date` header), and every HTTP response header.
+- Chromium's disk cache in the block-file format (`read_chrome_cache`, versions 2.0 to 3.0; the files given by name): each entry's key and URL (the site-partitioning prefix removed), whole however long, when it was cached, last used and modified (its rankings node), its state, counts and where its data streams are.
+- Firefox's disk cache: version 1's block files (`read_firefox_cache1`, records found block by block, evicted ones too) and version 2's entry files (`read_firefox_cache2`): the key and URL, fetch count, when it was last fetched and modified and expires (never as a sentinel), frecency, sizes, and the metadata elements (request method, response headers, …).
+- `detect` tells these by their contents (Safari's cookies, Java index files, a Chromium cache's `index`, Opera's files) or names (Firefox's cache files).
+
 ## Not yet
 
 - Deleted Firefox downloads (their annotations, `moz_annos`), and deleted WebCache entries (ESE: not recovered).
 - A deleted visit whose page record lost its rowid to a freeblock header isn't joined to it (Chromium's `last_visit_time` could match it to its last visit, a guess not made); its URL is empty.
 - WebCache downloads (`iedownload`), cache entries and cookies.
-- Bookmarks, cookies, form history, autofill, favicons, keyword searches (`keyword_search_terms`), sync sources (`visit_source`), Chromium's `Top Sites` and `Shortcuts`, Safari.
+- Bookmarks, favicons, keyword searches (`keyword_search_terms`), sync sources (`visit_source`), Chromium's `Top Sites` and `Shortcuts`.
+- Chromium's "simple" cache format (Linux, Android) and the cached content and HTTP headers of either browser's cache (Chromium's data streams are located, not read); Firefox's `_CACHE_MAP_`.
 - Danger types and interrupt reasons as names: they are Chromium's numbers, which grow with each version.
 
 ## How it's checked
@@ -63,6 +73,8 @@ for problem in &history.problems {
 | Databases made by `tests/fixtures/recovery/gen.sh` in write-ahead log mode, deleting with `secure_delete` on after a checkpoint, as the browsers do: a Chromium `History` whose log forgets a site (two pages, three visits), deletes two visits of a kept page, rewrites a visit's duration and deletes a download with its URL chain; a Firefox `places.sqlite` with visits deleted (`secure_delete` off) before the checkpoint, a site forgotten, a visit deleted and frecencies changed in the log, and two visits recorded and deleted in one transaction | Chromium: the 5 deleted visits whole with their rowids (from the superseded frame), their URLs from the 2 recovered pages and the live one, the download with its two-URL chain; the rewritten visit and the kept page's older count not reported. Firefox: the 7 deleted visits (2 from the page as the log has it now, 1 from a superseded frame, 4 from the file's copy) and the forgotten page only. Each file alone: nothing, and the two freeblock visits |
 | plaso's files and the synthetic ones above | no deleted entry: their freeblocks and their one freelist page are zeroed, and what isn't zero between their cell pointers and cells is stale cell pointers (checked byte by byte, independently of the reader) |
 | Property tests: arbitrary bytes, arbitrary pages behind a real header, every fixture (those with deleted records too) and the logs (with older page versions to recover too) damaged and cut anywhere | read or refused, never a panic |
+- Edge's load statistics, Safari's cookies, Google Analytics' cookies, Opera's history and Java's index files: plaso's test files (`tests/fixtures/plaso/`), every one of the 378 events its `edge_load_statistics`, `binary_cookies`, Google Analytics cookie plugins, `opera_global`, `opera_typed_history` and `java_idx` parsers make, read the same (`tests/webhist.rs`, against `tests/oracle/plaso-webhist.tsv` from plaso 20260720), with the differences documented there: plaso gives Safari's Google Analytics events the cookie's name as their URL; reads a 13-digit `__utmb` time as seconds (year 45,800); reads `firefox_2_cookies.sqlite` with two plugins, each Google Analytics event twice.
+- Chromium's and Firefox's caches: every one of plaso's 1,079 `chrome_cache` events (217 and 862 entries) and 1,921 `firefox_cache` and `firefox_cache2` events, read the same (`tests/caches.rs`), with the differences documented there: plaso cuts a longer Chromium key at 160 bytes (299 of them) and empties one stored apart (38), leaves streams in `f_` files out of its payloads, and reads Firefox's "never expires" as 2106-02-07; dfVFS keeps one cache2 entry from plaso, which this crate reads.
 - Cookies, form history, extensions and Safari: plaso's test files (`tests/fixtures/plaso/`), every one of the 2,144 events its `chrome_17_cookies`, `chrome_66_cookies`, `firefox_2_cookies`, `firefox_10_cookies`, `chrome_autofill`, `chrome_extension_activity`, `chrome_preferences`, `safari_historydb`, `safari_history` and `safari_downloads` parsers read, read the same (`tests/extras.rs`).
 
 ## Licence

@@ -37,3 +37,38 @@ gzip-compressed (gzip -9n), otherwise unmodified (SHA-256 of the originals):
   safari/History.db                    2e87d99d0bc7765e523ee1250828e82fb350780c0c28020db6bb0b0ce8d3f351
   plist/History.plist                  f0b7da783abf82182fca8603ef269ce8c934a4fe291595fb87cf325bda6265a4
   plist/Downloads.plist                38f46a836f9c07e8d368c51c63b0f909105729f3ee4c0c7da5cb50d498c7a509
+
+Also from test_data/ at commit 91b6849503b125267d00ea134248e4fe59e5479c, under
+the same paths here, unmodified; those named .gz stored gzip-compressed
+(gzip -9n). SHA-256 of the originals:
+
+  load_statistics.db                     d5296e5f46db4fdb82b439c0b0aec63df40b399771282f6a383bd8d49000880d
+  Cookies.binarycookies                  fdb592b5cf52cffdca11bd5740564f7172d19435a89f5396ddeed7364564a9a5
+  global_history.dat                     910a4fd861f8343eecb1068fd1af07c4d3aac96d20cc6c56fab99fb02feb1b5d
+  typed_history.xml                      4593441d5d8ca82e50c3be41fba831baf5d1f18369475221aedbead27953db6f
+  java.idx                               ab6241d02631cad1e492285a896d9ad245b8bca15c3eb41f0cc925f9676c4b7a
+  java_602.idx                           9d36a8b361dfdf980118d06d31f333600f339646aeee8bdccafe8b5c890d85ce
+  chrome_cache/index                     963537b9429c0aefbdd170150971a7df9d2efeb4ce3313623aaa0913885f9c2a
+  chrome_cache/data_0                    2a3ff729e2942c362328b1b01989cb06eaba69e376fc1d3dd8299e32cddf5294
+  chrome_cache/data_1                    c5140537346778be899f8879812eb263e6acfe8c98e0164c3605e0e691bef9e3
+  chrome_cache/data_2                    4b965170b1df4530326d6dcaf5e1b7f95eca6066eed4c68b24375b7c48ff620c
+  chrome_cache_v3/index                  9518d5136464fac442fbdf0046fa34b50e590931840dc7da017eaa6ef0c9b706
+  chrome_cache_v3/data_0                 b2b14ecb6a407df32fbb3e09fe93398f9b57d0aa6b7a8429321ee991d8716313
+  chrome_cache_v3/data_1                 98b4ae6a0f1b148be9fe57ed1c70b54dfcde9880954f5906872fd19bc0d77368
+  chrome_cache_v3/data_2                 5f149d820ca8a70d44af22b77b3f335a8b5c816a4cbc5740c22d15fb3291f597
+  firefox_cache/firefox3/_CACHE_001_     c5d5bee4fd75a301de830c784b853c890d1b361afab11b7896844037bd4d2eea
+  firefox_cache/firefox3/_CACHE_002_     5bd71151494541bc66bed6ce0d3ea925bb8311e1105d7f642e16aaa8e238dc71
+  firefox_cache/firefox3/_CACHE_003_     acb81d783c1fe83e997f8339ac3c6152aeb965ce797bd76eeb3893936c95735d
+  firefox_cache/firefox28/_CACHE_001_    feb497ff67ff5e5c8a343a1401381e977c51de853311266e5a4759e7a13576aa
+  firefox_cache/firefox28/_CACHE_002_    dd8cd9ad00a99a2522c1af027ca5889f896e440726fb68ee1b38bdaa1f129e0f
+  firefox_cache/firefox28/_CACHE_003_    d731ea7d6b3b8ba55369cc9c03090ffafdc0f830926f5ca8f02cb2a5033b8321
+  firefox_cache/cache2/0EDDF8C091E2FED62E44BEDDDC1723F5BF38FE4F  b1dc8aade3301833dae12ecae071c8e74ebfa0a4d69416ec7bf0145b423bfd05
+  firefox_cache/cache2/0FC75AE83A9F7CAEFD982F3A793D9CDE5166ECD2  2d163e0cc8a3f7465d3092b62635a741598f53fe2049a8e79ef64a7da439cfbb
+  firefox_cache/cache2/1F4B3A4FC81FB19C530758231FA54313BE8F6FA2  8b63b6bb295fef015a4066157c36240f7940cb7a8b60a373769dbab769796a26
+  firefox_cache/cache2/9E599395B8E39ED759C56FC9CD6BBD80FBB426DC  933140c4b347d7a96054781c2125e1be26192d2ac7e93a2f069ac8bc302d033f
+  firefox_cache/cache2/C966EB70794E44E7E3E8A260106D0C72439AF65B  38c2a325d185a095e7b12db8634bb7ac4d7f7cbc71d53248404769717e9f5401
+
+Of the Chromium caches, only index, data_0, data_1 and data_2 are kept:
+data_3 and the f_ files hold the cached content. firefox_cache/firefox28/
+E8D65m01 is the same file as firefox28/_CACHE_003_ (the same SHA-256) and
+is not kept twice.

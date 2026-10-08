@@ -1,9 +1,9 @@
 [package]
 name = "sootmark-browser"
-version = "0.6.0"
+version = "0.7.0"
 edition = "2021"
 rust-version = "1.80"
-description = "Browser artifacts for forensics: history and downloads (Chromium, Firefox, Safari, Internet Explorer WebCache) with deleted entries recovered, cookies, form history, extensions and their activity."
+description = "Browser artifacts for forensics: history and downloads (Chromium, Firefox, Safari, Opera, Internet Explorer WebCache) with deleted entries recovered, cookies (Safari's binary ones too) with Google Analytics decoded, Chromium and Firefox disk caches, form history, extensions, Edge load statistics, Java cache index files."
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Sootmark/browser"
 homepage = "https://sootmark.com"

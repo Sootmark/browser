@@ -1,0 +1,49 @@
+plaso-webhist.tsv, plaso-chrome-cache.tsv.gz, plaso-firefox-cache.tsv.gz:
+what plaso (the log2timeline/plaso:20260720 Docker image) reads from plaso's
+test files (tests/fixtures/plaso/, see its NOTICE) with its
+sqlite/edge_load_statistics, binary_cookies, cookie plugins (Google
+Analytics, through sqlite/chrome_17_cookies, sqlite/chrome_66_cookies,
+sqlite/firefox_2_cookies, sqlite/firefox_10_cookies and binary_cookies),
+opera_global, opera_typed_history, java_idx, chrome_cache, firefox_cache
+and firefox_cache2 parsers (psort -a -o json_line), one line per event,
+written by plaso_tsv.py (its docstring lists the columns). Written from
+plaso's output, not from this crate.
+
+The input layouts, on a host with Docker, the files as in plaso's
+test_data/ at commit 91b6849503b125267d00ea134248e4fe59e5479c (whole
+folders for the caches, with data_3, the f_ files and E8D65m01):
+
+    /tmp/sbx/edge/in/load_statistics.db
+    /tmp/sbx/ga/in/{cookies.db,Cookies-68.0.3440.106,firefox_2_cookies.sqlite,
+                    firefox_10_cookies.sqlite,Cookies.binarycookies}
+    /tmp/sbx/opera/in/{global_history.dat,typed_history.xml}
+    /tmp/sbx/javaidx/in/{java.idx,java_602.idx}
+    /tmp/sbx/chromecache/in/{chrome_cache,chrome_cache_v3}/
+    /tmp/sbx/firefoxcache/in/{cache2,firefox28,firefox3}/ and invalid_file
+
+For each <set> and its parsers:
+
+    edge          sqlite/edge_load_statistics
+    ga            sqlite/chrome_17_cookies,sqlite/chrome_66_cookies,sqlite/firefox_2_cookies,sqlite/firefox_10_cookies,binary_cookies
+    opera         opera_global,opera_typed_history
+    javaidx       java_idx
+    chromecache   chrome_cache
+    firefoxcache  firefox_cache,firefox_cache2
+
+the commands:
+
+    sudo docker run --rm -v /tmp/sbx/<set>:/data log2timeline/plaso:20260720 log2timeline --status_view none -q --parsers '<parsers>' --storage-file /data/out.plaso /data/in
+    sudo docker run --rm -v /tmp/sbx/<set>:/data log2timeline/plaso:20260720 psort --status_view none -q -a -o json_line -w /data/out.jsonl /data/out.plaso
+
+then, the four first sets' out.jsonl joined into webhist.jsonl:
+
+    python3 -I tests/oracle/plaso_tsv.py webhist.jsonl > tests/oracle/plaso-webhist.tsv
+    python3 -I tests/oracle/plaso_tsv.py chromecache.jsonl | gzip -9n > tests/oracle/plaso-chrome-cache.tsv.gz
+    python3 -I tests/oracle/plaso_tsv.py firefoxcache.jsonl | gzip -9n > tests/oracle/plaso-firefox-cache.tsv.gz
+
+plaso_tsv.py keeps the data types it lists only: of the ga set, Safari's
+cookies and the Google Analytics events (Chromium's and Firefox's cookies
+are in plaso-extras.tsv).
+
+The *.visits files are written by gen.sh (see it); plaso-extras.tsv from
+plaso's output for the cookie, form history, extension and Safari parsers.

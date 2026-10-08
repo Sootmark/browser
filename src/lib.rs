@@ -30,26 +30,47 @@
 //! found ([`Provenance`]). Earlier states of rows still live (a page whose
 //! visit count changed, a visit whose duration was written later) are left
 //! out.
+//!
+//! Beyond history, each with a reader of its own: cookies (Chromium,
+//! Firefox, and Safari's `Cookies.binarycookies`), with Google Analytics'
+//! decoded; Chromium's form history, extension activity and preferences;
+//! Edge's load statistics; Opera's typed history (Opera 12 and older,
+//! whose global history [`read`] reads); Java's deployment cache index
+//! files; and the disk caches of Chromium (block files) and Firefox
+//! (versions 1 and 2).
 
 use common::time::Ts;
 use sqlite::Database;
 
+mod analytics;
 mod autofill;
+mod binarycookies;
+mod chromecache;
 mod chromium;
 mod cookies;
 mod extensions;
 mod firefox;
+mod firefoxcache;
+mod javaidx;
+mod load_statistics;
+mod opera;
 mod recovered;
 mod safari;
 mod table;
 mod transition;
 mod webcache;
 
+pub use analytics::GoogleAnalytics;
 pub use autofill::AutofillEntry;
+pub use chromecache::{CacheStream, ChromeCache, ChromeCacheEntry};
 pub use cookies::{Cookie, CookieStore};
 pub use extensions::{
     read_preferences, ContentException, ExtensionActivity, InstalledExtension, Preferences,
 };
+pub use firefoxcache::FirefoxCacheEntry;
+pub use javaidx::{read_java_idx, JavaCacheEntry};
+pub use load_statistics::{HostRedirect, LoadStatistics, ResourceLoad};
+pub use opera::{TypedEntry, TypedUrl};
 
 pub use sqlite::{Area, Confidence, Evidence, PageState};
 pub use transition::{CoreTransition, PageTransition, Qualifier, Transition, VisitType};
@@ -89,14 +110,45 @@ pub enum Kind {
     ExtensionActivity,
     /// Chromium's `Preferences` (JSON): read with [`read_preferences`].
     Preferences,
+    /// Safari's `Cookies.binarycookies`: read with
+    /// [`read_binary_cookies`].
+    SafariCookies,
+    /// Edge's `load_statistics.db` (tables `load_statistics` and
+    /// `redirect_statistics`): read with [`read_load_statistics`].
+    LoadStatistics,
+    /// Opera's `global_history.dat` (Opera 12 and older): visits only.
+    OperaGlobalHistory,
+    /// Opera's `typed_history.xml` (Opera 12 and older): read with
+    /// [`read_opera_typed_history`].
+    OperaTypedHistory,
+    /// A Java deployment cache index file (`.idx`): read with
+    /// [`read_java_idx`].
+    JavaIdx,
+    /// A Chromium block-file cache's `index`: read with
+    /// [`read_chrome_cache`].
+    ChromeCache,
+    /// A Firefox cache version 1 block file (`_CACHE_001_` to
+    /// `_CACHE_003_`): read with [`read_firefox_cache1`].
+    FirefoxCache1,
+    /// A Firefox cache version 2 entry (`cache2/entries/<SHA-1>`): read
+    /// with [`read_firefox_cache2`].
+    FirefoxCache2,
 }
 
 impl Kind {
     /// The kind a file's name suggests: `History`, `places.sqlite`,
-    /// `downloads.sqlite` (case ignored), from a path or a bare name.
+    /// `downloads.sqlite`, … (case ignored), a Java cache index file by its
+    /// `.idx` extension, from a path or a bare name.
     #[must_use]
     pub fn from_name(name: &str) -> Option<Self> {
         let base = name.rsplit(['/', '\\']).next().unwrap_or(name);
+        let extension = base.rsplit_once('.').map(|(_, extension)| extension);
+        if extension.is_some_and(|e| e.eq_ignore_ascii_case("idx")) {
+            return Some(Self::JavaIdx);
+        }
+        if base.len() == 40 && base.bytes().all(|b| b.is_ascii_hexdigit()) {
+            return Some(Self::FirefoxCache2);
+        }
         [
             ("History", Self::ChromiumHistory),
             ("places.sqlite", Self::FirefoxPlaces),
@@ -110,6 +162,13 @@ impl Kind {
             ("Web Data", Self::Autofill),
             ("Extension Activity", Self::ExtensionActivity),
             ("Preferences", Self::Preferences),
+            ("Cookies.binarycookies", Self::SafariCookies),
+            ("load_statistics.db", Self::LoadStatistics),
+            ("global_history.dat", Self::OperaGlobalHistory),
+            ("typed_history.xml", Self::OperaTypedHistory),
+            ("_CACHE_001_", Self::FirefoxCache1),
+            ("_CACHE_002_", Self::FirefoxCache1),
+            ("_CACHE_003_", Self::FirefoxCache1),
         ]
         .into_iter()
         .find(|(known, _)| base.eq_ignore_ascii_case(known))
@@ -128,6 +187,8 @@ impl Kind {
             Some(Self::FirefoxDownloads)
         } else if has("history_items") && has("history_visits") {
             Some(Self::SafariHistory)
+        } else if has("load_statistics") && has("redirect_statistics") {
+            Some(Self::LoadStatistics)
         } else if has("cookies") || has("moz_cookies") {
             Some(Self::Cookies)
         } else if has("autofill") {
@@ -145,14 +206,41 @@ impl Kind {
 /// The tables decide when the file is a SQLite database whose schema
 /// reads; the name (as [`Kind::from_name`]) only when it is a SQLite
 /// database whose schema doesn't, such as the first pages of a larger
-/// file. An ESE database is a WebCache when named as one. Anything else is
-/// `None`.
+/// file. An ESE database is a WebCache when named as one. Safari's
+/// cookies, Java cache index files, a Chromium cache's `index`, Opera's
+/// typed history (XML) and global history (text) are told by their
+/// contents; Firefox's cache files by their names (and a version 2 entry
+/// by its metadata too). Anything else is `None`.
 #[must_use]
 pub fn detect(name: &str, data: &[u8]) -> Option<Kind> {
     if is_ese(data) {
         return (Kind::from_name(name) == Some(Kind::WebCache)).then_some(Kind::WebCache);
     }
+    if data.starts_with(binarycookies::SIGNATURE) {
+        return Some(Kind::SafariCookies);
+    }
+    if javaidx::is_java_idx(data) {
+        return Some(Kind::JavaIdx);
+    }
+    if chromecache::is_index(data) {
+        return Some(Kind::ChromeCache);
+    }
+    if opera::is_typed_history(data) {
+        return Some(Kind::OperaTypedHistory);
+    }
+    if opera::is_global_history(data) {
+        return Some(Kind::OperaGlobalHistory);
+    }
     let named = Kind::from_name(name);
+    match named {
+        Some(Kind::FirefoxCache1) => return named,
+        Some(Kind::FirefoxCache2) => {
+            return firefoxcache::read_v2(data)
+                .is_ok()
+                .then_some(Kind::FirefoxCache2);
+        }
+        _ => {}
+    }
     if data.starts_with(b"bplist") || data.trim_ascii_start().starts_with(b"<?xml") {
         return named.filter(|k| matches!(k, Kind::SafariHistoryPlist | Kind::SafariDownloads));
     }
@@ -429,14 +517,30 @@ impl std::fmt::Display for Error {
 impl std::error::Error for Error {}
 
 /// Read a browser's history database: a SQLite one with its `-wal` file's
-/// committed changes (`wal` may be empty), or a WebCache (`wal` unused).
+/// committed changes (`wal` may be empty), or a WebCache, a Safari
+/// property list or an Opera `global_history.dat` (`wal` unused).
 ///
 /// # Errors
-/// When it isn't a SQLite or ESE database, or has none of the tables of a
-/// [`Kind`].
+/// When it isn't one of them, or is a SQLite database with none of the
+/// tables of a [`Kind`].
 pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
     if is_ese(database) {
         return read_webcache(database);
+    }
+    if opera::is_typed_history(database) {
+        return Err(Error(format!(
+            "a {:?} file, not history",
+            Kind::OperaTypedHistory
+        )));
+    }
+    if opera::is_global_history(database) {
+        let mut problems = Vec::new();
+        let visits = opera::global_history(database, &mut problems);
+        return Ok(History::of_visits(
+            Kind::OperaGlobalHistory,
+            visits,
+            problems,
+        ));
     }
     if database.starts_with(b"bplist") || database.trim_ascii_start().starts_with(b"<?xml") {
         let downloads = plist::parse(database)
@@ -474,7 +578,15 @@ pub fn read(database: &[u8], wal: &[u8]) -> Result<History, Error> {
         | Kind::Cookies
         | Kind::Autofill
         | Kind::ExtensionActivity
-        | Kind::Preferences => {
+        | Kind::Preferences
+        | Kind::SafariCookies
+        | Kind::LoadStatistics
+        | Kind::OperaGlobalHistory
+        | Kind::OperaTypedHistory
+        | Kind::JavaIdx
+        | Kind::ChromeCache
+        | Kind::FirefoxCache1
+        | Kind::FirefoxCache2 => {
             return Err(Error(format!("a {kind:?} database, not history")));
         }
     };
@@ -531,6 +643,88 @@ fn rows<T>(
 /// When it isn't a SQLite database.
 pub fn read_cookies(database: &[u8], wal: &[u8]) -> Result<Rows<Cookie>, Error> {
     rows(database, wal, cookies::read)
+}
+
+/// Read Safari's cookies (`Cookies.binarycookies`), Google Analytics'
+/// decoded.
+///
+/// # Errors
+/// When it doesn't start with `cook`.
+pub fn read_binary_cookies(data: &[u8]) -> Result<Rows<Cookie>, Error> {
+    if !data.starts_with(binarycookies::SIGNATURE) {
+        return Err(Error("no cook signature".to_owned()));
+    }
+    let mut problems = Vec::new();
+    let mut rows = binarycookies::read(data, &mut problems);
+    analytics::decode_all(&mut rows, &mut problems);
+    Ok(Rows { rows, problems })
+}
+
+/// Read Edge's load statistics (`load_statistics.db`), with its `-wal`
+/// file's committed changes.
+///
+/// # Errors
+/// When it isn't a SQLite database.
+pub fn read_load_statistics(database: &[u8], wal: &[u8]) -> Result<LoadStatistics, Error> {
+    let db = Database::open_with_wal(database, wal).map_err(|e| Error(e.to_string()))?;
+    let mut problems = db.problems.clone();
+    let mut statistics = load_statistics::read(&db, &mut problems);
+    statistics.problems = problems;
+    Ok(statistics)
+}
+
+/// Read Opera's typed history (`typed_history.xml`, Opera 12 and older).
+///
+/// # Errors
+/// When it isn't XML whose root is `typed_history`.
+pub fn read_opera_typed_history(data: &[u8]) -> Result<Rows<TypedUrl>, Error> {
+    if !opera::is_typed_history(data) {
+        return Err(Error("not an Opera typed_history.xml".to_owned()));
+    }
+    let mut problems = Vec::new();
+    let rows = opera::typed_history(data, &mut problems);
+    Ok(Rows { rows, problems })
+}
+
+/// Read a Chromium block-file cache from its `index`, the other files
+/// (`data_0` to `data_3`, `f_…`) given by name by `file`: every entry with
+/// its key (the URL), when it was made and last used, and where its data
+/// streams are. The block files of entries, their rankings and keys stored
+/// apart are needed; a file needed but not given is reported in
+/// `problems`.
+///
+/// # Errors
+/// When `index` doesn't start with the cache's magic.
+pub fn read_chrome_cache<'f>(
+    index: &[u8],
+    file: impl Fn(&str) -> Option<&'f [u8]>,
+) -> Result<ChromeCache, Error> {
+    chromecache::read(index, file)
+}
+
+/// Read a Firefox cache version 1 block file (`_CACHE_001_`,
+/// `_CACHE_002_`, `_CACHE_003_`; `name`, which may be a path, gives its
+/// block size): every metadata record its blocks hold.
+///
+/// # Errors
+/// When it holds none.
+pub fn read_firefox_cache1(name: &str, data: &[u8]) -> Result<Rows<FirefoxCacheEntry>, Error> {
+    let rows = firefoxcache::read_v1(name, data);
+    if rows.is_empty() {
+        return Err(Error("no Firefox cache record".to_owned()));
+    }
+    Ok(Rows {
+        rows,
+        problems: Vec::new(),
+    })
+}
+
+/// Read a Firefox cache version 2 entry file (`cache2/entries/<SHA-1>`).
+///
+/// # Errors
+/// When its metadata can't be found or is out of range.
+pub fn read_firefox_cache2(data: &[u8]) -> Result<FirefoxCacheEntry, Error> {
+    firefoxcache::read_v2(data)
 }
 
 /// Read Chromium's form history (`Web Data`).
